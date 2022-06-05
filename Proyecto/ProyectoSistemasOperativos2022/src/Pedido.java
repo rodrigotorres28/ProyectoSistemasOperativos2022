@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Pedido {
 
-    private String comercio;
-    private int tiempoElaboracion;
+  private String comercio;
+  private int tiempoElaboracion;
 	private int distanciaCliente;
 	private int id;
 	private String productos;

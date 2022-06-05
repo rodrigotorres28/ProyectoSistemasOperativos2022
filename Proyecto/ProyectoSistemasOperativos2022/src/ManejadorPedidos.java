@@ -17,11 +17,11 @@ public class ManejadorPedidos {
         if(!pedidos.empty()){
             actual = pedidos.pop();
         
-        
             while(actual.getHoraIngresado() <= contadorGlobal){
                 System.out.println("SI entro el pedido " + String.valueOf(actual.getId()) + " en el tick: " + String.valueOf(contadorGlobal));
-                manejadorComercios.nuevoPedido(actual);
+                if(manejadorComercios.nuevoPedido(actual)){
                 //nuevo pedido repartidores
+                }
                 if(!pedidos.empty()){
                 actual = pedidos.pop();
                 }
