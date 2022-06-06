@@ -14,11 +14,14 @@ public class Reloj implements Runnable{
 
     @Override
     public void run() {
+        long inicio = System.currentTimeMillis();
         while(true){
             
             manejadorPedidos.checkearPedidos(contadorGlobal, manejadorComercios);
             manejadorComercios.checkearComercios(contadorGlobal);
             //manejador de repartidores
+            
+            System.out.println("\nTerminó tick #" + contadorGlobal + " | Transcurridos:  "+ (System.currentTimeMillis() - inicio)+ "ms\n----------------------------------------------------------------------------");
 
             try {
                 Thread.sleep(1000);
@@ -27,8 +30,6 @@ public class Reloj implements Runnable{
             }
             
             contadorGlobal++;
-
-            System.out.println("\nHora actual en ms: " + System.currentTimeMillis()+ "\n---------------");
         }
     }
     

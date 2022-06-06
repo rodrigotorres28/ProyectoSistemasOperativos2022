@@ -14,7 +14,6 @@ public class ManejadorComercios {
 	}
 
 	void checkearComercios(long contadorGlobal){
-        System.out.println("se liberan los semaforos comienzo");
         semComienzo.release(comercios.size());
         
         try {
@@ -23,7 +22,6 @@ public class ManejadorComercios {
             e.printStackTrace();
         }
         
-        System.out.println("se liberan los semaforos final");
         semFinalTodos.release(comercios.size());
 
     }

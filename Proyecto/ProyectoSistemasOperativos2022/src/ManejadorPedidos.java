@@ -18,9 +18,9 @@ public class ManejadorPedidos {
             actual = pedidos.pop();
         
             while(actual.getHoraIngresado() <= contadorGlobal){
-                System.out.println("SI entro el pedido " + String.valueOf(actual.getId()) + " en el tick: " + String.valueOf(contadorGlobal));
                 if(manejadorComercios.nuevoPedido(actual)){
-                //nuevo pedido repartidores
+                    System.out.println("Entro el pedido #" + String.valueOf(actual.getId()) + " para el comercio: " + actual.getComercio());
+                    //nuevo pedido repartidores
                 }
                 if(!pedidos.empty()){
                 actual = pedidos.pop();
@@ -29,7 +29,6 @@ public class ManejadorPedidos {
                     return;
                 }
             }
-            System.out.println("NO entro el pedido " + String.valueOf(actual.getId()) + " en el tick: " + String.valueOf(contadorGlobal));
             pedidos.add(actual);
         }
     }
