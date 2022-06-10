@@ -11,6 +11,7 @@ public class Comercio implements Runnable{
 	private Semaphore semComienzo;
     private Semaphore semFinal;
     private Semaphore semFinalTodos;
+    private Semaphore pedidosMutex = new Semaphore(1);
     private Pedido siguiente;
     private Pedido elaborando;
     private int elaboracionActual = 0;
@@ -40,22 +41,20 @@ public class Comercio implements Runnable{
     }
 
     public void agregarPedido(Pedido pedido){
+        try {pedidosMutex.acquire();} catch (InterruptedException e) {}
         pedidos.add(pedido);
+        pedidosMutex.release();
     }
 
     @Override
     public void run() {
         while(true){
-            try {
-                semComienzo.acquire();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            try {semComienzo.acquire();} catch (InterruptedException e) {}
 
             if(siguiente != null){
                 siguiente.setAntiguedad(siguiente.getAntiguedad()+1);
             }
-
+            try {pedidosMutex.acquire();} catch (InterruptedException e) {}
             for (Pedido pedido : pedidos) {
                 pedido.setAntiguedad(pedido.getAntiguedad()+1);
                 if(siguiente == null){
@@ -68,6 +67,7 @@ public class Comercio implements Runnable{
                     pedidos.remove(pedido);
                 }
             }
+            pedidosMutex.release();
 
             if (elaboracionActual != 0){
                 elaboracionActual--;
@@ -99,11 +99,7 @@ public class Comercio implements Runnable{
             
             semFinal.release();
 
-            try {
-                semFinalTodos.acquire();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            try {semFinalTodos.acquire();} catch (InterruptedException e) {}
         }
     }
 }

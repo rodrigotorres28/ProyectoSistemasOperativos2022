@@ -1,19 +1,26 @@
 public class Main {
 
+   
+
     public static void main(String[] args) throws Exception {
 
-        ManejadorArchivosGenerico manejador = new ManejadorArchivosGenerico();
-        ManejadorComercios manejadorComercios = new ManejadorComercios();
-        ManejadorPedidos manejadorPedidos = new ManejadorPedidos();
+        //ManejadorArchivosGenerico manejador = new ManejadorArchivosGenerico();
 
-        //Creo el hilo reloj
+        ManejadorComercios manejadorComercios = new ManejadorComercios();
+        Thread hilomanejadorComercios = new Thread((Runnable)manejadorComercios);
+
+        ManejadorPedidos manejadorPedidos = new ManejadorPedidos();
+        Thread hilomanejadorPedidos = new Thread((Runnable)manejadorPedidos);
+
         Runnable reloj = new Reloj(manejadorComercios, manejadorPedidos);
         Thread hiloReloj = new Thread(reloj);
 
         manejadorComercios.cargarComercios();
         manejadorPedidos.cargarPedidos();
-        
-        hiloReloj.run();
 
+        hilomanejadorPedidos.start();
+        hilomanejadorComercios.start();
+        hiloReloj.run();
+        System.out.println("FIN DE LA SIMULACIÓN");
     }
 }
