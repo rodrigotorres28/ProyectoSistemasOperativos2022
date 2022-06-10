@@ -21,6 +21,9 @@ public class Main {
         hilomanejadorPedidos.start();
         hilomanejadorComercios.start();
         hiloReloj.run();
+        System.out.println("Generando salida...");
+        //salida logger
         System.out.println("FIN DE LA SIMULACIÓN");
+        System.exit(0);
     }
 }

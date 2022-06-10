@@ -30,9 +30,9 @@ public class ManejadorPedidos implements Runnable {
 
     void cargarPedidos(){
 
-        Pedido ped1 = new Pedido("McDonalds", 10, 12, 1, "1 Mc Combo Cuarto de Libra grande", 5);
-        Pedido ped2 = new Pedido("McDonalds", 5, 10, 2, "Mc Nuggets", 8);
-        Pedido ped3 = new Pedido("La vaca picada", 7, 3, 3, "1 Braserito para 2", 15);
+        Pedido ped1 = new Pedido("McDonalds", "restaurante", 10, 12, 1, "1 Mc Combo Cuarto de Libra grande", 5);
+        Pedido ped2 = new Pedido("McDonalds", "restaurante", 5, 10, 2, "Mc Nuggets", 8);
+        Pedido ped3 = new Pedido("La vaca picada", "restaurante", 7, 3, 3, "1 Braserito para 2", 15);
 
         pedidos.add(ped3);
         pedidos.add(ped2);

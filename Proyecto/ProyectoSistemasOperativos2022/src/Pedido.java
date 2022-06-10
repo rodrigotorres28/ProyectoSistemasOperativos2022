@@ -1,6 +1,7 @@
 public class Pedido {
 
   private String comercio;
+  private String tipoComercio;
   private int tiempoElaboracion;
   private int distanciaCliente;
   private int id;
@@ -16,7 +17,6 @@ public class Pedido {
     return antiguedad;
   }
 
-  // Getters
   public int getHoraIngresado() {
     return horaIngresado;
   }
@@ -41,10 +41,15 @@ public class Pedido {
     return productos;
   }
 
-  public Pedido(String Comercio, int TiempoElaboracion, int DistanciaCliente, int Id, String Productos,
+  public String getTipoComercio() {
+    return tipoComercio;
+  }
+
+  public Pedido(String Comercio, String TipoComercio , int TiempoElaboracion, int DistanciaCliente, int Id, String Productos,
       int HoraIngresado) {
 
     this.comercio = Comercio;
+    this.tipoComercio = TipoComercio;
     this.tiempoElaboracion = TiempoElaboracion;
     this.distanciaCliente = DistanciaCliente;
     this.id = Id;

@@ -1,13 +1,15 @@
 public class LogPedido {
     private int id;
+    private String tipoComercio;
     private String ingresaTick;
     private String inicioElaboracionTick;
     private String finElaboracionTick;
     private String inicioEnvioTick;
     private String finEnvioTick;
 
-    public LogPedido(int Id, String IngresaTick){
+    public LogPedido(int Id, String TipoComercio, String IngresaTick){
         this.id = Id;
+        this.tipoComercio = TipoComercio;
         this.ingresaTick = IngresaTick;
     }
 
@@ -38,5 +40,22 @@ public class LogPedido {
     public int getId() {
         return id;
     }
-
+    public String getTipoComercio() {
+        return tipoComercio;
+    }
+    public String getIngresaTick() {
+        return ingresaTick;
+    }
+    public String getInicioElaboracionTick() {
+        return inicioElaboracionTick;
+    }
+    public String getFinElaboracionTick() {
+        return finElaboracionTick;
+    }
+    public String getInicioEnvioTick() {
+        return inicioEnvioTick;
+    }
+    public String getFinEnvioTick() {
+        return finEnvioTick;
+    }
 }
