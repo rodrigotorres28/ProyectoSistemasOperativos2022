@@ -3,18 +3,19 @@ import java.util.concurrent.Semaphore;
 
 public class Comercio implements Runnable{
 
-    private String nombre;
-	private Boolean ocupado;
-    private List<Pedido> pedidos;
-	private List<Repartidor> repartidoresEsperando;
-    private Queue<Pedido> pedidosListos = new LinkedList<>();
-	private Semaphore semComienzo;
-    private Semaphore semFinal;
-    private Semaphore semFinalTodos;
-    private Semaphore pedidosMutex = new Semaphore(1);
-    private Pedido siguiente;
-    private Pedido elaborando;
-    private int elaboracionActual = 0;
+    protected String nombre;
+	protected Boolean ocupado;
+    protected List<Pedido> pedidos;
+	protected Queue<Repartidor> repartidoresEsperando = new LinkedList<Repartidor>();
+    protected Queue<Pedido> pedidosListos = new LinkedList<>();
+	protected Semaphore semComienzo;
+    protected Semaphore semFinal;
+    protected Semaphore semFinalTodos;
+    protected Semaphore pedidosMutex = new Semaphore(1);
+    protected Pedido siguiente;
+    protected Pedido elaborando;
+    protected int elaboracionActual = 0;
+    protected ManejadorRepartidores manejadorRepartidores;
 
     // Getters
     public String getNombre() {
@@ -26,24 +27,29 @@ public class Comercio implements Runnable{
     public List<Pedido> getPedidos() {
 		return pedidos;
 	}
-    public List<Repartidor> getRepartidoresEsperando() {
+    public Queue<Repartidor> getRepartidoresEsperando() {
 		return repartidoresEsperando;
 	}
 	
-	public Comercio(String Nombre, Semaphore SemComienzo, Semaphore SemFinal, Semaphore SemFinalTodos){
+	public Comercio(String Nombre, ManejadorRepartidores ManejadorRepartidores, Semaphore SemComienzo, Semaphore SemFinal, Semaphore SemFinalTodos){
         this.nombre = Nombre;
+        this.manejadorRepartidores = ManejadorRepartidores;
         this.semComienzo = SemComienzo;
         this.semFinal = SemFinal;
         this.semFinalTodos = SemFinalTodos;
         this.ocupado = false;
         this.pedidos = new LinkedList<Pedido>();
-        this.repartidoresEsperando = new ArrayList<Repartidor>();
+        this.repartidoresEsperando = new LinkedList<Repartidor>();
     }
 
     public void agregarPedido(Pedido pedido){
         try {pedidosMutex.acquire();} catch (InterruptedException e) {}
         pedidos.add(pedido);
         pedidosMutex.release();
+    }
+
+    public void agregarRepartidor(Repartidor repartidor){
+        repartidoresEsperando.add(repartidor);
     }
 
     @Override
@@ -92,10 +98,20 @@ public class Comercio implements Runnable{
             }
 
             while(pedidosListos.size() > 0){
-                break; //asignar reprtidores (en vez del break)
+                if(repartidoresEsperando.size()>0){
+                    Repartidor repartidor = repartidoresEsperando.remove();
+                    Pedido pedido = pedidosListos.remove();
+                    repartidor.setPedido(pedido);
+                    repartidor.setEnEspera(false);
+                    repartidor.setDistanciaRestante(pedido.getDistanciaCliente());
+                    repartidor.setEnviando(true);
+                    manejadorRepartidores.repartidorEnviando(repartidor);
+                    System.out.println("Comenzó el envio del pedido #" + pedido.getId() + ". Por el repartidor #" + repartidor.getId());
+                }
+                else{
+                    break;
+                }
             }
-
-            //System.out.println("comercio " + nombre + " elaborando");
             
             semFinal.release();
 

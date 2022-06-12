@@ -4,14 +4,22 @@ import java.util.concurrent.Semaphore;
 
 public class ManejadorComercios implements Runnable{
 
+    private Boolean iniciando = true;
     private List<Comercio> comercios = new ArrayList<Comercio>();
     private Semaphore semComienzo = new Semaphore(0);
     private Semaphore semFinal = new Semaphore(0);
     private Semaphore semFinalTodos = new Semaphore(0);
     private Semaphore semTickComercios;
     private Semaphore semFinTickComercios;
+    private ManejadorRepartidores manejadorRepartidores;
 
-    public void setSemTickComercios(Semaphore semTickComercios) {
+    public void setIniciando(Boolean iniciando) {
+        this.iniciando = iniciando;
+    }
+    public void setManejadorRepartidores(ManejadorRepartidores manejadorRepartidores) {
+		this.manejadorRepartidores = manejadorRepartidores;
+	}
+	public void setSemTickComercios(Semaphore semTickComercios) {
         this.semTickComercios = semTickComercios;
     }
     public void setSemFinTickComercios(Semaphore semFinTickComercios) {
@@ -24,6 +32,9 @@ public class ManejadorComercios implements Runnable{
 
     @Override
     public void run() {
+        while(iniciando){
+            try {Thread.sleep(1);} catch (InterruptedException e) {}
+        }
         while(true){
             try {semTickComercios.acquire();} catch (InterruptedException e1) {}
             
@@ -35,15 +46,18 @@ public class ManejadorComercios implements Runnable{
         }
     }
 
-    void cargarComercios(){
+    void cargarComercios(ManejadorRepartidores manejador){
 
-        Comercio com1 = new Comercio("La vaca picada", semComienzo, semFinal, semFinalTodos);
-        Comercio com2 = new Comercio("McDonalds", semComienzo, semFinal, semFinalTodos);
-        Comercio com3 = new Comercio("Burger King", semComienzo, semFinal, semFinalTodos);
-        
+        Comercio com1 = new Comercio("La vaca picada", manejador , semComienzo, semFinal, semFinalTodos);
+        Comercio com2 = new Comercio("McDonalds", manejador, semComienzo, semFinal, semFinalTodos);
+        Comercio com3 = new Comercio("Burger King", manejador, semComienzo, semFinal, semFinalTodos);
+        ComercioSinElaboracion com4 = new ComercioSinElaboracion("Farmashop", manejador, semComienzo, semFinal, semFinalTodos);
+        ComercioSinElaboracion com5 = new ComercioSinElaboracion("TaTa", manejador, semComienzo, semFinal, semFinalTodos);
         comercios.add(com1);
         comercios.add(com2);
         comercios.add(com3);
+        comercios.add(com4);
+        comercios.add(com5);
 
         for (Comercio comercio : comercios) {
             Thread hilo = new Thread(comercio);

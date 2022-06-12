@@ -1,8 +1,9 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.StringJoiner;
 
 public class Logger {
-    private List<LogPedido> listaPedidosSimulados;
+    private List<LogPedido> listaPedidosSimulados = new ArrayList<>();
 
     public void registrarPedido(Pedido pedido, long contador){
         LogPedido logPedido = new LogPedido(pedido.getId(), pedido.getTipoComercio(), String.valueOf(contador));
