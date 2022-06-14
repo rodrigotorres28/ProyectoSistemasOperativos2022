@@ -16,6 +16,13 @@ public class Main {
         Runnable reloj = new Reloj(manejadorComercios, manejadorRepartidores, manejadorPedidos, logger);
         Thread hiloReloj = new Thread(reloj);
 
+
+       
+       
+
+       
+
+
         manejadorComercios.cargarComercios(manejadorRepartidores, logger);
         manejadorPedidos.cargarPedidos();
         manejadorRepartidores.cargarRepartidores(logger);

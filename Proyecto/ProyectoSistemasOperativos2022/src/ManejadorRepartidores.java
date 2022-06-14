@@ -242,13 +242,10 @@ public class ManejadorRepartidores implements Runnable {
 
 	public void cargarRepartidores(Logger logger) {
 
-        Repartidor r1 = new Repartidor(1, this, semComienzo, semFinal, semFinalTodos, logger);
-        Repartidor r2 = new Repartidor(2, this, semComienzo, semFinal, semFinalTodos, logger);
-        Repartidor r3 = new Repartidor(3, this, semComienzo, semFinal, semFinalTodos, logger);
-
-        repartidoresListos.add(r1);
-        repartidoresListos.add(r2);
-        repartidoresListos.add(r3);
+        int[] repartidores = ManejadorArchivosGenerico.leerArchivo("ubicacion");
+        for (int id: pedidos){
+            repartidoresListos.add(new Repartidor(id, this, semComienzo, semFinal, semFinalTodos, logger));
+        }
 
         totalDeRepartidores = repartidoresListos.size();
         for (Repartidor rep : repartidoresListos) {

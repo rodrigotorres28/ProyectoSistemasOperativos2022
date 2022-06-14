@@ -47,17 +47,15 @@ public class ManejadorComercios implements Runnable{
     }
 
     void cargarComercios(ManejadorRepartidores manejador, Logger logger){
-
-        Comercio com1 = new Comercio("La vaca picada", manejador , semComienzo, semFinal, semFinalTodos, logger);
-        Comercio com2 = new Comercio("McDonalds", manejador, semComienzo, semFinal, semFinalTodos, logger);
-        Comercio com3 = new Comercio("Burger King", manejador, semComienzo, semFinal, semFinalTodos, logger);
-        ComercioSinElaboracion com4 = new ComercioSinElaboracion("Farmashop", manejador, semComienzo, semFinal, semFinalTodos, logger);
-        ComercioSinElaboracion com5 = new ComercioSinElaboracion("TaTa", manejador, semComienzo, semFinal, semFinalTodos, logger);
-        comercios.add(com1);
-        comercios.add(com2);
-        comercios.add(com3);
-        comercios.add(com4);
-        comercios.add(com5);
+        //Se cargan los comercios
+        String[] nombresComercios = ManejadorArchivosGenerico.leerArchivo("ubicacion");
+        for (String nombre: nombresComercios){
+            comercios.add(new Comercio(nombre, manejador, semComienzo, semFinal, semFinalTodos, logger);
+        }
+        String[] nombresComerciosSinElaboracion =  ManejadorArchivosGenerico.leerArchivo("ubicacion");
+        for (String nombre: nombresComerciosSinElaboracion){
+            comercios.add(new ComercioSinElaboracion(nombre, manejador, semComienzo, semFinal, semFinalTodos, logger));
+        }
 
         for (Comercio comercio : comercios) {
             Thread hilo = new Thread(comercio);

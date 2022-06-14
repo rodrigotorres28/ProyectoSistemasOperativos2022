@@ -42,20 +42,11 @@ public class ManejadorPedidos implements Runnable {
 
     void cargarPedidos(){
 
-        Pedido ped1 = new Pedido("McDonalds", "restaurante", 10, 12, 1, "1 Mc Combo Cuarto de Libra grande", 5);
-        Pedido ped2 = new Pedido("McDonalds", "restaurante", 5, 10, 2, "Mc Nuggets", 8);
-        Pedido ped3 = new Pedido("La vaca picada", "restaurante", 7, 3, 3, "1 Braserito para 2", 15);
-        Pedido ped4 = new Pedido("La vaca picada", "restaurante", 11, 8, 4, "110 Braserito para 2", 18);
-        Pedido ped5 = new Pedido("Farmashop", "farmacia", 0, 5, 5, "1 Test de embarazo", 20);
-        Pedido ped6 = new Pedido("TaTa", "almacen", 0, 15, 6, "Queso azul", 20);
-
-
-        pedidos.add(ped6);
-        pedidos.add(ped5);
-        pedidos.add(ped4);
-        pedidos.add(ped3);
-        pedidos.add(ped2);
-        pedidos.add(ped1);
+        String[] arrayPedidos = ManejadorArchivosGenerico.leerArchivo("ubicacion");
+        for (String i: arrayPedidos){
+            String[] temp = i.split(",");
+            pedidos.add(new Pedido(temp[0], temp[1], Integer.parseInt(temp[2]), Integer.parseInt(temp[3]), Integer.parseInt(temp[4]), temp[5], Integer.parseInt(temp[6])));
+        }
     }
 
     @Override
