@@ -12,14 +12,17 @@ public class Reloj implements Runnable{
     private Semaphore semFinTickPedidos = new Semaphore(0);
     private Semaphore semTickRepartidores = new Semaphore(0);
     private Semaphore semFinTickRepartidores = new Semaphore(0);
+    private Logger logger;
+    
 
     public long getContador(){
         return this.contadorGlobal;
     }
-    public Reloj(ManejadorComercios ManejadorComercios, ManejadorRepartidores ManejadorRepartidores, ManejadorPedidos ManejadorPedidos) {
+    public Reloj(ManejadorComercios ManejadorComercios, ManejadorRepartidores ManejadorRepartidores, ManejadorPedidos ManejadorPedidos, Logger Logger) {
         this.manejadorComercios = ManejadorComercios;
         this.manejadorRepartidores = ManejadorRepartidores;
         this.manejadorPedidos = ManejadorPedidos;
+        this.logger = Logger;
     }
 
     @Override
@@ -28,6 +31,7 @@ public class Reloj implements Runnable{
         manejadorPedidos.setManejadorRepartidores(manejadorRepartidores);
         manejadorPedidos.setSemTickPedidos(semTickPedidos);
         manejadorPedidos.setSemFinTickPedidos(semFinTickPedidos);
+        manejadorPedidos.setLogger(logger);
         manejadorPedidos.setIniciando(false);
 
         manejadorComercios.setManejadorRepartidores(manejadorRepartidores);
@@ -38,12 +42,14 @@ public class Reloj implements Runnable{
         manejadorRepartidores.setManejadorComercios(manejadorComercios);
         manejadorRepartidores.setSemTickRepartidores(semTickRepartidores);
         manejadorRepartidores.setSemFinTickRepartidores(semFinTickRepartidores);
+        manejadorRepartidores.setLogger(logger);
         manejadorRepartidores.setIniciando(false);
         
 
         long inicio = System.currentTimeMillis();
         while(contadorGlobal <= 100){
             manejadorPedidos.setContadorGlobal(contadorGlobal);
+            logger.setContadorGlobal(contadorGlobal);
             semTickPedidos.release();
             semTickComercios.release();
             semTickRepartidores.release();

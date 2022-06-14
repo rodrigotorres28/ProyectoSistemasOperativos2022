@@ -16,6 +16,7 @@ public class Comercio implements Runnable{
     protected Pedido elaborando;
     protected int elaboracionActual = 0;
     protected ManejadorRepartidores manejadorRepartidores;
+    protected Logger logger;
 
     // Getters
     public String getNombre() {
@@ -31,12 +32,13 @@ public class Comercio implements Runnable{
 		return repartidoresEsperando;
 	}
 	
-	public Comercio(String Nombre, ManejadorRepartidores ManejadorRepartidores, Semaphore SemComienzo, Semaphore SemFinal, Semaphore SemFinalTodos){
+	public Comercio(String Nombre, ManejadorRepartidores ManejadorRepartidores, Semaphore SemComienzo, Semaphore SemFinal, Semaphore SemFinalTodos, Logger Logger){
         this.nombre = Nombre;
         this.manejadorRepartidores = ManejadorRepartidores;
         this.semComienzo = SemComienzo;
         this.semFinal = SemFinal;
         this.semFinalTodos = SemFinalTodos;
+        this.logger = Logger;
         this.ocupado = false;
         this.pedidos = new LinkedList<Pedido>();
         this.repartidoresEsperando = new LinkedList<Repartidor>();
@@ -67,7 +69,7 @@ public class Comercio implements Runnable{
                     siguiente = pedido;
                     pedidos.remove(pedido);
                 }
-                else if ((3*siguiente.getAntiguedad())/(siguiente.getTiempoElaboracion() + 1) < (3*pedido.getAntiguedad())/(pedido.getTiempoElaboracion() + 1)){
+                else if (prioridadHRRN(siguiente.getAntiguedad(),siguiente.getTiempoElaboracion()) < prioridadHRRN(pedido.getAntiguedad(),pedido.getTiempoElaboracion())){
                     pedidos.add(siguiente);
                     siguiente = pedido;
                     pedidos.remove(pedido);
@@ -80,11 +82,15 @@ public class Comercio implements Runnable{
             }
 
             if (elaborando != null && elaboracionActual == 0){
+                //Escribir a csv
+                logger.actualizarPedido(elaborando, "finElab");
                 System.out.println("Se Termino de elaborar el pedido #" + elaborando.getId() + " en el comercio: " + this.getNombre());
                 pedidosListos.add(elaborando);
                 elaborando = siguiente;
                 siguiente = null;
                 if(elaborando != null){
+                    //Escribir a csv
+                    logger.actualizarPedido(elaborando, "iniElab");
                     System.out.println("Se empezó a elaborar el pedido #" + elaborando.getId() + " en el comercio: " + this.getNombre());
                     elaboracionActual = elaborando.getTiempoElaboracion();
                 }
@@ -93,6 +99,8 @@ public class Comercio implements Runnable{
             if (elaborando == null && siguiente != null){
                 elaborando = siguiente;
                 siguiente = null;
+                //Escribir a csv
+                logger.actualizarPedido(elaborando, "iniElab");
                 System.out.println("Se empezó a elaborar el pedido #" + elaborando.getId() + " en el comercio: " + this.getNombre());
                 elaboracionActual = elaborando.getTiempoElaboracion();
             }
@@ -106,6 +114,8 @@ public class Comercio implements Runnable{
                     repartidor.setDistanciaRestante(pedido.getDistanciaCliente());
                     repartidor.setEnviando(true);
                     manejadorRepartidores.repartidorEnviando(repartidor);
+                    //Escribir a csv
+                    logger.actualizarPedido(pedido, "iniEnv");
                     System.out.println("Comenzó el envio del pedido #" + pedido.getId() + ". Por el repartidor #" + repartidor.getId());
                 }
                 else{
@@ -117,5 +127,11 @@ public class Comercio implements Runnable{
 
             try {semFinalTodos.acquire();} catch (InterruptedException e) {}
         }
+    }
+
+    private Float prioridadHRRN(int antiguedad, int elaboracion){
+        Float fElab = (float) elaboracion;
+        float prioridadElaboracion = 100.0f - (((fElab-10.0f)*100.0f)/35.0f);
+        return Math.max((antiguedad*5), prioridadElaboracion);
     }
 }

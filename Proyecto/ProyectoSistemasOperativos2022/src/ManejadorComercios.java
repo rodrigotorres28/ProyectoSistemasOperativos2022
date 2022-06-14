@@ -46,13 +46,13 @@ public class ManejadorComercios implements Runnable{
         }
     }
 
-    void cargarComercios(ManejadorRepartidores manejador){
+    void cargarComercios(ManejadorRepartidores manejador, Logger logger){
 
-        Comercio com1 = new Comercio("La vaca picada", manejador , semComienzo, semFinal, semFinalTodos);
-        Comercio com2 = new Comercio("McDonalds", manejador, semComienzo, semFinal, semFinalTodos);
-        Comercio com3 = new Comercio("Burger King", manejador, semComienzo, semFinal, semFinalTodos);
-        ComercioSinElaboracion com4 = new ComercioSinElaboracion("Farmashop", manejador, semComienzo, semFinal, semFinalTodos);
-        ComercioSinElaboracion com5 = new ComercioSinElaboracion("TaTa", manejador, semComienzo, semFinal, semFinalTodos);
+        Comercio com1 = new Comercio("La vaca picada", manejador , semComienzo, semFinal, semFinalTodos, logger);
+        Comercio com2 = new Comercio("McDonalds", manejador, semComienzo, semFinal, semFinalTodos, logger);
+        Comercio com3 = new Comercio("Burger King", manejador, semComienzo, semFinal, semFinalTodos, logger);
+        ComercioSinElaboracion com4 = new ComercioSinElaboracion("Farmashop", manejador, semComienzo, semFinal, semFinalTodos, logger);
+        ComercioSinElaboracion com5 = new ComercioSinElaboracion("TaTa", manejador, semComienzo, semFinal, semFinalTodos, logger);
         comercios.add(com1);
         comercios.add(com2);
         comercios.add(com3);
@@ -66,9 +66,12 @@ public class ManejadorComercios implements Runnable{
 
     }
 
-    boolean nuevoPedido(Pedido pedido){
+    boolean nuevoPedido(Pedido pedido, Logger logger){
         for (Comercio comercio : comercios) {
             if (comercio.getNombre() == pedido.getComercio()){
+                //Escribir a csv
+                logger.registrarPedido(pedido);
+                System.out.println("Entro el pedido #" + String.valueOf(pedido.getId()) + " para el comercio: " + pedido.getComercio());
                 comercio.agregarPedido(pedido);
                 return true;
             }

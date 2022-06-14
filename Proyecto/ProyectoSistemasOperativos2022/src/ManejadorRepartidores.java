@@ -27,6 +27,11 @@ public class ManejadorRepartidores implements Runnable {
     private List<Repartidor> repartidoresEnviando = new ArrayList<Repartidor>();
     private int totalDeRepartidores;
     private ManejadorComercios manejadorComercios;
+    private Logger logger;
+
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
 
     public void setIniciando(Boolean iniciando) {
         this.iniciando = iniciando;
@@ -76,7 +81,7 @@ public class ManejadorRepartidores implements Runnable {
                     siguienteDistanciaCorta = colaRestauranteDistanciaCorta.get(i);
                     colaRestauranteDistanciaCorta.remove(colaRestauranteDistanciaCorta.get(i));
                 }
-                else if ((3*siguienteDistanciaCorta.getAntiguedad())/(siguienteDistanciaCorta.getTiempoElaboracion() + 1) < (3*colaRestauranteDistanciaCorta.get(i).getAntiguedad())/(colaRestauranteDistanciaCorta.get(i).getTiempoElaboracion() + 1)){
+                else if (prioridadHRRN(siguienteDistanciaMedia.getAntiguedad(), siguienteDistanciaMedia.getTiempoElaboracion()) < prioridadHRRN(colaRestauranteDistanciaCorta.get(i).getAntiguedad(), (colaRestauranteDistanciaCorta.get(i).getTiempoElaboracion()))){
                     colaRestauranteDistanciaCorta.add(siguienteDistanciaCorta);
                     siguienteDistanciaCorta = colaRestauranteDistanciaCorta.get(i);
                     colaRestauranteDistanciaCorta.remove(colaRestauranteDistanciaCorta.get(i));
@@ -95,7 +100,7 @@ public class ManejadorRepartidores implements Runnable {
                     siguienteDistanciaMedia = colaRestauranteDistanciaMedia.get(i);
                     colaRestauranteDistanciaMedia.remove(colaRestauranteDistanciaMedia.get(i));
                 }
-                else if ((3*siguienteDistanciaMedia.getAntiguedad())/(siguienteDistanciaMedia.getTiempoElaboracion() + 1) < (3*colaRestauranteDistanciaMedia.get(i).getAntiguedad())/(colaRestauranteDistanciaMedia.get(i).getTiempoElaboracion() + 1)){
+                else if (prioridadHRRN(siguienteDistanciaMedia.getAntiguedad(), siguienteDistanciaMedia.getTiempoElaboracion()) < prioridadHRRN(colaRestauranteDistanciaMedia.get(i).getAntiguedad(), (colaRestauranteDistanciaMedia.get(i).getTiempoElaboracion()))){
                     colaRestauranteDistanciaMedia.add(siguienteDistanciaMedia);
                     siguienteDistanciaMedia = colaRestauranteDistanciaMedia.get(i);
                     colaRestauranteDistanciaMedia.remove(colaRestauranteDistanciaMedia.get(i));
@@ -114,7 +119,7 @@ public class ManejadorRepartidores implements Runnable {
                     siguienteDistanciaLarga = colaRestauranteDistanciaLarga.get(i);
                     colaRestauranteDistanciaLarga.remove(colaRestauranteDistanciaLarga.get(i));
                 }
-                else if ((3*siguienteDistanciaLarga.getAntiguedad())/(siguienteDistanciaLarga.getTiempoElaboracion() + 1) < (3*colaRestauranteDistanciaLarga.get(i).getAntiguedad())/(colaRestauranteDistanciaLarga.get(i).getTiempoElaboracion() + 1)){
+                else if (prioridadHRRN(siguienteDistanciaLarga.getAntiguedad(), siguienteDistanciaLarga.getTiempoElaboracion()) < prioridadHRRN(colaRestauranteDistanciaLarga.get(i).getAntiguedad(), (colaRestauranteDistanciaLarga.get(i).getTiempoElaboracion()))){
                     colaRestauranteDistanciaLarga.add(siguienteDistanciaLarga);
                     siguienteDistanciaLarga = colaRestauranteDistanciaLarga.get(i);
                     colaRestauranteDistanciaLarga.remove(colaRestauranteDistanciaLarga.get(i));
@@ -172,6 +177,9 @@ public class ManejadorRepartidores implements Runnable {
                 Repartidor repartidor = repartidoresListos.remove();
                 for (Comercio comercio : manejadorComercios.getComercios()) {
                     if(siguienteParaAtender.getComercio() == comercio.nombre){
+                        //Escribir a csv
+                        logger.actualizarPedido(siguienteParaAtender, "asignRep");
+                        System.out.println("Se asignó el rapartidor #" + repartidor.getId() + " al comercio: " + comercio.getNombre());
                         comercio.agregarRepartidor(repartidor);
                         break;
                     }
@@ -217,6 +225,12 @@ public class ManejadorRepartidores implements Runnable {
         }
     }
 
+    private Float prioridadHRRN(int antiguedad, int elaboracion){
+        Float fElab = (float) elaboracion;
+        float prioridadElaboracion = 100.0f - (((fElab-10.0f)*100.0f)/35.0f);
+        return Math.max((antiguedad*5), prioridadElaboracion);
+    }
+
     public void repartidorListo(Repartidor repartidor){
         repartidoresEnviando.remove(repartidor);
         repartidoresListos.add(repartidor);
@@ -226,11 +240,11 @@ public class ManejadorRepartidores implements Runnable {
         repartidoresEnviando.add(repartidor);
     }
 
-	public void cargarRepartidores() {
+	public void cargarRepartidores(Logger logger) {
 
-        Repartidor r1 = new Repartidor(1, this, semComienzo, semFinal, semFinalTodos);
-        Repartidor r2 = new Repartidor(2, this, semComienzo, semFinal, semFinalTodos);
-        Repartidor r3 = new Repartidor(3, this, semComienzo, semFinal, semFinalTodos);
+        Repartidor r1 = new Repartidor(1, this, semComienzo, semFinal, semFinalTodos, logger);
+        Repartidor r2 = new Repartidor(2, this, semComienzo, semFinal, semFinalTodos, logger);
+        Repartidor r3 = new Repartidor(3, this, semComienzo, semFinal, semFinalTodos, logger);
 
         repartidoresListos.add(r1);
         repartidoresListos.add(r2);

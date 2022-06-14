@@ -4,6 +4,7 @@ public class LogPedido {
     private String ingresaTick;
     private String inicioElaboracionTick;
     private String finElaboracionTick;
+    private String asignacionRepartidor;
     private String inicioEnvioTick;
     private String finEnvioTick;
 
@@ -37,6 +38,10 @@ public class LogPedido {
         this.finEnvioTick = finEnvioTick;
     }
 
+    public void setAsignacionRepartidor(String asignacionRepartidor) {
+        this.asignacionRepartidor = asignacionRepartidor;
+    }
+    
     public int getId() {
         return id;
     }
@@ -57,5 +62,8 @@ public class LogPedido {
     }
     public String getFinEnvioTick() {
         return finEnvioTick;
+    }
+    public String getAsignacionRepartidor() {
+        return asignacionRepartidor;
     }
 }

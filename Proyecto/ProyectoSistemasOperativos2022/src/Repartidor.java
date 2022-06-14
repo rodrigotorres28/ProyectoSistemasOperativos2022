@@ -11,13 +11,15 @@ public class Repartidor implements Runnable{
 	private Semaphore semComienzo;
     private Semaphore semFinal;
     private Semaphore semFinalTodos;
+	private Logger logger;
 
-	public Repartidor(int id, ManejadorRepartidores manejadorRepartidores, Semaphore SemComienzo, Semaphore SemFinal, Semaphore SemFinalTodos) {
+	public Repartidor(int id, ManejadorRepartidores manejadorRepartidores, Semaphore SemComienzo, Semaphore SemFinal, Semaphore SemFinalTodos, Logger Logger) {
 		this.id = id;
 		this.manejadorRepartidores = manejadorRepartidores;
 		this.semComienzo = SemComienzo;
 		this.semFinal = SemFinal;
 		this.semFinalTodos = SemFinalTodos;
+		this.logger = Logger;
 	}
 
 	public void setManejadorRepartidores(ManejadorRepartidores manejadorRepartidores) {
@@ -61,11 +63,14 @@ public class Repartidor implements Runnable{
 			
 			if (!enEspera){
 				if(enviando && distanciaRestante == 0){
+					//Escribir a csv
+					logger.actualizarPedido(pedido, "finEnv");
 					System.out.println("Finalizó el envio del pedido #" + pedido.getId() + ". Por el repartidor #" + id);
 					distanciaRestante = pedido.getDistanciaCliente();
 					enviando = false;
 				}
 				if(!enviando && distanciaRestante == 0){
+					//Escribir a csv
 					System.out.println("El repartidor #" + id + " vuelve a estar listo");
 					enEspera = true;
 					manejadorRepartidores.repartidorListo(this);

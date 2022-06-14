@@ -12,7 +12,11 @@ public class ManejadorPedidos implements Runnable {
     private Semaphore semTickPedidos;
     private Semaphore semFinTickPedidos;
     private boolean iniciando = true;
+    private Logger logger;
 
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
     public void setIniciando(boolean iniciando) {
         this.iniciando = iniciando;
     }
@@ -69,9 +73,8 @@ public class ManejadorPedidos implements Runnable {
                 actual = pedidos.pop();
             
                 while(actual.getHoraIngresado() <= contadorGlobal){
-                    if(manejadorComercios.nuevoPedido(actual)){
+                    if(manejadorComercios.nuevoPedido(actual, logger)){
                         manejadorRepartidores.nuevoPedido(actual);
-                        System.out.println("Entro el pedido #" + String.valueOf(actual.getId()) + " para el comercio: " + actual.getComercio());
                     }
                     if(!pedidos.empty()){
                     actual = pedidos.pop();
