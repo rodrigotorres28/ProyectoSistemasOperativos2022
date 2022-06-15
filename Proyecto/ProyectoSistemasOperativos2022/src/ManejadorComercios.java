@@ -47,17 +47,20 @@ public class ManejadorComercios implements Runnable{
     }
 
     void cargarComercios(ManejadorRepartidores manejador, Logger logger){
-
-        Comercio com1 = new Comercio("La vaca picada", manejador , semComienzo, semFinal, semFinalTodos, logger);
-        Comercio com2 = new Comercio("McDonalds", manejador, semComienzo, semFinal, semFinalTodos, logger);
-        Comercio com3 = new Comercio("Burger King", manejador, semComienzo, semFinal, semFinalTodos, logger);
-        ComercioSinElaboracion com4 = new ComercioSinElaboracion("Farmashop", manejador, semComienzo, semFinal, semFinalTodos, logger);
-        ComercioSinElaboracion com5 = new ComercioSinElaboracion("TaTa", manejador, semComienzo, semFinal, semFinalTodos, logger);
-        comercios.add(com1);
-        comercios.add(com2);
-        comercios.add(com3);
-        comercios.add(com4);
-        comercios.add(com5);
+        //Se cargan los comercios
+        String[] entradaComercios = ManejadorArchivosGenerico.leerArchivo("src/EntradaComercios.csv");
+        for (String entrada: entradaComercios){
+            String[] temp = entrada.split(";");
+            if (temp[1].compareTo("restaurante") == 0) {
+                comercios.add(new Comercio(temp[0], manejador, semComienzo, semFinal, semFinalTodos, logger)); 
+            }
+            else if(temp[1].compareTo("farmacia") == 0 || temp[1].compareTo("almacen") == 0){
+                comercios.add(new ComercioSinElaboracion(temp[0], manejador, semComienzo, semFinal, semFinalTodos, logger));
+            }
+            else{
+                System.out.println("Tipo de Comercio incorrecto en el archivo de entrada de comercios: " + temp[0]);
+            }
+        }
 
         for (Comercio comercio : comercios) {
             Thread hilo = new Thread(comercio);
@@ -68,7 +71,7 @@ public class ManejadorComercios implements Runnable{
 
     boolean nuevoPedido(Pedido pedido, Logger logger){
         for (Comercio comercio : comercios) {
-            if (comercio.getNombre() == pedido.getComercio()){
+            if (comercio.getNombre().compareTo(pedido.getComercio()) == 0){
                 //Escribir a csv
                 logger.registrarPedido(pedido);
                 System.out.println("Entro el pedido #" + String.valueOf(pedido.getId()) + " para el comercio: " + pedido.getComercio());

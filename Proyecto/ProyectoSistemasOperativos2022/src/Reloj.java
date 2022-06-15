@@ -47,7 +47,7 @@ public class Reloj implements Runnable{
         
 
         long inicio = System.currentTimeMillis();
-        while(contadorGlobal <= 100){
+        while(contadorGlobal <= 200){
             manejadorPedidos.setContadorGlobal(contadorGlobal);
             logger.setContadorGlobal(contadorGlobal);
             semTickPedidos.release();
