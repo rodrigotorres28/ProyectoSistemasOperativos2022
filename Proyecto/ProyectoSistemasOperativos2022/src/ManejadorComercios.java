@@ -48,13 +48,18 @@ public class ManejadorComercios implements Runnable{
 
     void cargarComercios(ManejadorRepartidores manejador, Logger logger){
         //Se cargan los comercios
-        String[] nombresComercios = ManejadorArchivosGenerico.leerArchivo("ubicacion");
-        for (String nombre: nombresComercios){
-            comercios.add(new Comercio(nombre, manejador, semComienzo, semFinal, semFinalTodos, logger);
-        }
-        String[] nombresComerciosSinElaboracion =  ManejadorArchivosGenerico.leerArchivo("ubicacion");
-        for (String nombre: nombresComerciosSinElaboracion){
-            comercios.add(new ComercioSinElaboracion(nombre, manejador, semComienzo, semFinal, semFinalTodos, logger));
+        String[] entradaComercios = ManejadorArchivosGenerico.leerArchivo("src/EntradaComercios.csv");
+        for (String entrada: entradaComercios){
+            String[] temp = entrada.split(";");
+            if (temp[1].compareTo("restaurante") == 0) {
+                comercios.add(new Comercio(temp[0], manejador, semComienzo, semFinal, semFinalTodos, logger)); 
+            }
+            else if(temp[1].compareTo("farmacia") == 0 || temp[1].compareTo("almacen") == 0){
+                comercios.add(new ComercioSinElaboracion(temp[0], manejador, semComienzo, semFinal, semFinalTodos, logger));
+            }
+            else{
+                System.out.println("Tipo de Comercio incorrecto en el archivo de entrada de comercios: " + temp[0]);
+            }
         }
 
         for (Comercio comercio : comercios) {
@@ -66,7 +71,7 @@ public class ManejadorComercios implements Runnable{
 
     boolean nuevoPedido(Pedido pedido, Logger logger){
         for (Comercio comercio : comercios) {
-            if (comercio.getNombre() == pedido.getComercio()){
+            if (comercio.getNombre().compareTo(pedido.getComercio()) == 0){
                 //Escribir a csv
                 logger.registrarPedido(pedido);
                 System.out.println("Entro el pedido #" + String.valueOf(pedido.getId()) + " para el comercio: " + pedido.getComercio());

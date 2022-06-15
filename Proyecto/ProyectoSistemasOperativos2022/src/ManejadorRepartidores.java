@@ -176,7 +176,7 @@ public class ManejadorRepartidores implements Runnable {
             if(!repartidoresListos.isEmpty() && siguienteParaAtender != null){
                 Repartidor repartidor = repartidoresListos.remove();
                 for (Comercio comercio : manejadorComercios.getComercios()) {
-                    if(siguienteParaAtender.getComercio() == comercio.nombre){
+                    if(siguienteParaAtender.getComercio().compareTo(comercio.nombre) == 0){
                         //Escribir a csv
                         logger.actualizarPedido(siguienteParaAtender, "asignRep");
                         System.out.println("Se asignó el rapartidor #" + repartidor.getId() + " al comercio: " + comercio.getNombre());
@@ -242,9 +242,9 @@ public class ManejadorRepartidores implements Runnable {
 
 	public void cargarRepartidores(Logger logger) {
 
-        int[] repartidores = ManejadorArchivosGenerico.leerArchivo("ubicacion");
-        for (int id: pedidos){
-            repartidoresListos.add(new Repartidor(id, this, semComienzo, semFinal, semFinalTodos, logger));
+        //String[] repartidores = ManejadorArchivosGenerico.leerArchivo("ubicacion");
+        for (int i = 1; i <= 3; i++){
+            repartidoresListos.add(new Repartidor(i, this, semComienzo, semFinal, semFinalTodos, logger));
         }
 
         totalDeRepartidores = repartidoresListos.size();
