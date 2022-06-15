@@ -1,7 +1,0 @@
-ID;Tipo de Comercio;Ingreso;Inicio Elaboración;Fin Elaboración;Asignación de repartidor;Inicio Envio;Fin Envio;Demora total del Pedido;Demora Sin elaboración ni envio;Tiempo para asignar repartidor;Demora de entrega al repartidor
-1;restaurante;5;6;31;6;31;41;36;1;1;25
-2;restaurante;8;31;41;9;41;49;41;23;1;32
-3;restaurante;15;16;31;16;31;36;21;1;1;15
-4;restaurante;18;31;61;42;61;70;52;13;24;19
-5;farmacia;20;21;22;52;53;59;39;32;32;30
-6;almacen;20;21;22;58;59;75;55;38;38;36

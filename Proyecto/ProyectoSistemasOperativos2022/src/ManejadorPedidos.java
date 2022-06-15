@@ -42,9 +42,9 @@ public class ManejadorPedidos implements Runnable {
 
     public void cargarPedidos(){
 
-        String[] arrayPedidos = ManejadorArchivosGenerico.leerArchivo("src/EntradaPedidos.csv");
+        String[] arrayPedidos = ManejadorArchivosGenerico.leerArchivo("Entradas/Pedidos.csv");
         for (String i: arrayPedidos){
-            String[] temp = i.split(";");
+            String[] temp = i.split(",");
             pedidos.add(new Pedido(temp[0], temp[1], Integer.parseInt(temp[2]), Integer.parseInt(temp[3]), Integer.parseInt(temp[4]), temp[5], Integer.parseInt(temp[6])));
         }
     }

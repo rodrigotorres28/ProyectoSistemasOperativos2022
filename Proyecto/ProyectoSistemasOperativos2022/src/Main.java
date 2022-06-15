@@ -27,7 +27,7 @@ public class Main {
 
         System.out.println("Generando salida...");
         String[] salida = logger.crearStringsParaSalida();
-        ManejadorArchivosGenerico.escribirArchivo("SalidaConIndicadores.csv", salida);
+        ManejadorArchivosGenerico.escribirArchivo("Salidas/ResumenConIndicadores.csv", salida);
         System.out.println("FIN DE LA SIMULACIÓN");
         System.exit(0);
     }

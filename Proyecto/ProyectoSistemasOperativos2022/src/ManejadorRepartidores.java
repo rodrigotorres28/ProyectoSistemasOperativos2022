@@ -91,7 +91,7 @@ public class ManejadorRepartidores implements Runnable {
             for (int i=0; i < colaRestauranteDistanciaMedia.size(); i++) {
                 colaRestauranteDistanciaMedia.get(i).setAntiguedad(colaRestauranteDistanciaMedia.get(i).getAntiguedad() + 1);
 
-                if(colaRestauranteDistanciaMedia.get(i).getAntiguedad() >= 10){
+                if(colaRestauranteDistanciaMedia.get(i).getAntiguedad() >= 15){
                     colaRestauranteDistanciaMedia.get(i).setAntiguedad(0);
                     colaRestauranteDistanciaCorta.add(colaRestauranteDistanciaMedia.get(i));
                     colaRestauranteDistanciaMedia.remove(colaRestauranteDistanciaMedia.get(i));
@@ -153,6 +153,7 @@ public class ManejadorRepartidores implements Runnable {
                     siguienteRestaurante = null;
                 }
             }
+            //esto esta bien?
             if(!colaAlmacen.isEmpty() && siguienteRestaurante != null){
                 if(siguienteRestaurante.getAntiguedad() >= 30){
                     colaFarmacia.add(colaAlmacen.remove());
@@ -242,8 +243,10 @@ public class ManejadorRepartidores implements Runnable {
 
 	public void cargarRepartidores(Logger logger) {
 
-        //String[] repartidores = ManejadorArchivosGenerico.leerArchivo("ubicacion");
-        for (int i = 1; i <= 3; i++){
+        String[] entrada = ManejadorArchivosGenerico.leerArchivo("Entradas/ComerciosRepartidores.csv");
+        String repartidores = entrada[0];
+        int cantidadRepartidores = Integer.parseInt(repartidores.split(",")[1]);
+        for (int i = 1; i <= cantidadRepartidores; i++){
             repartidoresListos.add(new Repartidor(i, this, semComienzo, semFinal, semFinalTodos, logger));
         }
 

@@ -48,9 +48,9 @@ public class ManejadorComercios implements Runnable{
 
     void cargarComercios(ManejadorRepartidores manejador, Logger logger){
         //Se cargan los comercios
-        String[] entradaComercios = ManejadorArchivosGenerico.leerArchivo("src/EntradaComercios.csv");
+        String[] entradaComercios = ManejadorArchivosGenerico.leerArchivo("Entradas/ComerciosRepartidores.csv");
         for (String entrada: entradaComercios){
-            String[] temp = entrada.split(";");
+            String[] temp = entrada.split(",");
             if (temp[1].compareTo("restaurante") == 0) {
                 comercios.add(new Comercio(temp[0], manejador, semComienzo, semFinal, semFinalTodos, logger)); 
             }
@@ -58,7 +58,9 @@ public class ManejadorComercios implements Runnable{
                 comercios.add(new ComercioSinElaboracion(temp[0], manejador, semComienzo, semFinal, semFinalTodos, logger));
             }
             else{
-                System.out.println("Tipo de Comercio incorrecto en el archivo de entrada de comercios: " + temp[0]);
+                if(entrada != entradaComercios[0]){
+                    System.out.println("Tipo de Comercio incorrecto en el archivo de entrada de comercios: " + temp[0]);
+                }
             }
         }
 
