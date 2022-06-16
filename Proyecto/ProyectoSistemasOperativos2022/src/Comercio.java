@@ -17,8 +17,12 @@ public class Comercio implements Runnable{
     protected int elaboracionActual = 0;
     protected ManejadorRepartidores manejadorRepartidores;
     protected Logger logger;
+    protected long tickActual;
 
-    // Getters
+    public void setTickActual(long tickActual) {
+		this.tickActual = tickActual;
+	}
+	// Getters
     public String getNombre() {
 		return nombre;
 	}
@@ -82,14 +86,14 @@ public class Comercio implements Runnable{
             }
 
             if (elaborando != null && elaboracionActual == 0){
-                //Escribir a csv
+                ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Se Termino de elaborar el pedido," + String.valueOf(elaborando.getId()));
                 logger.actualizarPedido(elaborando, "finElab");
                 System.out.println("Se Termino de elaborar el pedido #" + elaborando.getId() + " en el comercio: " + this.getNombre());
                 pedidosListos.add(elaborando);
                 elaborando = siguiente;
                 siguiente = null;
                 if(elaborando != null){
-                    //Escribir a csv
+                    ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Se empezó a elaborar el pedido," + String.valueOf(elaborando.getId()));
                     logger.actualizarPedido(elaborando, "iniElab");
                     System.out.println("Se empezó a elaborar el pedido #" + elaborando.getId() + " en el comercio: " + this.getNombre());
                     elaboracionActual = elaborando.getTiempoElaboracion();
@@ -99,10 +103,18 @@ public class Comercio implements Runnable{
             if (elaborando == null && siguiente != null){
                 elaborando = siguiente;
                 siguiente = null;
-                //Escribir a csv
+                ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Se empezó a elaborar el pedido," + String.valueOf(elaborando.getId()));
                 logger.actualizarPedido(elaborando, "iniElab");
                 System.out.println("Se empezó a elaborar el pedido #" + elaborando.getId() + " en el comercio: " + this.getNombre());
                 elaboracionActual = elaborando.getTiempoElaboracion();
+                if(elaborando.getTipoComercio().compareTo("restaurante") != 0){
+                    ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Se Termino de elaborar el pedido," + String.valueOf(elaborando.getId()));
+                    logger.actualizarPedido(elaborando, "finElab");
+                    System.out.println("Se Termino de elaborar el pedido #" + elaborando.getId() + " en el comercio: " + this.getNombre());
+                    pedidosListos.add(elaborando);
+                    elaborando = siguiente;
+                    siguiente = null;
+                }
             }
 
             while(pedidosListos.size() > 0){
@@ -114,7 +126,8 @@ public class Comercio implements Runnable{
                     repartidor.setDistanciaRestante(pedido.getDistanciaCliente());
                     repartidor.setEnviando(true);
                     manejadorRepartidores.repartidorEnviando(repartidor);
-                    //Escribir a csv
+                    ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Comenzó el envio del pedido," + String.valueOf(pedido.getId()));
+                    ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraRepartidores.csv", String.valueOf(tickActual) + ",Comenzó el envio del pedido," + String.valueOf(repartidor.getId()));
                     logger.actualizarPedido(pedido, "iniEnv");
                     System.out.println("Comenzó el envio del pedido #" + pedido.getId() + ". Por el repartidor #" + repartidor.getId());
                 }

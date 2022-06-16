@@ -36,6 +36,9 @@ public class Logger {
                     case "finEnv":
                         listaPedidosSimulados.get(i).setFinEnvioTick(String.valueOf(contadorGlobal));
                         break;
+                    case "repList":
+                        listaPedidosSimulados.get(i).setRepartidorListoTick(String.valueOf(contadorGlobal));
+                        break;
                     default:
                         System.out.println("Error del Switch Case del Logger");
                         break;
@@ -47,7 +50,7 @@ public class Logger {
 
     public String[] crearStringsParaSalida(){
         String[] stringSalida = new String[listaPedidosSimulados.size() + 1];
-        String linea = "ID,Tipo de Comercio,|,Ingreso,Inicio Elaboración,Fin Elaboración,Asignación de repartidor,Inicio Envio,Fin Envio,|,Demora total del Pedido,Demora Sin elaboración ni envio,Tiempo para asignar repartidor,Demora de entrega al repartidor";
+        String linea = "ID,Tipo de Comercio,|,Ingreso,Inicio Elaboración,Fin Elaboración,Asignación de repartidor,Inicio Envio,Fin Envio,Repartidor Listo,|,Demora total del Pedido,Demora Sin elaboración ni envio,Tiempo para asignar repartidor,Demora de entrega al repartidor";
         stringSalida[0] = linea;
         int i = 1;
         for (LogPedido logPedido : listaPedidosSimulados) {
@@ -68,6 +71,7 @@ public class Logger {
             str.add(logPedido.getAsignacionRepartidor());
             str.add(logPedido.getInicioEnvioTick());
             str.add(logPedido.getFinEnvioTick());
+            str.add(logPedido.getRepartidorListoTick());
             str.add("|");
             str.add(demoraTotal);
             str.add(demoraSinElaboracionNiEnvio);

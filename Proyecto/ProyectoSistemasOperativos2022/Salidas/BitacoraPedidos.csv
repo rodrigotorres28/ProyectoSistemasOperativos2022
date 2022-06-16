@@ -1,0 +1,37 @@
+Tick,Evento,ID Pedido
+5,Entró el pedido al sistema,1
+6,Se asignó el rapartidor,1
+6,Se empezó a elaborar el pedido,1
+8,Entró el pedido al sistema,2
+9,Se asignó el rapartidor,2
+15,Entró el pedido al sistema,3
+16,Se empezó a elaborar el pedido,3
+16,Se asignó el rapartidor,3
+18,Entró el pedido al sistema,4
+20,Entró el pedido al sistema,5
+20,Entró el pedido al sistema,6
+21,Se empezó a elaborar el pedido,5
+21,Se empezó a elaborar el pedido,6
+21,Se Termino de elaborar el pedido,6
+21,Se Termino de elaborar el pedido,5
+31,Se Termino de elaborar el pedido,3
+31,Se Termino de elaborar el pedido,1
+31,Se empezó a elaborar el pedido,2
+31,Se empezó a elaborar el pedido,4
+31,Comenzó el envio del pedido,1
+31,Comenzó el envio del pedido,3
+36,Finalizó el envío del pedido,3
+41,Finalizó el envío del pedido,1
+41,Se Termino de elaborar el pedido,2
+41,Comenzó el envio del pedido,2
+42,Se asignó el rapartidor,4
+49,Finalizó el envío del pedido,2
+52,Se asignó el rapartidor,5
+53,Comenzó el envio del pedido,5
+58,Se asignó el rapartidor,6
+58,Finalizó el envío del pedido,5
+59,Comenzó el envio del pedido,6
+61,Se Termino de elaborar el pedido,4
+61,Comenzó el envio del pedido,4
+70,Finalizó el envío del pedido,4
+76,Finalizó el envío del pedido,6

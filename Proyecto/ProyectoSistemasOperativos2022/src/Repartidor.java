@@ -12,6 +12,11 @@ public class Repartidor implements Runnable{
     private Semaphore semFinal;
     private Semaphore semFinalTodos;
 	private Logger logger;
+	private long tickActual;
+
+	public void setTickActual(long tickActual) {
+		this.tickActual = tickActual;
+	}
 
 	public Repartidor(int id, ManejadorRepartidores manejadorRepartidores, Semaphore SemComienzo, Semaphore SemFinal, Semaphore SemFinalTodos, Logger Logger) {
 		this.id = id;
@@ -63,14 +68,16 @@ public class Repartidor implements Runnable{
 			
 			if (!enEspera){
 				if(enviando && distanciaRestante == 0){
-					//Escribir a csv
+					ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Finalizó el envío del pedido," + String.valueOf(pedido.getId()));
+					ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraRepartidores.csv", String.valueOf(tickActual) + ",Finalizó el envío del pedido," + String.valueOf(id));
 					logger.actualizarPedido(pedido, "finEnv");
-					System.out.println("Finalizó el envio del pedido #" + pedido.getId() + ". Por el repartidor #" + id);
+					System.out.println("Finalizó el envío del pedido #" + pedido.getId() + ". Por el repartidor #" + id);
 					distanciaRestante = pedido.getDistanciaCliente();
 					enviando = false;
 				}
 				if(!enviando && distanciaRestante == 0){
-					//Escribir a csv
+					ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraRepartidores.csv", String.valueOf(tickActual) + ",El repartidor vuelve a estar listo," + String.valueOf(id));
+					logger.actualizarPedido(pedido, "repList");
 					System.out.println("El repartidor #" + id + " vuelve a estar listo");
 					enEspera = true;
 					manejadorRepartidores.repartidorListo(this);

@@ -28,6 +28,11 @@ public class ManejadorRepartidores implements Runnable {
     private int totalDeRepartidores;
     private ManejadorComercios manejadorComercios;
     private Logger logger;
+    private long tickActual;
+
+    public void setTickActual(long tickActual) {
+        this.tickActual = tickActual;
+    }
 
     public void setLogger(Logger logger) {
         this.logger = logger;
@@ -50,14 +55,28 @@ public class ManejadorRepartidores implements Runnable {
         this.manejadorComercios = manejadorComercios;
     }
 
+    public Queue<Repartidor> getRepartidoresListos() {
+        return repartidoresListos;
+    }
+    public int getTotalDeRepartidores() {
+        return totalDeRepartidores;
+    }
+
     @Override
     public void run() {
         while(iniciando){
             try {Thread.sleep(1);} catch (InterruptedException e) {}
         }
-        while(true){
-            
+        while(true){     
             try {semTickRepartidores.acquire();} catch (InterruptedException e) {}
+
+            //Se actualizan los contadores
+            for (Repartidor repartidor: repartidoresListos){
+                repartidor.setTickActual(tickActual);
+            }
+            for (Repartidor repartidor: repartidoresEnviando){
+                repartidor.setTickActual(tickActual);
+            }
 
             if(siguienteDistanciaCorta != null){
                 siguienteDistanciaCorta.setAntiguedad(siguienteDistanciaCorta.getAntiguedad()+1);
@@ -153,10 +172,13 @@ public class ManejadorRepartidores implements Runnable {
                     siguienteRestaurante = null;
                 }
             }
-            //esto esta bien?
-            if(!colaAlmacen.isEmpty() && siguienteRestaurante != null){
-                if(siguienteRestaurante.getAntiguedad() >= 30){
+            if(!colaAlmacen.isEmpty()){
+                Pedido primeroAlmacen = colaAlmacen.peek();
+                while (primeroAlmacen.getAntiguedad() >=30){
                     colaFarmacia.add(colaAlmacen.remove());
+                    if(colaAlmacen.isEmpty()){
+                        break;
+                    }
                 }
             }
 
@@ -178,7 +200,8 @@ public class ManejadorRepartidores implements Runnable {
                 Repartidor repartidor = repartidoresListos.remove();
                 for (Comercio comercio : manejadorComercios.getComercios()) {
                     if(siguienteParaAtender.getComercio().compareTo(comercio.nombre) == 0){
-                        //Escribir a csv
+                        ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Se asignó el rapartidor," + String.valueOf(siguienteParaAtender.getId()));
+                        ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraRepartidores.csv", String.valueOf(tickActual) + ",Se asignó el rapartidor," + String.valueOf(repartidor.getId()));
                         logger.actualizarPedido(siguienteParaAtender, "asignRep");
                         System.out.println("Se asignó el rapartidor #" + repartidor.getId() + " al comercio: " + comercio.getNombre());
                         comercio.agregarRepartidor(repartidor);

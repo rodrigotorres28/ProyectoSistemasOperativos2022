@@ -35,7 +35,10 @@ public class ManejadorPedidos implements Runnable {
     public void setManejadorRepartidores(ManejadorRepartidores manejadorRepartidores) {
         this.manejadorRepartidores = manejadorRepartidores;
     }
-
+    
+    public Boolean getTerminar() {
+        return terminar;
+    }
 	public List<Pedido> getPedidos() {
         return pedidos;
     }

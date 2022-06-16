@@ -12,8 +12,12 @@ public class ManejadorComercios implements Runnable{
     private Semaphore semTickComercios;
     private Semaphore semFinTickComercios;
     private ManejadorRepartidores manejadorRepartidores;
+    private long tickActual;
 
-    public void setIniciando(Boolean iniciando) {
+    public void setTickActual(long tickActual) {
+		this.tickActual = tickActual;
+	}
+	public void setIniciando(Boolean iniciando) {
         this.iniciando = iniciando;
     }
     public void setManejadorRepartidores(ManejadorRepartidores manejadorRepartidores) {
@@ -35,9 +39,15 @@ public class ManejadorComercios implements Runnable{
         while(iniciando){
             try {Thread.sleep(1);} catch (InterruptedException e) {}
         }
+
         while(true){
             try {semTickComercios.acquire();} catch (InterruptedException e1) {}
             
+            //Se actualizan los contadores de los comercios
+            for (Comercio comercio: comercios){
+                comercio.setTickActual(tickActual);
+            }
+
             semComienzo.release(comercios.size());
             try {semFinal.acquire(comercios.size());} catch (InterruptedException e) {}
             semFinalTodos.release(comercios.size());
@@ -50,17 +60,8 @@ public class ManejadorComercios implements Runnable{
         //Se cargan los comercios
         String[] entradaComercios = ManejadorArchivosGenerico.leerArchivo("Entradas/ComerciosRepartidores.csv");
         for (String entrada: entradaComercios){
-            String[] temp = entrada.split(",");
-            if (temp[1].compareTo("restaurante") == 0) {
-                comercios.add(new Comercio(temp[0], manejador, semComienzo, semFinal, semFinalTodos, logger)); 
-            }
-            else if(temp[1].compareTo("farmacia") == 0 || temp[1].compareTo("almacen") == 0){
-                comercios.add(new ComercioSinElaboracion(temp[0], manejador, semComienzo, semFinal, semFinalTodos, logger));
-            }
-            else{
-                if(entrada != entradaComercios[0]){
-                    System.out.println("Tipo de Comercio incorrecto en el archivo de entrada de comercios: " + temp[0]);
-                }
+            if (entrada != entradaComercios[0]) {
+                comercios.add(new Comercio(entrada, manejador, semComienzo, semFinal, semFinalTodos, logger)); 
             }
         }
 
@@ -74,7 +75,7 @@ public class ManejadorComercios implements Runnable{
     boolean nuevoPedido(Pedido pedido, Logger logger){
         for (Comercio comercio : comercios) {
             if (comercio.getNombre().compareTo(pedido.getComercio()) == 0){
-                //Escribir a csv
+                ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Entró el pedido al sistema," + String.valueOf(pedido.getId()));
                 logger.registrarPedido(pedido);
                 System.out.println("Entro el pedido #" + String.valueOf(pedido.getId()) + " para el comercio: " + pedido.getComercio());
                 comercio.agregarPedido(pedido);

@@ -26,6 +26,53 @@ public class ManejadorArchivosGenerico {
 			e.printStackTrace();
 		}
 	}
+	public static void borrarYEscribirArchivo(String nombreCompletoArchivo, String[] listaLineasArchivo) {
+		FileWriter fw;
+		try {
+			fw = new FileWriter(nombreCompletoArchivo,false);
+			BufferedWriter bw = new BufferedWriter(fw);
+			for (int i = 0; i < listaLineasArchivo.length; i++){
+				String lineaActual = listaLineasArchivo[i];
+				bw.write(lineaActual);
+				bw.newLine();
+			}
+			bw.close();
+			fw.close();
+		} catch (IOException e) {
+			System.out.println("Error al escribir el archivo "+nombreCompletoArchivo);
+			e.printStackTrace();
+		}
+	}
+
+	public static void escribirLinea(String nombreCompletoArchivo, String lineaActual) {
+		FileWriter fw;
+		try {
+			fw = new FileWriter(nombreCompletoArchivo,true);
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(lineaActual);
+			bw.newLine();
+			bw.close();
+			fw.close();
+		} catch (IOException e) {
+			System.out.println("Error al escribir el archivo "+nombreCompletoArchivo);
+			e.printStackTrace();
+		}
+	}
+
+	public static void borrarYEscribirLinea(String nombreCompletoArchivo, String lineaActual) {
+		FileWriter fw;
+		try {
+			fw = new FileWriter(nombreCompletoArchivo,false);
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(lineaActual);
+			bw.newLine();
+			bw.close();
+			fw.close();
+		} catch (IOException e) {
+			System.out.println("Error al escribir el archivo "+nombreCompletoArchivo);
+			e.printStackTrace();
+		}
+	}
 
 	public static String[] leerArchivo(String nombreCompletoArchivo){
 		FileReader fr;

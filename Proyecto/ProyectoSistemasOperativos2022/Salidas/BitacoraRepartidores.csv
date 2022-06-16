@@ -1,0 +1,25 @@
+Tick,Evento,ID Repartidor
+6,Se asignó el rapartidor,1
+9,Se asignó el rapartidor,2
+16,Se asignó el rapartidor,3
+31,Comenzó el envio del pedido,1
+31,Comenzó el envio del pedido,3
+36,Finalizó el envío del pedido,3
+41,El repartidor vuelve a estar listo,3
+41,Finalizó el envío del pedido,1
+41,Comenzó el envio del pedido,2
+42,Se asignó el rapartidor,3
+49,Finalizó el envío del pedido,2
+51,El repartidor vuelve a estar listo,1
+52,Se asignó el rapartidor,1
+53,Comenzó el envio del pedido,1
+57,El repartidor vuelve a estar listo,2
+58,Se asignó el rapartidor,2
+58,Finalizó el envío del pedido,1
+59,Comenzó el envio del pedido,2
+61,Comenzó el envio del pedido,3
+64,El repartidor vuelve a estar listo,1
+70,Finalizó el envío del pedido,3
+76,Finalizó el envío del pedido,2
+79,El repartidor vuelve a estar listo,3
+93,El repartidor vuelve a estar listo,2

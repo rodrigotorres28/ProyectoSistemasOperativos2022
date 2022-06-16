@@ -47,7 +47,13 @@ public class Reloj implements Runnable{
         
 
         long inicio = System.currentTimeMillis();
-        while(contadorGlobal <= 200){
+        int finSimulacion = 100;
+        while(finSimulacion > 0){
+            //Se actualizan los contadores
+            manejadorComercios.setTickActual(contadorGlobal);
+            manejadorRepartidores.setTickActual(contadorGlobal);
+
+
             manejadorPedidos.setContadorGlobal(contadorGlobal);
             logger.setContadorGlobal(contadorGlobal);
             semTickPedidos.release();
@@ -59,6 +65,19 @@ public class Reloj implements Runnable{
                 semFinTickPedidos.acquire();
                 semFinTickRepartidores.acquire();
             } catch (InterruptedException e1) {}
+
+            if(manejadorPedidos.getTerminar()){
+                //Se espera 100 ticks para finalizar por el extraño caso posible de que tras recibirse todos los pedidos; todos los repartidores esten a
+                //la espera pero queden pedidos aun siendo elaborados.
+                if(manejadorRepartidores.getRepartidoresListos().size() == manejadorRepartidores.getTotalDeRepartidores())
+                {
+                    finSimulacion--; 
+                }
+                else{
+                    finSimulacion = 100;
+                }
+            }
+
             System.out.println("\nTerminó tick #" + contadorGlobal + " | Transcurridos:  "+ (System.currentTimeMillis() - inicio)+ "ms\n----------------------------------------------------------------------------");
 
             //try {Thread.sleep(500);} catch (InterruptedException e) {} // <-- Utilizar este sleep si se quiere cambiar el tiempo en ms de los ticks
