@@ -56,26 +56,31 @@ public class ManejadorComercios implements Runnable{
         }
     }
 
-    void cargarComercios(ManejadorRepartidores manejador, Logger logger){
+    public Boolean cargarComercios(ManejadorRepartidores manejador, Logger logger){
         //Se cargan los comercios
         String[] entradaComercios = ManejadorArchivosGenerico.leerArchivo("Entradas/ComerciosRepartidores.csv");
+        try {
         for (String entrada: entradaComercios){
             if (entrada != entradaComercios[0]) {
                 comercios.add(new Comercio(entrada, manejador, semComienzo, semFinal, semFinalTodos, logger)); 
             }
+        }
+        } catch (Exception e) {
+            System.out.println("Formato de ComerciosRepartidores.csv incorrecto");
+            return false;
         }
 
         for (Comercio comercio : comercios) {
             Thread hilo = new Thread(comercio);
             hilo.start();
         }
-
+        return true;
     }
 
     boolean nuevoPedido(Pedido pedido, Logger logger){
         for (Comercio comercio : comercios) {
             if (comercio.getNombre().compareTo(pedido.getComercio()) == 0){
-                ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Entró el pedido al sistema," + String.valueOf(pedido.getId()));
+                ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Entró el pedido al sistema," + String.valueOf(pedido.getTipoComercio()) + "," + String.valueOf(pedido.getId()));
                 logger.registrarPedido(pedido);
                 System.out.println("Entro el pedido #" + String.valueOf(pedido.getId()) + " para el comercio: " + pedido.getComercio());
                 comercio.agregarPedido(pedido);

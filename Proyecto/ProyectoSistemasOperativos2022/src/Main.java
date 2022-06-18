@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        ManejadorArchivosGenerico.borrarYEscribirLinea("Salidas/BitacoraPedidos.csv", "Tick,Evento,ID Pedido");
+        ManejadorArchivosGenerico.borrarYEscribirLinea("Salidas/BitacoraPedidos.csv", "Tick,Evento,Tipo de Comercio,ID Pedido");
         ManejadorArchivosGenerico.borrarYEscribirLinea("Salidas/BitacoraRepartidores.csv", "Tick,Evento,ID Repartidor");
+        ManejadorArchivosGenerico.borrarYEscribirLinea("Salidas/SaturacionDeColas.csv", "Tick,Restaurante dist. Larga,Restaurante dist. Media,Restaurante dist. Corta,Almacen,Farmacia,ID Siguiente Restaurante, ID Siguiente Para Atender");
         Logger logger = new Logger();
 
         ManejadorComercios manejadorComercios = new ManejadorComercios();
@@ -17,9 +18,13 @@ public class Main {
         Runnable reloj = new Reloj(manejadorComercios, manejadorRepartidores, manejadorPedidos, logger);
         Thread hiloReloj = new Thread(reloj);
         
-        manejadorComercios.cargarComercios(manejadorRepartidores, logger);
-        manejadorPedidos.cargarPedidos();
-        manejadorRepartidores.cargarRepartidores(logger);
+        Boolean comerciosCorrecto = manejadorComercios.cargarComercios(manejadorRepartidores, logger);
+        Boolean pedidosCorrecto = manejadorPedidos.cargarPedidos();
+        Boolean repartidoresCorrecto = manejadorRepartidores.cargarRepartidores(logger);
+
+        if(!(comerciosCorrecto && pedidosCorrecto && repartidoresCorrecto)){
+            System.exit(1);;
+        }
 
         hilomanejadorPedidos.start();
         hilomanejadorComercios.start();

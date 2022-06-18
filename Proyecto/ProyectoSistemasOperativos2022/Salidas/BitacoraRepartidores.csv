@@ -1,25 +1,4001 @@
 Tick,Evento,ID Repartidor
-6,Se asignó el rapartidor,1
-9,Se asignó el rapartidor,2
-16,Se asignó el rapartidor,3
-31,Comenzó el envio del pedido,1
-31,Comenzó el envio del pedido,3
-36,Finalizó el envío del pedido,3
-41,El repartidor vuelve a estar listo,3
-41,Finalizó el envío del pedido,1
-41,Comenzó el envio del pedido,2
-42,Se asignó el rapartidor,3
-49,Finalizó el envío del pedido,2
-51,El repartidor vuelve a estar listo,1
-52,Se asignó el rapartidor,1
-53,Comenzó el envio del pedido,1
-57,El repartidor vuelve a estar listo,2
-58,Se asignó el rapartidor,2
-58,Finalizó el envío del pedido,1
-59,Comenzó el envio del pedido,2
-61,Comenzó el envio del pedido,3
+3,Se asignó el rapartidor,1
+6,Se asignó el rapartidor,2
+8,Se asignó el rapartidor,3
+8,Comenzó el envio del pedido,3
+13,Se asignó el rapartidor,4
+13,Comenzó el envio del pedido,4
+14,Se asignó el rapartidor,5
+15,Se asignó el rapartidor,6
+20,Se asignó el rapartidor,7
+21,Se asignó el rapartidor,8
+21,Finalizó el envío del pedido,3
+22,Se asignó el rapartidor,9
+27,Se asignó el rapartidor,10
+31,Se asignó el rapartidor,11
+31,Comenzó el envio del pedido,5
+32,Se asignó el rapartidor,12
+32,Finalizó el envío del pedido,4
+34,El repartidor vuelve a estar listo,3
+35,Comenzó el envio del pedido,8
+37,Se asignó el rapartidor,13
+37,Comenzó el envio del pedido,1
+38,Se asignó el rapartidor,14
+40,Se asignó el rapartidor,15
+40,Comenzó el envio del pedido,10
+40,Finalizó el envío del pedido,8
+41,Se asignó el rapartidor,3
+42,Comenzó el envio del pedido,9
+45,El repartidor vuelve a estar listo,8
+46,Se asignó el rapartidor,8
+46,Comenzó el envio del pedido,2
+47,Comenzó el envio del pedido,8
+47,Comenzó el envio del pedido,6
+50,Finalizó el envío del pedido,1
+50,Finalizó el envío del pedido,10
+50,Finalizó el envío del pedido,5
+51,El repartidor vuelve a estar listo,4
+51,Finalizó el envío del pedido,9
+52,Se asignó el rapartidor,4
+57,Finalizó el envío del pedido,2
+57,Comenzó el envio del pedido,11
+58,Comenzó el envio del pedido,7
+59,Comenzó el envio del pedido,4
+60,El repartidor vuelve a estar listo,9
+61,Se asignó el rapartidor,9
+61,El repartidor vuelve a estar listo,10
+62,Comenzó el envio del pedido,9
+62,Se asignó el rapartidor,10
+63,Finalizó el envío del pedido,11
+63,Comenzó el envio del pedido,12
 64,El repartidor vuelve a estar listo,1
-70,Finalizó el envío del pedido,3
-76,Finalizó el envío del pedido,2
-79,El repartidor vuelve a estar listo,3
-93,El repartidor vuelve a estar listo,2
+65,Se asignó el rapartidor,1
+65,Finalizó el envío del pedido,6
+65,Finalizó el envío del pedido,8
+67,Finalizó el envío del pedido,9
+69,El repartidor vuelve a estar listo,2
+69,El repartidor vuelve a estar listo,11
+70,Se asignó el rapartidor,11
+70,El repartidor vuelve a estar listo,5
+71,Comenzó el envio del pedido,11
+71,Se asignó el rapartidor,2
+71,Finalizó el envío del pedido,4
+72,Se asignó el rapartidor,5
+73,El repartidor vuelve a estar listo,9
+73,Comenzó el envio del pedido,2
+74,Se asignó el rapartidor,9
+75,Finalizó el envío del pedido,11
+75,Comenzó el envio del pedido,14
+76,Comenzó el envio del pedido,5
+78,Finalizó el envío del pedido,7
+78,Finalizó el envío del pedido,12
+79,Finalizó el envío del pedido,2
+80,El repartidor vuelve a estar listo,11
+81,Se asignó el rapartidor,11
+82,Comenzó el envio del pedido,1
+83,El repartidor vuelve a estar listo,4
+83,El repartidor vuelve a estar listo,6
+84,Se asignó el rapartidor,6
+84,El repartidor vuelve a estar listo,8
+85,Se asignó el rapartidor,4
+85,El repartidor vuelve a estar listo,2
+86,Se asignó el rapartidor,8
+87,Se asignó el rapartidor,2
+88,Comenzó el envio del pedido,2
+91,Finalizó el envío del pedido,1
+91,Finalizó el envío del pedido,5
+91,Comenzó el envio del pedido,3
+93,El repartidor vuelve a estar listo,12
+94,Se asignó el rapartidor,12
+95,Comenzó el envio del pedido,12
+95,Finalizó el envío del pedido,14
+95,Comenzó el envio del pedido,6
+98,El repartidor vuelve a estar listo,7
+98,Finalizó el envío del pedido,3
+98,Comenzó el envio del pedido,15
+99,Se asignó el rapartidor,7
+100,El repartidor vuelve a estar listo,1
+101,Se asignó el rapartidor,1
+101,Finalizó el envío del pedido,6
+103,Comenzó el envio del pedido,9
+104,Comenzó el envio del pedido,13
+104,Comenzó el envio del pedido,10
+105,El repartidor vuelve a estar listo,3
+106,Se asignó el rapartidor,3
+106,El repartidor vuelve a estar listo,5
+106,Finalizó el envío del pedido,2
+106,Comenzó el envio del pedido,11
+107,Comenzó el envio del pedido,3
+107,Se asignó el rapartidor,5
+108,El repartidor vuelve a estar listo,6
+109,Se asignó el rapartidor,6
+109,Finalizó el envío del pedido,9
+110,Finalizó el envío del pedido,10
+111,Finalizó el envío del pedido,11
+112,Finalizó el envío del pedido,12
+114,Finalizó el envío del pedido,15
+114,Finalizó el envío del pedido,13
+115,El repartidor vuelve a estar listo,14
+115,El repartidor vuelve a estar listo,9
+116,Se asignó el rapartidor,14
+116,El repartidor vuelve a estar listo,11
+116,El repartidor vuelve a estar listo,10
+117,Comenzó el envio del pedido,14
+117,Se asignó el rapartidor,9
+118,Comenzó el envio del pedido,9
+118,Se asignó el rapartidor,10
+119,Se asignó el rapartidor,11
+120,Comenzó el envio del pedido,8
+121,Finalizó el envío del pedido,3
+122,Finalizó el envío del pedido,9
+122,Comenzó el envio del pedido,4
+124,El repartidor vuelve a estar listo,13
+125,Se asignó el rapartidor,13
+125,El repartidor vuelve a estar listo,2
+126,Se asignó el rapartidor,2
+127,Comenzó el envio del pedido,2
+127,El repartidor vuelve a estar listo,9
+128,Se asignó el rapartidor,9
+128,Comenzó el envio del pedido,1
+129,Comenzó el envio del pedido,9
+129,Finalizó el envío del pedido,8
+130,El repartidor vuelve a estar listo,12
+130,El repartidor vuelve a estar listo,15
+131,Se asignó el rapartidor,15
+132,Se asignó el rapartidor,12
+132,Comenzó el envio del pedido,15
+132,Finalizó el envío del pedido,14
+133,Comenzó el envio del pedido,12
+133,Finalizó el envío del pedido,4
+133,Comenzó el envio del pedido,11
+136,El repartidor vuelve a estar listo,3
+137,Se asignó el rapartidor,3
+138,El repartidor vuelve a estar listo,8
+138,Comenzó el envio del pedido,10
+139,Se asignó el rapartidor,8
+140,Finalizó el envío del pedido,11
+141,Finalizó el envío del pedido,15
+143,Comenzó el envio del pedido,3
+143,Comenzó el envio del pedido,8
+144,El repartidor vuelve a estar listo,4
+144,Finalizó el envío del pedido,9
+145,Se asignó el rapartidor,4
+145,Finalizó el envío del pedido,2
+146,Comenzó el envio del pedido,4
+146,Comenzó el envio del pedido,6
+147,El repartidor vuelve a estar listo,11
+148,Se asignó el rapartidor,11
+148,El repartidor vuelve a estar listo,14
+148,Finalizó el envío del pedido,1
+149,Comenzó el envio del pedido,11
+149,Se asignó el rapartidor,14
+150,Comenzó el envio del pedido,14
+151,El repartidor vuelve a estar listo,15
+151,Finalizó el envío del pedido,12
+152,Se asignó el rapartidor,15
+153,Comenzó el envio del pedido,15
+153,Finalizó el envío del pedido,11
+153,Finalizó el envío del pedido,6
+154,Finalizó el envío del pedido,8
+156,Comenzó el envio del pedido,5
+156,Finalizó el envío del pedido,10
+157,Finalizó el envío del pedido,3
+157,Comenzó el envio del pedido,7
+158,El repartidor vuelve a estar listo,11
+159,Se asignó el rapartidor,11
+160,El repartidor vuelve a estar listo,9
+160,El repartidor vuelve a estar listo,6
+161,Se asignó el rapartidor,9
+162,Comenzó el envio del pedido,9
+162,Se asignó el rapartidor,6
+162,Finalizó el envío del pedido,4
+162,Finalizó el envío del pedido,7
+164,El repartidor vuelve a estar listo,2
+165,Se asignó el rapartidor,2
+165,El repartidor vuelve a estar listo,8
+166,Se asignó el rapartidor,8
+166,Finalizó el envío del pedido,14
+167,El repartidor vuelve a estar listo,7
+167,Comenzó el envio del pedido,6
+168,Se asignó el rapartidor,7
+168,El repartidor vuelve a estar listo,1
+169,Se asignó el rapartidor,1
+169,Finalizó el envío del pedido,5
+170,El repartidor vuelve a estar listo,12
+171,Se asignó el rapartidor,12
+171,El repartidor vuelve a estar listo,3
+171,Finalizó el envío del pedido,15
+172,Comenzó el envio del pedido,12
+172,Se asignó el rapartidor,3
+174,El repartidor vuelve a estar listo,10
+175,Se asignó el rapartidor,10
+176,Comenzó el envio del pedido,10
+178,Finalizó el envío del pedido,6
+179,El repartidor vuelve a estar listo,4
+179,Finalizó el envío del pedido,9
+180,Se asignó el rapartidor,4
+181,Comenzó el envio del pedido,4
+182,El repartidor vuelve a estar listo,14
+183,Se asignó el rapartidor,14
+183,El repartidor vuelve a estar listo,5
+184,Se asignó el rapartidor,5
+185,Comenzó el envio del pedido,5
+187,Comenzó el envio del pedido,1
+187,Comenzó el envio del pedido,13
+189,El repartidor vuelve a estar listo,6
+189,Comenzó el envio del pedido,3
+190,Se asignó el rapartidor,6
+190,El repartidor vuelve a estar listo,15
+190,Finalizó el envío del pedido,5
+191,Se asignó el rapartidor,15
+191,Comenzó el envio del pedido,7
+191,Finalizó el envío del pedido,12
+192,Finalizó el envío del pedido,4
+193,Finalizó el envío del pedido,13
+194,Comenzó el envio del pedido,8
+195,Finalizó el envío del pedido,10
+196,El repartidor vuelve a estar listo,5
+197,Se asignó el rapartidor,5
+197,El repartidor vuelve a estar listo,9
+198,Se asignó el rapartidor,9
+198,Finalizó el envío del pedido,7
+199,Finalizó el envío del pedido,8
+199,El repartidor vuelve a estar listo,13
+199,Comenzó el envio del pedido,9
+200,Se asignó el rapartidor,13
+201,Finalizó el envío del pedido,1
+201,Finalizó el envío del pedido,3
+204,El repartidor vuelve a estar listo,4
+204,El repartidor vuelve a estar listo,8
+205,Se asignó el rapartidor,8
+206,Se asignó el rapartidor,4
+206,Comenzó el envio del pedido,8
+206,El repartidor vuelve a estar listo,7
+207,Se asignó el rapartidor,7
+207,Comenzó el envio del pedido,4
+210,Comenzó el envio del pedido,6
+211,El repartidor vuelve a estar listo,12
+211,Comenzó el envio del pedido,5
+212,Se asignó el rapartidor,12
+212,Comenzó el envio del pedido,7
+213,El repartidor vuelve a estar listo,3
+214,Se asignó el rapartidor,3
+215,Comenzó el envio del pedido,3
+215,El repartidor vuelve a estar listo,10
+215,El repartidor vuelve a estar listo,1
+215,Finalizó el envío del pedido,5
+215,Finalizó el envío del pedido,6
+216,Se asignó el rapartidor,10
+216,Comenzó el envio del pedido,14
+216,Finalizó el envío del pedido,9
+216,Finalizó el envío del pedido,8
+217,Se asignó el rapartidor,1
+218,Comenzó el envio del pedido,13
+218,Comenzó el envio del pedido,15
+220,El repartidor vuelve a estar listo,5
+221,Se asignó el rapartidor,5
+221,El repartidor vuelve a estar listo,6
+221,Finalizó el envío del pedido,4
+222,Se asignó el rapartidor,6
+224,Finalizó el envío del pedido,14
+227,El repartidor vuelve a estar listo,8
+228,Se asignó el rapartidor,8
+231,Finalizó el envío del pedido,7
+231,Finalizó el envío del pedido,13
+232,Finalizó el envío del pedido,15
+233,El repartidor vuelve a estar listo,14
+233,Comenzó el envio del pedido,11
+233,Comenzó el envio del pedido,6
+234,Se asignó el rapartidor,14
+234,El repartidor vuelve a estar listo,9
+234,Finalizó el envío del pedido,3
+235,Se asignó el rapartidor,9
+236,El repartidor vuelve a estar listo,4
+237,Se asignó el rapartidor,4
+238,Comenzó el envio del pedido,4
+243,Finalizó el envío del pedido,11
+244,El repartidor vuelve a estar listo,13
+245,Se asignó el rapartidor,13
+246,El repartidor vuelve a estar listo,15
+247,Se asignó el rapartidor,15
+248,Comenzó el envio del pedido,2
+250,Comenzó el envio del pedido,5
+251,El repartidor vuelve a estar listo,7
+252,Se asignó el rapartidor,7
+252,Comenzó el envio del pedido,1
+252,Finalizó el envío del pedido,6
+253,El repartidor vuelve a estar listo,11
+254,Se asignó el rapartidor,11
+254,El repartidor vuelve a estar listo,3
+255,Comenzó el envio del pedido,11
+255,Se asignó el rapartidor,3
+255,Comenzó el envio del pedido,15
+255,Finalizó el envío del pedido,4
+255,Finalizó el envío del pedido,2
+255,Comenzó el envio del pedido,3
+256,Finalizó el envío del pedido,1
+259,Comenzó el envio del pedido,14
+260,Comenzó el envio del pedido,7
+261,El repartidor vuelve a estar listo,1
+261,Comenzó el envio del pedido,8
+262,Se asignó el rapartidor,1
+262,El repartidor vuelve a estar listo,2
+263,Comenzó el envio del pedido,1
+263,Se asignó el rapartidor,2
+263,Finalizó el envío del pedido,5
+264,Finalizó el envío del pedido,11
+267,Finalizó el envío del pedido,3
+269,Finalizó el envío del pedido,7
+269,Comenzó el envio del pedido,13
+270,Finalizó el envío del pedido,8
+270,Finalizó el envío del pedido,15
+271,El repartidor vuelve a estar listo,6
+272,Se asignó el rapartidor,6
+273,Comenzó el envio del pedido,6
+273,El repartidor vuelve a estar listo,4
+274,Se asignó el rapartidor,4
+274,El repartidor vuelve a estar listo,11
+274,Finalizó el envío del pedido,14
+275,Se asignó el rapartidor,11
+276,El repartidor vuelve a estar listo,5
+276,Comenzó el envio del pedido,11
+277,Se asignó el rapartidor,5
+277,Comenzó el envio del pedido,2
+278,Comenzó el envio del pedido,5
+278,El repartidor vuelve a estar listo,7
+279,Se asignó el rapartidor,7
+279,El repartidor vuelve a estar listo,8
+280,Se asignó el rapartidor,8
+280,Comenzó el envio del pedido,7
+280,El repartidor vuelve a estar listo,3
+280,Finalizó el envío del pedido,1
+280,Finalizó el envío del pedido,11
+281,Se asignó el rapartidor,3
+281,Comenzó el envio del pedido,12
+281,Finalizó el envío del pedido,13
+285,El repartidor vuelve a estar listo,11
+286,Se asignó el rapartidor,11
+286,El repartidor vuelve a estar listo,15
+286,Finalizó el envío del pedido,5
+287,Comenzó el envio del pedido,11
+287,Se asignó el rapartidor,15
+287,Finalizó el envío del pedido,6
+288,Finalizó el envío del pedido,2
+288,Comenzó el envio del pedido,3
+289,El repartidor vuelve a estar listo,14
+289,Comenzó el envio del pedido,15
+290,Se asignó el rapartidor,14
+293,El repartidor vuelve a estar listo,13
+294,Se asignó el rapartidor,13
+294,Comenzó el envio del pedido,9
+294,Finalizó el envío del pedido,7
+295,El repartidor vuelve a estar listo,5
+296,Se asignó el rapartidor,5
+297,Finalizó el envío del pedido,12
+298,El repartidor vuelve a estar listo,1
+298,Comenzó el envio del pedido,4
+299,Se asignó el rapartidor,1
+299,Finalizó el envío del pedido,9
+299,Comenzó el envio del pedido,8
+300,El repartidor vuelve a estar listo,2
+301,Se asignó el rapartidor,2
+302,El repartidor vuelve a estar listo,6
+302,Comenzó el envio del pedido,2
+302,Finalizó el envío del pedido,11
+303,Se asignó el rapartidor,6
+305,El repartidor vuelve a estar listo,9
+306,Se asignó el rapartidor,9
+307,Finalizó el envío del pedido,3
+307,Finalizó el envío del pedido,15
+308,Comenzó el envio del pedido,10
+309,El repartidor vuelve a estar listo,7
+309,Comenzó el envio del pedido,14
+310,Se asignó el rapartidor,7
+310,Finalizó el envío del pedido,4
+311,Finalizó el envío del pedido,2
+312,Finalizó el envío del pedido,8
+314,El repartidor vuelve a estar listo,12
+315,Se asignó el rapartidor,12
+316,Comenzó el envio del pedido,12
+317,Comenzó el envio del pedido,9
+319,El repartidor vuelve a estar listo,11
+320,Se asignó el rapartidor,11
+321,Comenzó el envio del pedido,11
+322,El repartidor vuelve a estar listo,4
+322,Finalizó el envío del pedido,14
+323,Se asignó el rapartidor,4
+324,Comenzó el envio del pedido,4
+324,El repartidor vuelve a estar listo,2
+325,Se asignó el rapartidor,2
+325,El repartidor vuelve a estar listo,15
+325,El repartidor vuelve a estar listo,8
+325,Finalizó el envío del pedido,11
+326,Comenzó el envio del pedido,2
+326,Se asignó el rapartidor,8
+326,El repartidor vuelve a estar listo,3
+326,Finalizó el envío del pedido,9
+327,Comenzó el envio del pedido,8
+327,Se asignó el rapartidor,15
+328,Comenzó el envio del pedido,15
+328,Se asignó el rapartidor,3
+328,Finalizó el envío del pedido,10
+328,Finalizó el envío del pedido,4
+330,El repartidor vuelve a estar listo,11
+331,Se asignó el rapartidor,11
+332,Comenzó el envio del pedido,11
+332,Comenzó el envio del pedido,1
+333,El repartidor vuelve a estar listo,4
+334,Se asignó el rapartidor,4
+334,Comenzó el envio del pedido,13
+335,El repartidor vuelve a estar listo,14
+335,El repartidor vuelve a estar listo,9
+335,Finalizó el envío del pedido,12
+336,Comenzó el envio del pedido,4
+336,Se asignó el rapartidor,9
+337,Se asignó el rapartidor,14
+339,Finalizó el envío del pedido,2
+343,Finalizó el envío del pedido,8
+345,Comenzó el envio del pedido,14
+346,Finalizó el envío del pedido,11
+346,Finalizó el envío del pedido,15
+348,El repartidor vuelve a estar listo,10
+348,Comenzó el envio del pedido,3
+349,Se asignó el rapartidor,10
+349,Comenzó el envio del pedido,6
+350,Comenzó el envio del pedido,10
+350,Finalizó el envío del pedido,4
+350,Finalizó el envío del pedido,1
+350,Finalizó el envío del pedido,13
+353,El repartidor vuelve a estar listo,2
+354,Se asignó el rapartidor,2
+355,El repartidor vuelve a estar listo,12
+355,Comenzó el envio del pedido,2
+355,Finalizó el envío del pedido,6
+356,Se asignó el rapartidor,12
+357,Comenzó el envio del pedido,12
+357,Finalizó el envío del pedido,3
+360,El repartidor vuelve a estar listo,8
+360,Finalizó el envío del pedido,14
+361,Se asignó el rapartidor,8
+361,Comenzó el envio del pedido,7
+361,El repartidor vuelve a estar listo,11
+362,Comenzó el envio del pedido,8
+362,Se asignó el rapartidor,11
+362,El repartidor vuelve a estar listo,6
+363,Se asignó el rapartidor,6
+364,Comenzó el envio del pedido,6
+365,El repartidor vuelve a estar listo,15
+365,El repartidor vuelve a estar listo,4
+366,Se asignó el rapartidor,4
+366,El repartidor vuelve a estar listo,3
+367,Se asignó el rapartidor,15
+367,Comenzó el envio del pedido,4
+367,El repartidor vuelve a estar listo,13
+368,Comenzó el envio del pedido,15
+368,Se asignó el rapartidor,3
+368,Finalizó el envío del pedido,7
+368,Finalizó el envío del pedido,10
+369,Comenzó el envio del pedido,3
+369,Se asignó el rapartidor,13
+369,El repartidor vuelve a estar listo,1
+370,Se asignó el rapartidor,1
+370,Finalizó el envío del pedido,2
+371,Finalizó el envío del pedido,12
+373,Finalizó el envío del pedido,8
+374,Comenzó el envio del pedido,13
+375,El repartidor vuelve a estar listo,14
+375,Comenzó el envio del pedido,11
+376,Se asignó el rapartidor,14
+376,El repartidor vuelve a estar listo,7
+377,Se asignó el rapartidor,7
+378,Finalizó el envío del pedido,6
+378,Comenzó el envio del pedido,7
+378,Finalizó el envío del pedido,4
+380,Comenzó el envio del pedido,5
+381,Finalizó el envío del pedido,15
+381,Finalizó el envío del pedido,11
+381,Finalizó el envío del pedido,3
+381,Comenzó el envio del pedido,1
+385,El repartidor vuelve a estar listo,8
+386,Se asignó el rapartidor,8
+386,El repartidor vuelve a estar listo,2
+386,El repartidor vuelve a estar listo,12
+387,Comenzó el envio del pedido,8
+387,Se asignó el rapartidor,2
+387,El repartidor vuelve a estar listo,10
+387,El repartidor vuelve a estar listo,11
+388,Se asignó el rapartidor,12
+389,Comenzó el envio del pedido,12
+389,Se asignó el rapartidor,11
+389,Finalizó el envío del pedido,5
+389,Finalizó el envío del pedido,1
+389,Comenzó el envio del pedido,11
+390,Se asignó el rapartidor,10
+390,El repartidor vuelve a estar listo,4
+391,Se asignó el rapartidor,4
+391,Finalizó el envío del pedido,13
+392,El repartidor vuelve a estar listo,6
+393,Se asignó el rapartidor,6
+393,Finalizó el envío del pedido,7
+394,El repartidor vuelve a estar listo,3
+394,Comenzó el envio del pedido,6
+394,Comenzó el envio del pedido,4
+395,Se asignó el rapartidor,3
+395,El repartidor vuelve a estar listo,15
+396,Comenzó el envio del pedido,3
+396,Se asignó el rapartidor,15
+397,El repartidor vuelve a estar listo,1
+398,Se asignó el rapartidor,1
+398,El repartidor vuelve a estar listo,5
+399,Comenzó el envio del pedido,1
+399,Se asignó el rapartidor,5
+400,Finalizó el envío del pedido,12
+401,Finalizó el envío del pedido,11
+401,Finalizó el envío del pedido,4
+402,Comenzó el envio del pedido,15
+403,Comenzó el envio del pedido,14
+403,Comenzó el envio del pedido,10
+404,Finalizó el envío del pedido,8
+408,El repartidor vuelve a estar listo,13
+408,El repartidor vuelve a estar listo,4
+408,Finalizó el envío del pedido,6
+409,Se asignó el rapartidor,13
+409,Comenzó el envio del pedido,2
+409,El repartidor vuelve a estar listo,7
+410,Se asignó el rapartidor,4
+410,Finalizó el envío del pedido,3
+411,Comenzó el envio del pedido,4
+411,Se asignó el rapartidor,7
+411,Comenzó el envio del pedido,7
+412,El repartidor vuelve a estar listo,12
+412,Finalizó el envío del pedido,10
+412,Comenzó el envio del pedido,9
+413,Se asignó el rapartidor,12
+413,El repartidor vuelve a estar listo,11
+414,Comenzó el envio del pedido,12
+414,Se asignó el rapartidor,11
+415,Finalizó el envío del pedido,15
+416,Finalizó el envío del pedido,14
+416,Finalizó el envío del pedido,1
+421,El repartidor vuelve a estar listo,10
+422,Se asignó el rapartidor,10
+422,El repartidor vuelve a estar listo,8
+423,Se asignó el rapartidor,8
+423,El repartidor vuelve a estar listo,6
+424,Comenzó el envio del pedido,8
+424,Se asignó el rapartidor,6
+424,Finalizó el envío del pedido,12
+424,Finalizó el envío del pedido,2
+425,El repartidor vuelve a estar listo,3
+425,Comenzó el envio del pedido,6
+426,Se asignó el rapartidor,3
+427,Comenzó el envio del pedido,3
+427,Finalizó el envío del pedido,7
+428,El repartidor vuelve a estar listo,15
+428,Finalizó el envío del pedido,4
+429,Se asignó el rapartidor,15
+429,El repartidor vuelve a estar listo,14
+430,Se asignó el rapartidor,14
+431,Finalizó el envío del pedido,9
+431,Comenzó el envio del pedido,14
+434,El repartidor vuelve a estar listo,1
+434,Finalizó el envío del pedido,8
+435,Se asignó el rapartidor,1
+435,El repartidor vuelve a estar listo,12
+436,Comenzó el envio del pedido,1
+436,Se asignó el rapartidor,12
+436,Comenzó el envio del pedido,5
+437,Finalizó el envío del pedido,6
+437,Comenzó el envio del pedido,13
+440,El repartidor vuelve a estar listo,2
+441,Se asignó el rapartidor,2
+442,Finalizó el envío del pedido,5
+442,Comenzó el envio del pedido,15
+442,Comenzó el envio del pedido,11
+444,El repartidor vuelve a estar listo,7
+444,Finalizó el envío del pedido,14
+444,Comenzó el envio del pedido,2
+445,Se asignó el rapartidor,7
+445,Comenzó el envio del pedido,12
+445,El repartidor vuelve a estar listo,8
+445,Finalizó el envío del pedido,3
+446,Se asignó el rapartidor,8
+446,El repartidor vuelve a estar listo,4
+446,Finalizó el envío del pedido,13
+447,Comenzó el envio del pedido,8
+447,Se asignó el rapartidor,4
+447,Finalizó el envío del pedido,15
+448,Comenzó el envio del pedido,4
+449,El repartidor vuelve a estar listo,5
+449,Finalizó el envío del pedido,12
+450,Se asignó el rapartidor,5
+450,El repartidor vuelve a estar listo,9
+450,El repartidor vuelve a estar listo,6
+451,Se asignó el rapartidor,6
+451,Finalizó el envío del pedido,1
+451,Comenzó el envio del pedido,6
+452,Se asignó el rapartidor,9
+452,El repartidor vuelve a estar listo,15
+453,Se asignó el rapartidor,15
+453,Finalizó el envío del pedido,2
+454,El repartidor vuelve a estar listo,12
+455,Se asignó el rapartidor,12
+455,El repartidor vuelve a estar listo,13
+456,Se asignó el rapartidor,13
+456,Comenzó el envio del pedido,13
+457,Finalizó el envío del pedido,8
+458,El repartidor vuelve a estar listo,14
+459,Se asignó el rapartidor,14
+459,Finalizó el envío del pedido,11
+460,Comenzó el envio del pedido,7
+461,Comenzó el envio del pedido,14
+462,El repartidor vuelve a estar listo,2
+463,Se asignó el rapartidor,2
+463,Comenzó el envio del pedido,9
+464,El repartidor vuelve a estar listo,3
+465,Se asignó el rapartidor,3
+465,Comenzó el envio del pedido,3
+465,Comenzó el envio del pedido,12
+465,Finalizó el envío del pedido,4
+465,Finalizó el envío del pedido,13
+465,Finalizó el envío del pedido,7
+467,Finalizó el envío del pedido,9
+467,El repartidor vuelve a estar listo,1
+468,Se asignó el rapartidor,1
+468,El repartidor vuelve a estar listo,8
+468,Finalizó el envío del pedido,6
+469,Comenzó el envio del pedido,1
+469,Se asignó el rapartidor,8
+469,Finalizó el envío del pedido,3
+470,Comenzó el envio del pedido,8
+470,El repartidor vuelve a estar listo,7
+471,Se asignó el rapartidor,7
+472,El repartidor vuelve a estar listo,9
+473,Se asignó el rapartidor,9
+473,Comenzó el envio del pedido,2
+474,El repartidor vuelve a estar listo,13
+474,El repartidor vuelve a estar listo,3
+475,Se asignó el rapartidor,13
+476,Se asignó el rapartidor,3
+476,El repartidor vuelve a estar listo,11
+477,Se asignó el rapartidor,11
+478,Finalizó el envío del pedido,1
+478,Comenzó el envio del pedido,3
+479,Finalizó el envío del pedido,12
+479,Comenzó el envio del pedido,5
+480,Finalizó el envío del pedido,14
+481,Comenzó el envio del pedido,10
+483,El repartidor vuelve a estar listo,4
+483,Finalizó el envío del pedido,8
+484,Se asignó el rapartidor,4
+485,El repartidor vuelve a estar listo,6
+485,Comenzó el envio del pedido,4
+486,Se asignó el rapartidor,6
+487,Comenzó el envio del pedido,6
+487,Finalizó el envío del pedido,2
+488,El repartidor vuelve a estar listo,1
+489,Se asignó el rapartidor,1
+490,Finalizó el envío del pedido,5
+491,Finalizó el envío del pedido,3
+492,Comenzó el envio del pedido,11
+494,El repartidor vuelve a estar listo,12
+495,Se asignó el rapartidor,12
+495,Comenzó el envio del pedido,7
+496,Comenzó el envio del pedido,12
+496,Finalizó el envío del pedido,4
+497,El repartidor vuelve a estar listo,8
+498,Se asignó el rapartidor,8
+498,Comenzó el envio del pedido,1
+498,Finalizó el envío del pedido,6
+499,El repartidor vuelve a estar listo,14
+499,Comenzó el envio del pedido,8
+500,Se asignó el rapartidor,14
+500,Finalizó el envío del pedido,7
+501,El repartidor vuelve a estar listo,5
+501,Finalizó el envío del pedido,10
+502,Se asignó el rapartidor,5
+502,El repartidor vuelve a estar listo,2
+502,Comenzó el envio del pedido,9
+503,Se asignó el rapartidor,2
+503,Finalizó el envío del pedido,11
+504,El repartidor vuelve a estar listo,3
+504,Comenzó el envio del pedido,2
+505,Se asignó el rapartidor,3
+506,El repartidor vuelve a estar listo,7
+506,Comenzó el envio del pedido,13
+507,Se asignó el rapartidor,7
+508,El repartidor vuelve a estar listo,4
+508,Comenzó el envio del pedido,7
+509,Se asignó el rapartidor,4
+509,Finalizó el envío del pedido,2
+510,El repartidor vuelve a estar listo,6
+511,Se asignó el rapartidor,6
+511,Finalizó el envío del pedido,9
+512,Finalizó el envío del pedido,13
+512,Finalizó el envío del pedido,1
+513,Comenzó el envio del pedido,3
+513,Comenzó el envio del pedido,4
+514,El repartidor vuelve a estar listo,11
+515,Se asignó el rapartidor,11
+515,Comenzó el envio del pedido,5
+515,El repartidor vuelve a estar listo,2
+515,Finalizó el envío del pedido,7
+515,Finalizó el envío del pedido,12
+515,Finalizó el envío del pedido,8
+516,Comenzó el envio del pedido,11
+516,Se asignó el rapartidor,2
+517,Comenzó el envio del pedido,14
+518,El repartidor vuelve a estar listo,13
+519,Se asignó el rapartidor,13
+521,El repartidor vuelve a estar listo,10
+521,El repartidor vuelve a estar listo,9
+522,Se asignó el rapartidor,10
+522,Finalizó el envío del pedido,14
+522,Comenzó el envio del pedido,15
+523,Se asignó el rapartidor,9
+523,El repartidor vuelve a estar listo,7
+523,Finalizó el envío del pedido,5
+524,Se asignó el rapartidor,7
+524,Finalizó el envío del pedido,3
+524,Finalizó el envío del pedido,11
+527,El repartidor vuelve a estar listo,1
+527,El repartidor vuelve a estar listo,14
+528,Se asignó el rapartidor,1
+529,Se asignó el rapartidor,14
+530,Finalizó el envío del pedido,4
+530,Finalizó el envío del pedido,15
+532,El repartidor vuelve a estar listo,8
+532,El repartidor vuelve a estar listo,5
+533,Se asignó el rapartidor,5
+533,El repartidor vuelve a estar listo,11
+534,Se asignó el rapartidor,8
+535,El repartidor vuelve a estar listo,12
+535,El repartidor vuelve a estar listo,3
+536,Se asignó el rapartidor,11
+538,El repartidor vuelve a estar listo,15
+539,Comenzó el envio del pedido,6
+541,Se asignó el rapartidor,12
+541,Comenzó el envio del pedido,12
+542,Se asignó el rapartidor,3
+542,Comenzó el envio del pedido,9
+543,Comenzó el envio del pedido,3
+543,Se asignó el rapartidor,15
+544,Finalizó el envío del pedido,6
+544,Comenzó el envio del pedido,10
+545,Comenzó el envio del pedido,7
+547,El repartidor vuelve a estar listo,4
+548,Se asignó el rapartidor,4
+549,El repartidor vuelve a estar listo,6
+549,Comenzó el envio del pedido,4
+550,Se asignó el rapartidor,6
+550,Finalizó el envío del pedido,12
+553,Finalizó el envío del pedido,10
+553,Finalizó el envío del pedido,3
+554,Finalizó el envío del pedido,9
+557,Comenzó el envio del pedido,13
+557,Comenzó el envio del pedido,1
+559,Comenzó el envio del pedido,15
+560,El repartidor vuelve a estar listo,12
+561,Se asignó el rapartidor,12
+562,El repartidor vuelve a estar listo,10
+562,Finalizó el envío del pedido,7
+563,Se asignó el rapartidor,10
+563,Comenzó el envio del pedido,14
+564,Comenzó el envio del pedido,10
+564,El repartidor vuelve a estar listo,3
+564,Comenzó el envio del pedido,6
+565,Se asignó el rapartidor,3
+567,El repartidor vuelve a estar listo,9
+567,Finalizó el envío del pedido,4
+568,Se asignó el rapartidor,9
+568,Finalizó el envío del pedido,14
+571,Finalizó el envío del pedido,15
+573,El repartidor vuelve a estar listo,14
+573,Finalizó el envío del pedido,1
+573,Finalizó el envío del pedido,6
+574,Se asignó el rapartidor,14
+574,Comenzó el envio del pedido,2
+576,Comenzó el envio del pedido,8
+577,Finalizó el envío del pedido,13
+578,Comenzó el envio del pedido,5
+579,El repartidor vuelve a estar listo,7
+580,Se asignó el rapartidor,7
+580,Comenzó el envio del pedido,11
+581,Comenzó el envio del pedido,7
+582,El repartidor vuelve a estar listo,6
+582,Finalizó el envío del pedido,10
+583,Se asignó el rapartidor,6
+583,El repartidor vuelve a estar listo,15
+583,Finalizó el envío del pedido,2
+584,Se asignó el rapartidor,15
+585,Finalizó el envío del pedido,7
+585,Comenzó el envio del pedido,14
+586,El repartidor vuelve a estar listo,4
+586,Finalizó el envío del pedido,8
+587,Se asignó el rapartidor,4
+587,Finalizó el envío del pedido,11
+589,El repartidor vuelve a estar listo,1
+590,Se asignó el rapartidor,1
+590,El repartidor vuelve a estar listo,7
+591,Se asignó el rapartidor,7
+592,El repartidor vuelve a estar listo,2
+592,Finalizó el envío del pedido,5
+592,Comenzó el envio del pedido,7
+593,Se asignó el rapartidor,2
+594,Comenzó el envio del pedido,15
+595,El repartidor vuelve a estar listo,11
+596,Se asignó el rapartidor,11
+596,Comenzó el envio del pedido,3
+596,Comenzó el envio del pedido,6
+596,El repartidor vuelve a estar listo,8
+597,Se asignó el rapartidor,8
+597,El repartidor vuelve a estar listo,13
+599,Se asignó el rapartidor,13
+599,Finalizó el envío del pedido,15
+599,Comenzó el envio del pedido,13
+599,Finalizó el envío del pedido,7
+601,El repartidor vuelve a estar listo,10
+602,Se asignó el rapartidor,10
+602,Finalizó el envío del pedido,14
+604,El repartidor vuelve a estar listo,15
+605,Se asignó el rapartidor,15
+606,El repartidor vuelve a estar listo,5
+607,El repartidor vuelve a estar listo,7
+607,Comenzó el envio del pedido,9
+609,Se asignó el rapartidor,5
+609,Finalizó el envío del pedido,6
+610,Se asignó el rapartidor,7
+612,Finalizó el envío del pedido,3
+613,Comenzó el envio del pedido,10
+613,Comenzó el envio del pedido,1
+615,Finalizó el envío del pedido,9
+616,Finalizó el envío del pedido,13
+616,Comenzó el envio del pedido,4
+619,El repartidor vuelve a estar listo,14
+620,Se asignó el rapartidor,14
+620,Comenzó el envio del pedido,12
+623,El repartidor vuelve a estar listo,9
+623,El repartidor vuelve a estar listo,6
+623,Finalizó el envío del pedido,1
+624,Se asignó el rapartidor,6
+624,Comenzó el envio del pedido,14
+625,Comenzó el envio del pedido,6
+625,Se asignó el rapartidor,9
+628,Comenzó el envio del pedido,15
+629,El repartidor vuelve a estar listo,3
+630,Se asignó el rapartidor,3
+630,Finalizó el envío del pedido,10
+631,Finalizó el envío del pedido,12
+632,Finalizó el envío del pedido,4
+632,Comenzó el envio del pedido,3
+633,El repartidor vuelve a estar listo,1
+634,Se asignó el rapartidor,1
+634,Comenzó el envio del pedido,5
+634,El repartidor vuelve a estar listo,13
+635,Se asignó el rapartidor,13
+635,Comenzó el envio del pedido,11
+636,Comenzó el envio del pedido,8
+638,Finalizó el envío del pedido,14
+639,Finalizó el envío del pedido,15
+640,Finalizó el envío del pedido,3
+641,Comenzó el envio del pedido,7
+642,Finalizó el envío del pedido,5
+643,El repartidor vuelve a estar listo,12
+644,Se asignó el rapartidor,12
+644,Finalizó el envío del pedido,6
+647,El repartidor vuelve a estar listo,10
+648,Se asignó el rapartidor,10
+648,El repartidor vuelve a estar listo,4
+648,El repartidor vuelve a estar listo,3
+649,Se asignó el rapartidor,4
+650,Se asignó el rapartidor,3
+650,El repartidor vuelve a estar listo,15
+651,Se asignó el rapartidor,15
+651,El repartidor vuelve a estar listo,5
+651,Finalizó el envío del pedido,11
+652,Se asignó el rapartidor,5
+653,El repartidor vuelve a estar listo,14
+653,Finalizó el envío del pedido,7
+654,Se asignó el rapartidor,14
+655,Comenzó el envio del pedido,14
+656,Finalizó el envío del pedido,8
+660,Comenzó el envio del pedido,2
+664,El repartidor vuelve a estar listo,6
+665,Se asignó el rapartidor,6
+666,El repartidor vuelve a estar listo,7
+667,Se asignó el rapartidor,7
+668,El repartidor vuelve a estar listo,11
+668,Comenzó el envio del pedido,7
+669,Se asignó el rapartidor,11
+671,Comenzó el envio del pedido,1
+672,Comenzó el envio del pedido,9
+673,Finalizó el envío del pedido,14
+675,Comenzó el envio del pedido,10
+675,Comenzó el envio del pedido,3
+676,Finalizó el envío del pedido,2
+676,El repartidor vuelve a estar listo,8
+677,Se asignó el rapartidor,8
+682,Comenzó el envio del pedido,15
+683,Finalizó el envío del pedido,3
+683,Comenzó el envio del pedido,11
+684,Finalizó el envío del pedido,7
+685,Finalizó el envío del pedido,9
+687,Finalizó el envío del pedido,1
+688,Comenzó el envio del pedido,12
+689,Finalizó el envío del pedido,10
+690,Finalizó el envío del pedido,15
+691,El repartidor vuelve a estar listo,3
+691,Comenzó el envio del pedido,5
+692,Se asignó el rapartidor,3
+692,El repartidor vuelve a estar listo,14
+692,El repartidor vuelve a estar listo,2
+692,Finalizó el envío del pedido,11
+693,Comenzó el envio del pedido,3
+693,Se asignó el rapartidor,14
+694,Se asignó el rapartidor,2
+694,Comenzó el envio del pedido,14
+694,Comenzó el envio del pedido,8
+695,Comenzó el envio del pedido,13
+697,Comenzó el envio del pedido,6
+698,El repartidor vuelve a estar listo,9
+699,Se asignó el rapartidor,9
+699,El repartidor vuelve a estar listo,15
+700,Se asignó el rapartidor,15
+700,Comenzó el envio del pedido,15
+701,El repartidor vuelve a estar listo,7
+701,El repartidor vuelve a estar listo,11
+702,Se asignó el rapartidor,11
+702,Finalizó el envío del pedido,5
+702,Finalizó el envío del pedido,12
+703,Comenzó el envio del pedido,11
+703,Se asignó el rapartidor,7
+703,El repartidor vuelve a estar listo,10
+703,El repartidor vuelve a estar listo,1
+704,Se asignó el rapartidor,1
+704,Finalizó el envío del pedido,8
+705,Comenzó el envio del pedido,1
+705,Se asignó el rapartidor,10
+705,Finalizó el envío del pedido,13
+705,Finalizó el envío del pedido,3
+709,Comenzó el envio del pedido,2
+713,El repartidor vuelve a estar listo,5
+713,Finalizó el envío del pedido,14
+713,Comenzó el envio del pedido,9
+714,Se asignó el rapartidor,5
+714,Comenzó el envio del pedido,4
+714,El repartidor vuelve a estar listo,8
+714,Finalizó el envío del pedido,6
+714,Finalizó el envío del pedido,1
+714,Finalizó el envío del pedido,11
+715,Comenzó el envio del pedido,5
+715,Se asignó el rapartidor,8
+715,El repartidor vuelve a estar listo,13
+716,Se asignó el rapartidor,13
+716,Comenzó el envio del pedido,8
+716,El repartidor vuelve a estar listo,12
+717,Comenzó el envio del pedido,13
+717,Se asignó el rapartidor,12
+717,Finalizó el envío del pedido,15
+718,El repartidor vuelve a estar listo,3
+719,Se asignó el rapartidor,3
+719,Finalizó el envío del pedido,2
+722,Finalizó el envío del pedido,4
+722,Finalizó el envío del pedido,9
+724,El repartidor vuelve a estar listo,1
+725,Se asignó el rapartidor,1
+725,Comenzó el envio del pedido,1
+726,El repartidor vuelve a estar listo,11
+727,Se asignó el rapartidor,11
+727,Comenzó el envio del pedido,7
+727,Comenzó el envio del pedido,10
+727,Finalizó el envío del pedido,13
+728,Comenzó el envio del pedido,11
+728,Comenzó el envio del pedido,12
+729,El repartidor vuelve a estar listo,2
+729,Finalizó el envío del pedido,5
+730,Se asignó el rapartidor,2
+731,Comenzó el envio del pedido,2
+731,El repartidor vuelve a estar listo,6
+731,El repartidor vuelve a estar listo,9
+731,El repartidor vuelve a estar listo,4
+732,Se asignó el rapartidor,6
+732,Finalizó el envío del pedido,10
+733,Se asignó el rapartidor,4
+733,El repartidor vuelve a estar listo,14
+734,Comenzó el envio del pedido,4
+734,Se asignó el rapartidor,9
+734,Finalizó el envío del pedido,8
+734,El repartidor vuelve a estar listo,15
+735,Se asignó el rapartidor,14
+735,Finalizó el envío del pedido,12
+736,Se asignó el rapartidor,15
+737,Comenzó el envio del pedido,15
+738,El repartidor vuelve a estar listo,13
+738,El repartidor vuelve a estar listo,10
+738,Finalizó el envío del pedido,11
+739,Se asignó el rapartidor,13
+740,Comenzó el envio del pedido,14
+740,Se asignó el rapartidor,10
+740,Finalizó el envío del pedido,1
+741,Comenzó el envio del pedido,10
+742,El repartidor vuelve a estar listo,12
+742,Finalizó el envío del pedido,7
+743,Se asignó el rapartidor,12
+744,El repartidor vuelve a estar listo,5
+744,Finalizó el envío del pedido,14
+745,Se asignó el rapartidor,5
+745,Finalizó el envío del pedido,2
+746,Comenzó el envio del pedido,5
+746,Finalizó el envío del pedido,4
+749,El repartidor vuelve a estar listo,11
+749,El repartidor vuelve a estar listo,14
+750,Se asignó el rapartidor,11
+750,Comenzó el envio del pedido,11
+751,Se asignó el rapartidor,14
+753,El repartidor vuelve a estar listo,8
+754,Se asignó el rapartidor,8
+754,Finalizó el envío del pedido,15
+755,Comenzó el envio del pedido,8
+755,Comenzó el envio del pedido,13
+756,El repartidor vuelve a estar listo,1
+757,Se asignó el rapartidor,1
+757,Finalizó el envío del pedido,10
+758,El repartidor vuelve a estar listo,7
+758,Comenzó el envio del pedido,9
+759,Se asignó el rapartidor,7
+759,El repartidor vuelve a estar listo,4
+760,Se asignó el rapartidor,4
+760,El repartidor vuelve a estar listo,2
+760,Finalizó el envío del pedido,13
+761,Se asignó el rapartidor,2
+762,Finalizó el envío del pedido,5
+764,Comenzó el envio del pedido,3
+764,Finalizó el envío del pedido,8
+764,Comenzó el envio del pedido,1
+765,El repartidor vuelve a estar listo,13
+766,Se asignó el rapartidor,13
+767,Comenzó el envio del pedido,13
+769,Finalizó el envío del pedido,11
+771,El repartidor vuelve a estar listo,15
+772,Se asignó el rapartidor,15
+773,El repartidor vuelve a estar listo,10
+773,Finalizó el envío del pedido,9
+774,Se asignó el rapartidor,10
+774,El repartidor vuelve a estar listo,8
+775,Se asignó el rapartidor,8
+775,Comenzó el envio del pedido,10
+775,Comenzó el envio del pedido,6
+775,Comenzó el envio del pedido,7
+777,Finalizó el envío del pedido,3
+779,El repartidor vuelve a estar listo,5
+779,Comenzó el envio del pedido,4
+779,Comenzó el envio del pedido,2
+779,Finalizó el envío del pedido,10
+780,Se asignó el rapartidor,5
+781,Finalizó el envío del pedido,1
+781,Comenzó el envio del pedido,5
+781,Comenzó el envio del pedido,14
+782,Finalizó el envío del pedido,13
+784,El repartidor vuelve a estar listo,10
+785,Se asignó el rapartidor,10
+786,Comenzó el envio del pedido,10
+787,Finalizó el envío del pedido,2
+787,Finalizó el envío del pedido,14
+788,El repartidor vuelve a estar listo,11
+788,El repartidor vuelve a estar listo,9
+789,Se asignó el rapartidor,11
+789,Finalizó el envío del pedido,6
+789,Finalizó el envío del pedido,7
+789,Comenzó el envio del pedido,11
+790,Se asignó el rapartidor,9
+790,El repartidor vuelve a estar listo,3
+791,Se asignó el rapartidor,3
+791,Finalizó el envío del pedido,5
+792,Finalizó el envío del pedido,4
+792,Comenzó el envio del pedido,8
+793,El repartidor vuelve a estar listo,14
+794,Se asignó el rapartidor,14
+795,Comenzó el envio del pedido,14
+795,El repartidor vuelve a estar listo,2
+795,Comenzó el envio del pedido,9
+796,Se asignó el rapartidor,2
+797,Comenzó el envio del pedido,2
+798,El repartidor vuelve a estar listo,13
+798,El repartidor vuelve a estar listo,1
+799,Se asignó el rapartidor,13
+799,Comenzó el envio del pedido,12
+800,Se asignó el rapartidor,1
+801,Finalizó el envío del pedido,10
+801,El repartidor vuelve a estar listo,5
+802,Se asignó el rapartidor,5
+803,El repartidor vuelve a estar listo,7
+803,El repartidor vuelve a estar listo,6
+803,Comenzó el envio del pedido,5
+804,Se asignó el rapartidor,7
+804,Finalizó el envío del pedido,8
+805,Se asignó el rapartidor,6
+805,El repartidor vuelve a estar listo,4
+806,Se asignó el rapartidor,4
+806,Comenzó el envio del pedido,15
+807,Finalizó el envío del pedido,9
+808,Finalizó el envío del pedido,11
+809,Finalizó el envío del pedido,2
+809,Finalizó el envío del pedido,14
+810,Finalizó el envío del pedido,12
+810,Comenzó el envio del pedido,7
+813,Finalizó el envío del pedido,15
+813,Comenzó el envio del pedido,3
+815,Finalizó el envío del pedido,5
+816,El repartidor vuelve a estar listo,8
+817,Se asignó el rapartidor,8
+817,Comenzó el envio del pedido,6
+817,El repartidor vuelve a estar listo,10
+817,Finalizó el envío del pedido,7
+818,Se asignó el rapartidor,10
+819,El repartidor vuelve a estar listo,9
+819,Comenzó el envio del pedido,10
+820,Se asignó el rapartidor,9
+821,Comenzó el envio del pedido,9
+821,El repartidor vuelve a estar listo,12
+821,El repartidor vuelve a estar listo,15
+822,Se asignó el rapartidor,15
+822,El repartidor vuelve a estar listo,2
+823,Se asignó el rapartidor,12
+823,Comenzó el envio del pedido,15
+824,Se asignó el rapartidor,2
+824,Comenzó el envio del pedido,13
+824,El repartidor vuelve a estar listo,7
+824,El repartidor vuelve a estar listo,14
+825,Se asignó el rapartidor,14
+825,Comenzó el envio del pedido,8
+825,Finalizó el envío del pedido,6
+826,Se asignó el rapartidor,7
+827,El repartidor vuelve a estar listo,11
+827,Finalizó el envío del pedido,10
+828,Se asignó el rapartidor,11
+828,El repartidor vuelve a estar listo,5
+829,Se asignó el rapartidor,5
+830,Comenzó el envio del pedido,5
+830,Finalizó el envío del pedido,9
+831,Finalizó el envío del pedido,8
+832,Finalizó el envío del pedido,3
+833,Comenzó el envio del pedido,14
+834,El repartidor vuelve a estar listo,6
+834,Finalizó el envío del pedido,5
+834,Comenzó el envio del pedido,4
+835,Se asignó el rapartidor,6
+836,El repartidor vuelve a estar listo,10
+836,Finalizó el envío del pedido,13
+837,Se asignó el rapartidor,10
+838,El repartidor vuelve a estar listo,8
+838,Comenzó el envio del pedido,10
+839,Se asignó el rapartidor,8
+839,El repartidor vuelve a estar listo,5
+840,Se asignó el rapartidor,5
+840,Comenzó el envio del pedido,8
+840,Comenzó el envio del pedido,6
+840,El repartidor vuelve a estar listo,9
+840,Finalizó el envío del pedido,15
+841,Se asignó el rapartidor,9
+841,Comenzó el envio del pedido,9
+843,Finalizó el envío del pedido,4
+844,Finalizó el envío del pedido,8
+845,Comenzó el envio del pedido,1
+845,Comenzó el envio del pedido,11
+847,Finalizó el envío del pedido,6
+848,Finalizó el envío del pedido,14
+849,El repartidor vuelve a estar listo,13
+849,El repartidor vuelve a estar listo,8
+850,Se asignó el rapartidor,8
+851,Se asignó el rapartidor,13
+851,Comenzó el envio del pedido,2
+851,El repartidor vuelve a estar listo,3
+851,Finalizó el envío del pedido,10
+852,Comenzó el envio del pedido,13
+852,Se asignó el rapartidor,3
+852,El repartidor vuelve a estar listo,4
+853,Se asignó el rapartidor,4
+855,Finalizó el envío del pedido,2
+855,El repartidor vuelve a estar listo,6
+856,Se asignó el rapartidor,6
+856,Finalizó el envío del pedido,9
+858,El repartidor vuelve a estar listo,15
+859,Se asignó el rapartidor,15
+860,Comenzó el envio del pedido,15
+860,El repartidor vuelve a estar listo,2
+861,Se asignó el rapartidor,2
+861,Finalizó el envío del pedido,11
+862,Finalizó el envío del pedido,13
+863,El repartidor vuelve a estar listo,14
+864,Se asignó el rapartidor,14
+864,Comenzó el envio del pedido,5
+864,Finalizó el envío del pedido,1
+865,El repartidor vuelve a estar listo,10
+866,Se asignó el rapartidor,10
+867,Comenzó el envio del pedido,10
+868,Finalizó el envío del pedido,15
+868,Comenzó el envio del pedido,8
+871,El repartidor vuelve a estar listo,9
+872,Se asignó el rapartidor,9
+872,Comenzó el envio del pedido,7
+873,El repartidor vuelve a estar listo,13
+873,Comenzó el envio del pedido,4
+874,Se asignó el rapartidor,13
+874,Finalizó el envío del pedido,5
+875,Comenzó el envio del pedido,3
+876,Finalizó el envío del pedido,8
+877,El repartidor vuelve a estar listo,11
+877,El repartidor vuelve a estar listo,15
+878,Se asignó el rapartidor,15
+878,Comenzó el envio del pedido,6
+879,Se asignó el rapartidor,11
+879,Comenzó el envio del pedido,12
+879,Finalizó el envío del pedido,4
+882,Finalizó el envío del pedido,6
+883,El repartidor vuelve a estar listo,1
+884,Se asignó el rapartidor,1
+884,El repartidor vuelve a estar listo,8
+884,Comenzó el envio del pedido,1
+885,Se asignó el rapartidor,8
+885,El repartidor vuelve a estar listo,5
+885,El repartidor vuelve a estar listo,4
+885,Finalizó el envío del pedido,10
+886,Comenzó el envio del pedido,8
+886,Se asignó el rapartidor,4
+886,Finalizó el envío del pedido,7
+887,Comenzó el envio del pedido,4
+887,Se asignó el rapartidor,5
+887,El repartidor vuelve a estar listo,6
+888,Se asignó el rapartidor,6
+888,Comenzó el envio del pedido,14
+889,Comenzó el envio del pedido,11
+891,Finalizó el envío del pedido,1
+893,Finalizó el envío del pedido,12
+894,Finalizó el envío del pedido,3
+894,Finalizó el envío del pedido,4
+898,El repartidor vuelve a estar listo,1
+898,Finalizó el envío del pedido,8
+899,Se asignó el rapartidor,1
+900,Finalizó el envío del pedido,14
+901,El repartidor vuelve a estar listo,7
+902,Se asignó el rapartidor,7
+902,Comenzó el envio del pedido,15
+902,Comenzó el envio del pedido,6
+902,El repartidor vuelve a estar listo,4
+903,Comenzó el envio del pedido,7
+903,Se asignó el rapartidor,4
+904,El repartidor vuelve a estar listo,10
+904,Comenzó el envio del pedido,4
+905,Se asignó el rapartidor,10
+908,El repartidor vuelve a estar listo,12
+908,Finalizó el envío del pedido,11
+909,Se asignó el rapartidor,12
+909,Comenzó el envio del pedido,9
+910,Comenzó el envio del pedido,5
+910,Comenzó el envio del pedido,10
+911,El repartidor vuelve a estar listo,8
+911,Comenzó el envio del pedido,1
+912,Se asignó el rapartidor,8
+912,El repartidor vuelve a estar listo,14
+913,Comenzó el envio del pedido,8
+913,Se asignó el rapartidor,14
+913,Comenzó el envio del pedido,2
+913,El repartidor vuelve a estar listo,3
+914,Se asignó el rapartidor,3
+915,Finalizó el envío del pedido,15
+916,Comenzó el envio del pedido,13
+917,Finalizó el envío del pedido,9
+917,Finalizó el envío del pedido,8
+919,Finalizó el envío del pedido,10
+920,Comenzó el envio del pedido,14
+921,Finalizó el envío del pedido,6
+922,El repartidor vuelve a estar listo,8
+922,Finalizó el envío del pedido,5
+922,Finalizó el envío del pedido,7
+923,Se asignó el rapartidor,8
+923,Finalizó el envío del pedido,4
+924,Comenzó el envio del pedido,8
+924,Finalizó el envío del pedido,2
+925,El repartidor vuelve a estar listo,9
+926,Se asignó el rapartidor,9
+927,El repartidor vuelve a estar listo,11
+927,Comenzó el envio del pedido,9
+928,Se asignó el rapartidor,11
+928,El repartidor vuelve a estar listo,10
+928,Finalizó el envío del pedido,13
+928,Comenzó el envio del pedido,12
+929,Se asignó el rapartidor,10
+929,El repartidor vuelve a estar listo,15
+929,Finalizó el envío del pedido,1
+929,Comenzó el envio del pedido,11
+930,Se asignó el rapartidor,15
+930,Comenzó el envio del pedido,10
+930,Finalizó el envío del pedido,14
+934,El repartidor vuelve a estar listo,5
+935,Se asignó el rapartidor,5
+936,El repartidor vuelve a estar listo,2
+936,Comenzó el envio del pedido,5
+937,Se asignó el rapartidor,2
+938,Finalizó el envío del pedido,10
+939,Finalizó el envío del pedido,11
+940,El repartidor vuelve a estar listo,13
+940,El repartidor vuelve a estar listo,14
+940,Finalizó el envío del pedido,5
+941,Se asignó el rapartidor,14
+941,El repartidor vuelve a estar listo,6
+941,Finalizó el envío del pedido,9
+941,Finalizó el envío del pedido,8
+942,Se asignó el rapartidor,13
+942,El repartidor vuelve a estar listo,7
+943,Comenzó el envio del pedido,13
+943,Se asignó el rapartidor,6
+943,El repartidor vuelve a estar listo,4
+943,Finalizó el envío del pedido,12
+943,Comenzó el envio del pedido,3
+944,Se asignó el rapartidor,7
+945,Comenzó el envio del pedido,7
+945,Se asignó el rapartidor,4
+945,El repartidor vuelve a estar listo,5
+946,Comenzó el envio del pedido,4
+946,Se asignó el rapartidor,5
+947,Comenzó el envio del pedido,5
+947,El repartidor vuelve a estar listo,10
+948,Se asignó el rapartidor,10
+948,El repartidor vuelve a estar listo,1
+949,Comenzó el envio del pedido,10
+949,Se asignó el rapartidor,1
+950,El repartidor vuelve a estar listo,11
+951,Se asignó el rapartidor,11
+951,Finalizó el envío del pedido,7
+952,Comenzó el envio del pedido,11
+953,Finalizó el envío del pedido,13
+955,Comenzó el envio del pedido,1
+956,El repartidor vuelve a estar listo,9
+957,Se asignó el rapartidor,9
+958,Comenzó el envio del pedido,9
+958,El repartidor vuelve a estar listo,7
+958,El repartidor vuelve a estar listo,12
+959,Se asignó el rapartidor,7
+959,El repartidor vuelve a estar listo,8
+959,Finalizó el envío del pedido,4
+960,Se asignó el rapartidor,12
+960,Finalizó el envío del pedido,3
+960,Finalizó el envío del pedido,5
+961,Se asignó el rapartidor,8
+962,Comenzó el envio del pedido,8
+962,Finalizó el envío del pedido,1
+962,Finalizó el envío del pedido,11
+963,Comenzó el envio del pedido,15
+964,El repartidor vuelve a estar listo,13
+964,Comenzó el envio del pedido,14
+965,Se asignó el rapartidor,13
+965,Finalizó el envío del pedido,10
+967,Finalizó el envío del pedido,8
+969,El repartidor vuelve a estar listo,1
+969,Finalizó el envío del pedido,9
+970,Se asignó el rapartidor,1
+971,Finalizó el envío del pedido,14
+971,Comenzó el envio del pedido,7
+972,Finalizó el envío del pedido,15
+973,El repartidor vuelve a estar listo,4
+973,El repartidor vuelve a estar listo,11
+973,El repartidor vuelve a estar listo,8
+974,Se asignó el rapartidor,4
+974,El repartidor vuelve a estar listo,5
+975,Comenzó el envio del pedido,4
+975,Se asignó el rapartidor,8
+976,Comenzó el envio del pedido,8
+976,Se asignó el rapartidor,11
+976,Comenzó el envio del pedido,13
+976,Finalizó el envío del pedido,7
+977,Comenzó el envio del pedido,11
+977,Se asignó el rapartidor,5
+977,El repartidor vuelve a estar listo,3
+978,Comenzó el envio del pedido,5
+978,Se asignó el rapartidor,3
+978,El repartidor vuelve a estar listo,14
+979,Comenzó el envio del pedido,3
+979,Se asignó el rapartidor,14
+979,Comenzó el envio del pedido,1
+980,Comenzó el envio del pedido,14
+981,El repartidor vuelve a estar listo,7
+981,El repartidor vuelve a estar listo,9
+981,El repartidor vuelve a estar listo,15
+981,Finalizó el envío del pedido,13
+982,Se asignó el rapartidor,7
+982,El repartidor vuelve a estar listo,10
+983,Se asignó el rapartidor,9
+984,Comenzó el envio del pedido,9
+984,Se asignó el rapartidor,15
+984,Finalizó el envío del pedido,5
+985,Se asignó el rapartidor,10
+985,Comenzó el envio del pedido,15
+985,Comenzó el envio del pedido,7
+986,Finalizó el envío del pedido,11
+987,El repartidor vuelve a estar listo,13
+987,Finalizó el envío del pedido,4
+987,Finalizó el envío del pedido,14
+988,Se asignó el rapartidor,13
+988,Finalizó el envío del pedido,1
+991,El repartidor vuelve a estar listo,5
+992,Se asignó el rapartidor,5
+992,Comenzó el envio del pedido,2
+993,Finalizó el envío del pedido,15
+995,El repartidor vuelve a estar listo,14
+995,Finalizó el envío del pedido,9
+995,Finalizó el envío del pedido,8
+996,Se asignó el rapartidor,14
+996,El repartidor vuelve a estar listo,11
+997,Se asignó el rapartidor,11
+998,El repartidor vuelve a estar listo,1
+998,Finalizó el envío del pedido,3
+998,Comenzó el envio del pedido,6
+999,Se asignó el rapartidor,1
+1000,Comenzó el envio del pedido,1
+1000,El repartidor vuelve a estar listo,4
+1001,Se asignó el rapartidor,4
+1002,El repartidor vuelve a estar listo,15
+1003,Se asignó el rapartidor,15
+1003,Finalizó el envío del pedido,2
+1004,Finalizó el envío del pedido,7
+1005,Finalizó el envío del pedido,6
+1006,Comenzó el envio del pedido,13
+1007,El repartidor vuelve a estar listo,9
+1008,Se asignó el rapartidor,9
+1009,Comenzó el envio del pedido,4
+1009,Comenzó el envio del pedido,5
+1012,El repartidor vuelve a estar listo,6
+1012,Finalizó el envío del pedido,13
+1013,Se asignó el rapartidor,6
+1014,El repartidor vuelve a estar listo,2
+1015,Se asignó el rapartidor,2
+1015,El repartidor vuelve a estar listo,8
+1015,Comenzó el envio del pedido,11
+1016,Se asignó el rapartidor,8
+1016,Finalizó el envío del pedido,4
+1017,Comenzó el envio del pedido,8
+1018,El repartidor vuelve a estar listo,3
+1018,El repartidor vuelve a estar listo,13
+1019,Se asignó el rapartidor,3
+1019,Finalizó el envío del pedido,1
+1019,Comenzó el envio del pedido,15
+1020,Se asignó el rapartidor,13
+1020,Finalizó el envío del pedido,11
+1023,El repartidor vuelve a estar listo,4
+1024,Comenzó el envio del pedido,14
+1024,Se asignó el rapartidor,4
+1024,El repartidor vuelve a estar listo,7
+1025,Se asignó el rapartidor,7
+1025,El repartidor vuelve a estar listo,11
+1026,Se asignó el rapartidor,11
+1026,Finalizó el envío del pedido,5
+1026,Comenzó el envio del pedido,6
+1027,Comenzó el envio del pedido,10
+1029,Comenzó el envio del pedido,12
+1030,Finalizó el envío del pedido,8
+1032,Finalizó el envío del pedido,15
+1034,Comenzó el envio del pedido,13
+1035,Finalizó el envío del pedido,14
+1036,Finalizó el envío del pedido,12
+1037,Finalizó el envío del pedido,6
+1039,El repartidor vuelve a estar listo,1
+1040,Se asignó el rapartidor,1
+1041,Comenzó el envio del pedido,1
+1043,El repartidor vuelve a estar listo,5
+1043,El repartidor vuelve a estar listo,12
+1043,Comenzó el envio del pedido,11
+1044,Se asignó el rapartidor,12
+1044,El repartidor vuelve a estar listo,8
+1044,Finalizó el envío del pedido,13
+1045,Se asignó el rapartidor,5
+1045,El repartidor vuelve a estar listo,15
+1045,Finalizó el envío del pedido,10
+1046,Comenzó el envio del pedido,5
+1046,Se asignó el rapartidor,8
+1047,Comenzó el envio del pedido,8
+1047,Se asignó el rapartidor,15
+1047,El repartidor vuelve a estar listo,14
+1048,Comenzó el envio del pedido,15
+1048,Se asignó el rapartidor,14
+1048,Comenzó el envio del pedido,4
+1048,Finalizó el envío del pedido,1
+1049,El repartidor vuelve a estar listo,6
+1050,Se asignó el rapartidor,6
+1054,El repartidor vuelve a estar listo,13
+1055,Se asignó el rapartidor,13
+1056,El repartidor vuelve a estar listo,1
+1056,Finalizó el envío del pedido,11
+1057,Se asignó el rapartidor,1
+1057,Comenzó el envio del pedido,7
+1057,Comenzó el envio del pedido,3
+1058,Finalizó el envío del pedido,5
+1059,Comenzó el envio del pedido,9
+1060,Finalizó el envío del pedido,8
+1060,Comenzó el envio del pedido,1
+1062,Finalizó el envío del pedido,15
+1062,Comenzó el envio del pedido,14
+1063,El repartidor vuelve a estar listo,10
+1063,Comenzó el envio del pedido,13
+1063,Finalizó el envío del pedido,7
+1063,Finalizó el envío del pedido,4
+1064,Se asignó el rapartidor,10
+1065,Finalizó el envío del pedido,3
+1065,Comenzó el envio del pedido,10
+1066,Comenzó el envio del pedido,6
+1067,Finalizó el envío del pedido,1
+1069,El repartidor vuelve a estar listo,11
+1069,Finalizó el envío del pedido,10
+1070,Se asignó el rapartidor,11
+1070,El repartidor vuelve a estar listo,7
+1071,Se asignó el rapartidor,7
+1071,El repartidor vuelve a estar listo,5
+1071,Finalizó el envío del pedido,9
+1072,Se asignó el rapartidor,5
+1072,Comenzó el envio del pedido,7
+1073,El repartidor vuelve a estar listo,3
+1073,Comenzó el envio del pedido,5
+1074,Se asignó el rapartidor,3
+1074,El repartidor vuelve a estar listo,10
+1074,El repartidor vuelve a estar listo,8
+1074,El repartidor vuelve a estar listo,1
+1075,Comenzó el envio del pedido,3
+1075,Se asignó el rapartidor,10
+1075,Finalizó el envío del pedido,14
+1076,Comenzó el envio del pedido,10
+1076,Se asignó el rapartidor,1
+1076,Comenzó el envio del pedido,12
+1077,Se asignó el rapartidor,8
+1077,El repartidor vuelve a estar listo,15
+1078,Comenzó el envio del pedido,8
+1078,Se asignó el rapartidor,15
+1079,Comenzó el envio del pedido,15
+1079,El repartidor vuelve a estar listo,4
+1080,Se asignó el rapartidor,4
+1080,Finalizó el envío del pedido,6
+1081,Comenzó el envio del pedido,1
+1081,Finalizó el envío del pedido,5
+1082,Finalizó el envío del pedido,13
+1082,Finalizó el envío del pedido,3
+1083,El repartidor vuelve a estar listo,9
+1084,Se asignó el rapartidor,9
+1084,Comenzó el envio del pedido,2
+1085,Comenzó el envio del pedido,9
+1086,Finalizó el envío del pedido,7
+1086,Finalizó el envío del pedido,12
+1088,El repartidor vuelve a estar listo,14
+1089,Se asignó el rapartidor,14
+1090,El repartidor vuelve a estar listo,3
+1090,El repartidor vuelve a estar listo,5
+1090,Finalizó el envío del pedido,8
+1091,Se asignó el rapartidor,3
+1091,Finalizó el envío del pedido,15
+1092,Comenzó el envio del pedido,3
+1092,Se asignó el rapartidor,5
+1092,Finalizó el envío del pedido,1
+1093,Comenzó el envio del pedido,14
+1094,El repartidor vuelve a estar listo,6
+1094,Finalizó el envío del pedido,10
+1095,Se asignó el rapartidor,6
+1096,El repartidor vuelve a estar listo,12
+1097,Se asignó el rapartidor,12
+1097,Finalizó el envío del pedido,3
+1099,Finalizó el envío del pedido,9
+1100,Finalizó el envío del pedido,2
+1100,Comenzó el envio del pedido,6
+1101,El repartidor vuelve a estar listo,7
+1102,Se asignó el rapartidor,7
+1102,El repartidor vuelve a estar listo,13
+1102,Comenzó el envio del pedido,4
+1103,Comenzó el envio del pedido,7
+1103,Se asignó el rapartidor,13
+1103,El repartidor vuelve a estar listo,8
+1103,El repartidor vuelve a estar listo,3
+1104,Se asignó el rapartidor,3
+1104,El repartidor vuelve a estar listo,1
+1104,El repartidor vuelve a estar listo,15
+1105,Comenzó el envio del pedido,3
+1105,Se asignó el rapartidor,8
+1106,Se asignó el rapartidor,15
+1107,Comenzó el envio del pedido,15
+1107,Se asignó el rapartidor,1
+1108,Finalizó el envío del pedido,4
+1109,Comenzó el envio del pedido,12
+1110,Finalizó el envío del pedido,14
+1111,Comenzó el envio del pedido,8
+1113,El repartidor vuelve a estar listo,10
+1114,Se asignó el rapartidor,10
+1114,El repartidor vuelve a estar listo,9
+1114,El repartidor vuelve a estar listo,4
+1114,Comenzó el envio del pedido,13
+1114,Finalizó el envío del pedido,12
+1115,Comenzó el envio del pedido,10
+1115,Se asignó el rapartidor,4
+1116,Se asignó el rapartidor,9
+1117,El repartidor vuelve a estar listo,2
+1117,Comenzó el envio del pedido,9
+1118,Se asignó el rapartidor,2
+1118,Finalizó el envío del pedido,7
+1119,El repartidor vuelve a estar listo,12
+1119,Finalizó el envío del pedido,6
+1120,Se asignó el rapartidor,12
+1120,Finalizó el envío del pedido,8
+1121,Finalizó el envío del pedido,3
+1121,Comenzó el envio del pedido,11
+1122,Finalizó el envío del pedido,15
+1122,Comenzó el envio del pedido,12
+1123,Finalizó el envío del pedido,13
+1126,Comenzó el envio del pedido,1
+1127,El repartidor vuelve a estar listo,14
+1128,Se asignó el rapartidor,14
+1129,El repartidor vuelve a estar listo,8
+1129,Finalizó el envío del pedido,10
+1130,Se asignó el rapartidor,8
+1130,Comenzó el envio del pedido,2
+1131,Comenzó el envio del pedido,14
+1132,Finalizó el envío del pedido,1
+1132,El repartidor vuelve a estar listo,13
+1133,Se asignó el rapartidor,13
+1134,Comenzó el envio del pedido,13
+1134,El repartidor vuelve a estar listo,7
+1135,Se asignó el rapartidor,7
+1135,Finalizó el envío del pedido,11
+1136,Comenzó el envio del pedido,7
+1136,Finalizó el envío del pedido,9
+1136,Finalizó el envío del pedido,12
+1138,El repartidor vuelve a estar listo,1
+1138,El repartidor vuelve a estar listo,15
+1138,El repartidor vuelve a estar listo,6
+1138,El repartidor vuelve a estar listo,3
+1139,Se asignó el rapartidor,1
+1139,Finalizó el envío del pedido,2
+1140,Comenzó el envio del pedido,1
+1140,Se asignó el rapartidor,3
+1140,Comenzó el envio del pedido,5
+1141,Se asignó el rapartidor,6
+1141,Comenzó el envio del pedido,3
+1142,Comenzó el envio del pedido,6
+1142,Se asignó el rapartidor,15
+1143,Comenzó el envio del pedido,15
+1143,Finalizó el envío del pedido,14
+1143,Finalizó el envío del pedido,7
+1144,El repartidor vuelve a estar listo,10
+1145,Se asignó el rapartidor,10
+1149,El repartidor vuelve a estar listo,11
+1149,Finalizó el envío del pedido,3
+1149,El repartidor vuelve a estar listo,2
+1150,Se asignó el rapartidor,11
+1150,Finalizó el envío del pedido,13
+1150,El repartidor vuelve a estar listo,12
+1150,Finalizó el envío del pedido,6
+1151,Se asignó el rapartidor,2
+1151,Comenzó el envio del pedido,11
+1151,El repartidor vuelve a estar listo,7
+1152,Se asignó el rapartidor,12
+1152,Comenzó el envio del pedido,2
+1152,Finalizó el envío del pedido,5
+1153,Comenzó el envio del pedido,12
+1153,Se asignó el rapartidor,7
+1154,Comenzó el envio del pedido,7
+1154,Finalizó el envío del pedido,15
+1154,Comenzó el envio del pedido,4
+1155,El repartidor vuelve a estar listo,14
+1156,Se asignó el rapartidor,14
+1156,El repartidor vuelve a estar listo,9
+1157,Se asignó el rapartidor,9
+1158,El repartidor vuelve a estar listo,3
+1158,Finalizó el envío del pedido,1
+1158,Finalizó el envío del pedido,7
+1158,Finalizó el envío del pedido,11
+1158,Comenzó el envio del pedido,8
+1159,Se asignó el rapartidor,3
+1159,El repartidor vuelve a estar listo,6
+1160,Se asignó el rapartidor,6
+1161,Comenzó el envio del pedido,6
+1161,Finalizó el envío del pedido,12
+1163,El repartidor vuelve a estar listo,7
+1164,Se asignó el rapartidor,7
+1165,El repartidor vuelve a estar listo,5
+1165,Comenzó el envio del pedido,7
+1166,Se asignó el rapartidor,5
+1166,El repartidor vuelve a estar listo,15
+1166,El repartidor vuelve a estar listo,11
+1167,Se asignó el rapartidor,11
+1167,El repartidor vuelve a estar listo,13
+1167,Finalizó el envío del pedido,4
+1167,Comenzó el envio del pedido,5
+1168,Comenzó el envio del pedido,11
+1168,Se asignó el rapartidor,15
+1168,Finalizó el envío del pedido,2
+1168,Finalizó el envío del pedido,6
+1168,Comenzó el envio del pedido,14
+1169,Se asignó el rapartidor,13
+1169,Comenzó el envio del pedido,13
+1170,El repartidor vuelve a estar listo,12
+1171,Se asignó el rapartidor,12
+1172,Finalizó el envío del pedido,7
+1174,Comenzó el envio del pedido,12
+1174,Comenzó el envio del pedido,10
+1175,Finalizó el envío del pedido,14
+1175,Finalizó el envío del pedido,13
+1176,El repartidor vuelve a estar listo,6
+1176,Comenzó el envio del pedido,15
+1177,Se asignó el rapartidor,6
+1177,El repartidor vuelve a estar listo,1
+1177,Finalizó el envío del pedido,11
+1178,Comenzó el envio del pedido,6
+1178,Se asignó el rapartidor,1
+1178,Finalizó el envío del pedido,8
+1179,Comenzó el envio del pedido,1
+1179,Finalizó el envío del pedido,5
+1180,El repartidor vuelve a estar listo,4
+1180,El repartidor vuelve a estar listo,7
+1181,Se asignó el rapartidor,7
+1181,El repartidor vuelve a estar listo,13
+1182,Se asignó el rapartidor,4
+1182,Comenzó el envio del pedido,7
+1182,El repartidor vuelve a estar listo,14
+1182,Comenzó el envio del pedido,4
+1183,Se asignó el rapartidor,13
+1184,Se asignó el rapartidor,14
+1184,Comenzó el envio del pedido,13
+1185,El repartidor vuelve a estar listo,2
+1185,Comenzó el envio del pedido,14
+1185,Finalizó el envío del pedido,10
+1186,Se asignó el rapartidor,2
+1187,El repartidor vuelve a estar listo,11
+1187,Comenzó el envio del pedido,2
+1188,Se asignó el rapartidor,11
+1188,Finalizó el envío del pedido,7
+1188,Finalizó el envío del pedido,15
+1189,Comenzó el envio del pedido,11
+1189,Finalizó el envío del pedido,4
+1191,Comenzó el envio del pedido,9
+1192,El repartidor vuelve a estar listo,5
+1193,Se asignó el rapartidor,5
+1193,Comenzó el envio del pedido,3
+1193,Finalizó el envío del pedido,12
+1193,Finalizó el envío del pedido,1
+1194,Finalizó el envío del pedido,6
+1195,El repartidor vuelve a estar listo,7
+1196,Se asignó el rapartidor,7
+1196,El repartidor vuelve a estar listo,4
+1196,El repartidor vuelve a estar listo,10
+1197,Se asignó el rapartidor,10
+1198,Comenzó el envio del pedido,10
+1198,Se asignó el rapartidor,4
+1198,El repartidor vuelve a estar listo,8
+1199,Se asignó el rapartidor,8
+1199,Finalizó el envío del pedido,13
+1200,El repartidor vuelve a estar listo,15
+1200,Comenzó el envio del pedido,8
+1201,Se asignó el rapartidor,15
+1201,Comenzó el envio del pedido,7
+1201,Finalizó el envío del pedido,2
+1202,Comenzó el envio del pedido,15
+1202,Finalizó el envío del pedido,14
+1204,Finalizó el envío del pedido,11
+1207,Finalizó el envío del pedido,9
+1208,El repartidor vuelve a estar listo,1
+1209,Se asignó el rapartidor,1
+1211,El repartidor vuelve a estar listo,6
+1212,Se asignó el rapartidor,6
+1212,Finalizó el envío del pedido,10
+1212,Finalizó el envío del pedido,3
+1212,Finalizó el envío del pedido,8
+1213,El repartidor vuelve a estar listo,12
+1213,Comenzó el envio del pedido,6
+1214,Se asignó el rapartidor,12
+1214,Comenzó el envio del pedido,5
+1215,El repartidor vuelve a estar listo,13
+1215,Finalizó el envío del pedido,7
+1215,Comenzó el envio del pedido,12
+1216,Se asignó el rapartidor,13
+1216,El repartidor vuelve a estar listo,2
+1216,Comenzó el envio del pedido,4
+1217,Se asignó el rapartidor,2
+1218,Finalizó el envío del pedido,15
+1218,Comenzó el envio del pedido,1
+1219,Finalizó el envío del pedido,5
+1220,El repartidor vuelve a estar listo,14
+1220,El repartidor vuelve a estar listo,11
+1221,Se asignó el rapartidor,11
+1221,Comenzó el envio del pedido,11
+1222,Se asignó el rapartidor,14
+1223,El repartidor vuelve a estar listo,9
+1223,Comenzó el envio del pedido,14
+1224,Se asignó el rapartidor,9
+1224,Finalizó el envío del pedido,4
+1225,El repartidor vuelve a estar listo,8
+1225,El repartidor vuelve a estar listo,5
+1225,Finalizó el envío del pedido,6
+1226,Se asignó el rapartidor,8
+1227,Se asignó el rapartidor,5
+1227,El repartidor vuelve a estar listo,10
+1228,Se asignó el rapartidor,10
+1229,Comenzó el envio del pedido,10
+1230,El repartidor vuelve a estar listo,7
+1231,Se asignó el rapartidor,7
+1232,El repartidor vuelve a estar listo,3
+1232,El repartidor vuelve a estar listo,4
+1233,Se asignó el rapartidor,3
+1233,Comenzó el envio del pedido,2
+1233,Finalizó el envío del pedido,11
+1234,Comenzó el envio del pedido,3
+1234,Se asignó el rapartidor,4
+1234,Finalizó el envío del pedido,12
+1234,Finalizó el envío del pedido,10
+1235,El repartidor vuelve a estar listo,15
+1235,Finalizó el envío del pedido,14
+1235,Comenzó el envio del pedido,5
+1236,Se asignó el rapartidor,15
+1237,Finalizó el envío del pedido,1
+1238,El repartidor vuelve a estar listo,6
+1239,Se asignó el rapartidor,6
+1239,El repartidor vuelve a estar listo,10
+1240,Se asignó el rapartidor,10
+1241,Finalizó el envío del pedido,5
+1243,Finalizó el envío del pedido,2
+1243,Comenzó el envio del pedido,4
+1244,Finalizó el envío del pedido,3
+1244,Comenzó el envio del pedido,13
+1244,Comenzó el envio del pedido,8
+1245,El repartidor vuelve a estar listo,11
+1246,Se asignó el rapartidor,11
+1247,El repartidor vuelve a estar listo,5
+1248,Se asignó el rapartidor,5
+1248,El repartidor vuelve a estar listo,14
+1249,Comenzó el envio del pedido,5
+1249,Se asignó el rapartidor,14
+1249,Finalizó el envío del pedido,4
+1250,Finalizó el envío del pedido,8
+1254,El repartidor vuelve a estar listo,12
+1254,El repartidor vuelve a estar listo,2
+1254,Comenzó el envio del pedido,7
+1255,Se asignó el rapartidor,12
+1255,El repartidor vuelve a estar listo,3
+1255,El repartidor vuelve a estar listo,4
+1255,Finalizó el envío del pedido,13
+1256,Comenzó el envio del pedido,12
+1256,Se asignó el rapartidor,2
+1256,El repartidor vuelve a estar listo,1
+1256,El repartidor vuelve a estar listo,8
+1257,Se asignó el rapartidor,3
+1257,Comenzó el envio del pedido,2
+1258,Se asignó el rapartidor,4
+1258,Finalizó el envío del pedido,5
+1259,Se asignó el rapartidor,1
+1259,Comenzó el envio del pedido,6
+1260,Se asignó el rapartidor,8
+1260,Comenzó el envio del pedido,15
+1263,Finalizó el envío del pedido,7
+1264,Comenzó el envio del pedido,14
+1265,Finalizó el envío del pedido,6
+1265,Finalizó el envío del pedido,15
+1265,Comenzó el envio del pedido,9
+1266,El repartidor vuelve a estar listo,13
+1267,Se asignó el rapartidor,13
+1268,El repartidor vuelve a estar listo,5
+1268,Comenzó el envio del pedido,13
+1268,Comenzó el envio del pedido,1
+1269,Se asignó el rapartidor,5
+1270,El repartidor vuelve a estar listo,15
+1271,Se asignó el rapartidor,15
+1271,Comenzó el envio del pedido,10
+1271,El repartidor vuelve a estar listo,6
+1272,Comenzó el envio del pedido,15
+1272,Se asignó el rapartidor,6
+1272,El repartidor vuelve a estar listo,7
+1272,Finalizó el envío del pedido,12
+1272,Comenzó el envio del pedido,6
+1273,Se asignó el rapartidor,7
+1276,Finalizó el envío del pedido,9
+1276,Finalizó el envío del pedido,2
+1279,Comenzó el envio del pedido,4
+1281,Finalizó el envío del pedido,10
+1281,Finalizó el envío del pedido,15
+1282,Comenzó el envio del pedido,7
+1283,Finalizó el envío del pedido,14
+1283,Comenzó el envio del pedido,8
+1284,Finalizó el envío del pedido,1
+1285,Finalizó el envío del pedido,13
+1287,El repartidor vuelve a estar listo,9
+1288,Se asignó el rapartidor,9
+1289,El repartidor vuelve a estar listo,12
+1289,Comenzó el envio del pedido,9
+1289,Finalizó el envío del pedido,4
+1290,Se asignó el rapartidor,12
+1291,El repartidor vuelve a estar listo,15
+1291,Comenzó el envio del pedido,12
+1292,Se asignó el rapartidor,15
+1292,El repartidor vuelve a estar listo,10
+1292,Finalizó el envío del pedido,7
+1292,Finalizó el envío del pedido,6
+1293,Se asignó el rapartidor,10
+1293,Finalizó el envío del pedido,9
+1296,El repartidor vuelve a estar listo,2
+1297,Se asignó el rapartidor,2
+1298,El repartidor vuelve a estar listo,9
+1298,Comenzó el envio del pedido,2
+1298,Finalizó el envío del pedido,8
+1299,Se asignó el rapartidor,9
+1299,El repartidor vuelve a estar listo,4
+1299,Comenzó el envio del pedido,11
+1300,Se asignó el rapartidor,4
+1300,Comenzó el envio del pedido,9
+1300,El repartidor vuelve a estar listo,1
+1301,Se asignó el rapartidor,1
+1302,Comenzó el envio del pedido,1
+1302,El repartidor vuelve a estar listo,7
+1303,Se asignó el rapartidor,7
+1303,El repartidor vuelve a estar listo,14
+1303,El repartidor vuelve a estar listo,13
+1304,Se asignó el rapartidor,14
+1305,Se asignó el rapartidor,13
+1305,Comenzó el envio del pedido,4
+1305,Comenzó el envio del pedido,14
+1306,Comenzó el envio del pedido,3
+1308,Comenzó el envio del pedido,5
+1310,Finalizó el envío del pedido,12
+1310,Finalizó el envío del pedido,4
+1311,Finalizó el envío del pedido,14
+1312,El repartidor vuelve a estar listo,6
+1312,Finalizó el envío del pedido,9
+1313,Se asignó el rapartidor,6
+1313,El repartidor vuelve a estar listo,8
+1314,Se asignó el rapartidor,8
+1315,Finalizó el envío del pedido,11
+1315,Finalizó el envío del pedido,2
+1316,El repartidor vuelve a estar listo,4
+1317,Se asignó el rapartidor,4
+1317,Comenzó el envio del pedido,13
+1318,El repartidor vuelve a estar listo,14
+1318,Comenzó el envio del pedido,7
+1318,Finalizó el envío del pedido,1
+1319,Se asignó el rapartidor,14
+1320,Comenzó el envio del pedido,14
+1320,Finalizó el envío del pedido,5
+1321,Comenzó el envio del pedido,6
+1323,Finalizó el envío del pedido,3
+1325,El repartidor vuelve a estar listo,9
+1325,Finalizó el envío del pedido,7
+1326,Se asignó el rapartidor,9
+1327,Comenzó el envio del pedido,9
+1327,Comenzó el envio del pedido,4
+1330,El repartidor vuelve a estar listo,12
+1330,Finalizó el envío del pedido,13
+1331,Se asignó el rapartidor,12
+1331,El repartidor vuelve a estar listo,11
+1331,Finalizó el envío del pedido,6
+1332,Se asignó el rapartidor,11
+1332,Comenzó el envio del pedido,12
+1332,El repartidor vuelve a estar listo,5
+1333,Se asignó el rapartidor,5
+1333,Comenzó el envio del pedido,11
+1333,El repartidor vuelve a estar listo,2
+1333,El repartidor vuelve a estar listo,7
+1334,Comenzó el envio del pedido,5
+1334,Se asignó el rapartidor,2
+1335,Se asignó el rapartidor,7
+1335,Comenzó el envio del pedido,2
+1335,El repartidor vuelve a estar listo,1
+1335,Finalizó el envío del pedido,9
+1336,Comenzó el envio del pedido,7
+1336,Se asignó el rapartidor,1
+1336,Finalizó el envío del pedido,4
+1336,Finalizó el envío del pedido,14
+1340,El repartidor vuelve a estar listo,3
+1341,Se asignó el rapartidor,3
+1341,El repartidor vuelve a estar listo,6
+1341,Comenzó el envio del pedido,15
+1342,Comenzó el envio del pedido,3
+1342,Se asignó el rapartidor,6
+1343,Finalizó el envío del pedido,2
+1344,El repartidor vuelve a estar listo,13
+1344,El repartidor vuelve a estar listo,9
+1345,Se asignó el rapartidor,13
+1345,El repartidor vuelve a estar listo,4
+1346,Se asignó el rapartidor,9
+1347,Se asignó el rapartidor,4
+1348,Comenzó el envio del pedido,4
+1348,Finalizó el envío del pedido,12
+1349,Finalizó el envío del pedido,3
+1350,Finalizó el envío del pedido,7
+1350,Finalizó el envío del pedido,5
+1351,Finalizó el envío del pedido,15
+1352,El repartidor vuelve a estar listo,2
+1352,Finalizó el envío del pedido,11
+1353,Se asignó el rapartidor,2
+1353,Comenzó el envio del pedido,13
+1353,El repartidor vuelve a estar listo,14
+1354,Comenzó el envio del pedido,2
+1354,Se asignó el rapartidor,14
+1355,Finalizó el envío del pedido,4
+1357,El repartidor vuelve a estar listo,3
+1358,Se asignó el rapartidor,3
+1359,Comenzó el envio del pedido,3
+1359,Finalizó el envío del pedido,13
+1362,El repartidor vuelve a estar listo,15
+1363,Se asignó el rapartidor,15
+1363,Comenzó el envio del pedido,8
+1363,El repartidor vuelve a estar listo,4
+1364,Comenzó el envio del pedido,15
+1364,Se asignó el rapartidor,4
+1365,Comenzó el envio del pedido,4
+1365,El repartidor vuelve a estar listo,12
+1365,El repartidor vuelve a estar listo,7
+1366,Se asignó el rapartidor,7
+1366,El repartidor vuelve a estar listo,13
+1367,Se asignó el rapartidor,12
+1367,Comenzó el envio del pedido,7
+1367,El repartidor vuelve a estar listo,5
+1367,Comenzó el envio del pedido,1
+1368,Se asignó el rapartidor,13
+1368,Comenzó el envio del pedido,12
+1368,Finalizó el envío del pedido,2
+1369,Se asignó el rapartidor,5
+1369,Finalizó el envío del pedido,3
+1370,Comenzó el envio del pedido,5
+1372,El repartidor vuelve a estar listo,11
+1373,Se asignó el rapartidor,11
+1373,Finalizó el envío del pedido,8
+1374,Finalizó el envío del pedido,12
+1374,Comenzó el envio del pedido,9
+1375,Finalizó el envío del pedido,1
+1375,Comenzó el envio del pedido,11
+1376,Finalizó el envío del pedido,7
+1376,Finalizó el envío del pedido,5
+1378,Finalizó el envío del pedido,4
+1379,Finalizó el envío del pedido,9
+1380,El repartidor vuelve a estar listo,3
+1381,Se asignó el rapartidor,3
+1381,El repartidor vuelve a estar listo,12
+1382,Se asignó el rapartidor,12
+1383,El repartidor vuelve a estar listo,2
+1383,El repartidor vuelve a estar listo,1
+1383,El repartidor vuelve a estar listo,5
+1383,Finalizó el envío del pedido,15
+1383,Comenzó el envio del pedido,12
+1384,Se asignó el rapartidor,2
+1384,El repartidor vuelve a estar listo,8
+1384,El repartidor vuelve a estar listo,9
+1384,Finalizó el envío del pedido,11
+1385,Comenzó el envio del pedido,2
+1385,Se asignó el rapartidor,5
+1385,Comenzó el envio del pedido,10
+1386,Se asignó el rapartidor,1
+1386,El repartidor vuelve a estar listo,7
+1387,Se asignó el rapartidor,9
+1387,Comenzó el envio del pedido,9
+1388,Se asignó el rapartidor,8
+1389,Comenzó el envio del pedido,8
+1389,Se asignó el rapartidor,7
+1391,Finalizó el envío del pedido,12
+1392,El repartidor vuelve a estar listo,4
+1392,Finalizó el envío del pedido,9
+1393,Se asignó el rapartidor,4
+1393,El repartidor vuelve a estar listo,11
+1393,Finalizó el envío del pedido,10
+1393,Finalizó el envío del pedido,2
+1394,Se asignó el rapartidor,11
+1395,Comenzó el envio del pedido,3
+1395,Comenzó el envio del pedido,14
+1397,El repartidor vuelve a estar listo,9
+1398,Se asignó el rapartidor,9
+1400,El repartidor vuelve a estar listo,12
+1401,Se asignó el rapartidor,12
+1401,El repartidor vuelve a estar listo,10
+1402,Se asignó el rapartidor,10
+1402,El repartidor vuelve a estar listo,2
+1403,Se asignó el rapartidor,2
+1403,El repartidor vuelve a estar listo,15
+1404,Se asignó el rapartidor,15
+1404,Finalizó el envío del pedido,14
+1406,Comenzó el envio del pedido,9
+1408,Finalizó el envío del pedido,8
+1408,Comenzó el envio del pedido,6
+1409,Comenzó el envio del pedido,10
+1409,Comenzó el envio del pedido,4
+1411,Comenzó el envio del pedido,13
+1412,Comenzó el envio del pedido,11
+1413,El repartidor vuelve a estar listo,14
+1414,Se asignó el rapartidor,14
+1414,Finalizó el envío del pedido,3
+1415,Finalizó el envío del pedido,10
+1416,Comenzó el envio del pedido,14
+1417,Finalizó el envío del pedido,4
+1420,Finalizó el envío del pedido,13
+1420,Comenzó el envio del pedido,5
+1421,El repartidor vuelve a estar listo,10
+1422,Se asignó el rapartidor,10
+1423,Comenzó el envio del pedido,10
+1423,Finalizó el envío del pedido,11
+1424,Finalizó el envío del pedido,9
+1425,Finalizó el envío del pedido,6
+1426,El repartidor vuelve a estar listo,4
+1427,Se asignó el rapartidor,4
+1427,Comenzó el envio del pedido,15
+1427,Finalizó el envío del pedido,14
+1428,El repartidor vuelve a estar listo,8
+1428,Comenzó el envio del pedido,4
+1429,Se asignó el rapartidor,8
+1430,Comenzó el envio del pedido,8
+1430,Comenzó el envio del pedido,2
+1431,El repartidor vuelve a estar listo,13
+1431,Finalizó el envío del pedido,5
+1432,Se asignó el rapartidor,13
+1432,Comenzó el envio del pedido,12
+1433,El repartidor vuelve a estar listo,3
+1434,Se asignó el rapartidor,3
+1434,El repartidor vuelve a estar listo,11
+1434,Finalizó el envío del pedido,15
+1435,Se asignó el rapartidor,11
+1435,Finalizó el envío del pedido,4
+1438,Finalizó el envío del pedido,2
+1440,El repartidor vuelve a estar listo,14
+1440,Comenzó el envio del pedido,7
+1441,Se asignó el rapartidor,14
+1441,Finalizó el envío del pedido,10
+1442,Comenzó el envio del pedido,14
+1442,El repartidor vuelve a estar listo,9
+1442,El repartidor vuelve a estar listo,5
+1442,El repartidor vuelve a estar listo,6
+1442,El repartidor vuelve a estar listo,15
+1443,Se asignó el rapartidor,9
+1443,El repartidor vuelve a estar listo,4
+1443,Comenzó el envio del pedido,13
+1444,Comenzó el envio del pedido,9
+1444,Se asignó el rapartidor,5
+1445,Se asignó el rapartidor,6
+1445,Comenzó el envio del pedido,6
+1446,Se asignó el rapartidor,15
+1446,El repartidor vuelve a estar listo,2
+1447,Se asignó el rapartidor,4
+1447,Finalizó el envío del pedido,8
+1448,Se asignó el rapartidor,2
+1448,Finalizó el envío del pedido,9
+1448,Finalizó el envío del pedido,12
+1452,Finalizó el envío del pedido,7
+1452,Comenzó el envio del pedido,2
+1453,El repartidor vuelve a estar listo,9
+1453,Comenzó el envio del pedido,3
+1454,Se asignó el rapartidor,9
+1454,Comenzó el envio del pedido,4
+1456,Finalizó el envío del pedido,13
+1457,Finalizó el envío del pedido,14
+1457,Finalizó el envío del pedido,6
+1457,Comenzó el envio del pedido,11
+1459,Finalizó el envío del pedido,3
+1460,El repartidor vuelve a estar listo,10
+1461,Se asignó el rapartidor,10
+1462,Comenzó el envio del pedido,10
+1464,El repartidor vuelve a estar listo,7
+1464,El repartidor vuelve a estar listo,12
+1465,Se asignó el rapartidor,12
+1465,Comenzó el envio del pedido,1
+1465,El repartidor vuelve a estar listo,3
+1465,El repartidor vuelve a estar listo,8
+1466,Comenzó el envio del pedido,12
+1466,Se asignó el rapartidor,7
+1466,Finalizó el envío del pedido,2
+1467,Se asignó el rapartidor,3
+1467,Comenzó el envio del pedido,7
+1467,Comenzó el envio del pedido,3
+1468,Se asignó el rapartidor,8
+1468,Finalizó el envío del pedido,11
+1469,El repartidor vuelve a estar listo,13
+1469,El repartidor vuelve a estar listo,6
+1469,Comenzó el envio del pedido,8
+1470,Se asignó el rapartidor,6
+1471,Se asignó el rapartidor,13
+1471,Comenzó el envio del pedido,15
+1472,Finalizó el envío del pedido,1
+1473,El repartidor vuelve a estar listo,14
+1473,Finalizó el envío del pedido,4
+1474,Se asignó el rapartidor,14
+1474,Finalizó el envío del pedido,8
+1475,Comenzó el envio del pedido,14
+1477,Comenzó el envio del pedido,13
+1479,El repartidor vuelve a estar listo,11
+1479,Finalizó el envío del pedido,10
+1480,Se asignó el rapartidor,11
+1480,El repartidor vuelve a estar listo,8
+1480,El repartidor vuelve a estar listo,1
+1481,Comenzó el envio del pedido,11
+1481,Se asignó el rapartidor,8
+1481,Finalizó el envío del pedido,7
+1481,El repartidor vuelve a estar listo,2
+1481,Finalizó el envío del pedido,14
+1482,Se asignó el rapartidor,1
+1483,Comenzó el envio del pedido,1
+1483,Se asignó el rapartidor,2
+1484,Finalizó el envío del pedido,3
+1484,Finalizó el envío del pedido,12
+1486,Comenzó el envio del pedido,6
+1488,El repartidor vuelve a estar listo,14
+1489,Se asignó el rapartidor,14
+1489,Finalizó el envío del pedido,15
+1490,Comenzó el envio del pedido,14
+1491,Finalizó el envío del pedido,1
+1492,Finalizó el envío del pedido,13
+1492,Finalizó el envío del pedido,6
+1493,El repartidor vuelve a estar listo,4
+1494,Se asignó el rapartidor,4
+1494,Comenzó el envio del pedido,5
+1495,Comenzó el envio del pedido,4
+1496,El repartidor vuelve a estar listo,7
+1497,Se asignó el rapartidor,7
+1497,El repartidor vuelve a estar listo,10
+1498,Se asignó el rapartidor,10
+1498,El repartidor vuelve a estar listo,6
+1498,Finalizó el envío del pedido,11
+1499,Se asignó el rapartidor,6
+1499,Comenzó el envio del pedido,10
+1500,El repartidor vuelve a estar listo,1
+1500,Comenzó el envio del pedido,6
+1501,Se asignó el rapartidor,1
+1502,El repartidor vuelve a estar listo,3
+1502,Finalizó el envío del pedido,14
+1503,Se asignó el rapartidor,3
+1503,Comenzó el envio del pedido,7
+1503,El repartidor vuelve a estar listo,12
+1504,Comenzó el envio del pedido,3
+1504,Se asignó el rapartidor,12
+1504,Finalizó el envío del pedido,5
+1505,Comenzó el envio del pedido,12
+1507,El repartidor vuelve a estar listo,15
+1507,El repartidor vuelve a estar listo,13
+1508,Se asignó el rapartidor,15
+1509,Comenzó el envio del pedido,15
+1509,Se asignó el rapartidor,13
+1509,Finalizó el envío del pedido,3
+1509,Finalizó el envío del pedido,7
+1510,Finalizó el envío del pedido,4
+1510,Finalizó el envío del pedido,10
+1510,Comenzó el envio del pedido,13
+1511,Finalizó el envío del pedido,6
+1513,Comenzó el envio del pedido,9
+1514,El repartidor vuelve a estar listo,5
+1514,Comenzó el envio del pedido,1
+1515,Se asignó el rapartidor,5
+1515,El repartidor vuelve a estar listo,14
+1515,El repartidor vuelve a estar listo,3
+1516,Se asignó el rapartidor,14
+1516,El repartidor vuelve a estar listo,11
+1516,El repartidor vuelve a estar listo,7
+1516,Comenzó el envio del pedido,14
+1516,Comenzó el envio del pedido,5
+1517,Se asignó el rapartidor,3
+1517,Comenzó el envio del pedido,3
+1518,Se asignó el rapartidor,11
+1518,Comenzó el envio del pedido,2
+1519,Se asignó el rapartidor,7
+1520,Comenzó el envio del pedido,7
+1520,Finalizó el envío del pedido,13
+1522,El repartidor vuelve a estar listo,6
+1522,El repartidor vuelve a estar listo,10
+1523,Se asignó el rapartidor,10
+1523,Finalizó el envío del pedido,12
+1524,Comenzó el envio del pedido,10
+1524,Se asignó el rapartidor,6
+1524,Finalizó el envío del pedido,15
+1524,Finalizó el envío del pedido,2
+1526,El repartidor vuelve a estar listo,4
+1526,Finalizó el envío del pedido,5
+1527,Se asignó el rapartidor,4
+1527,Finalizó el envío del pedido,3
+1528,Finalizó el envío del pedido,7
+1530,El repartidor vuelve a estar listo,13
+1530,Finalizó el envío del pedido,1
+1530,Finalizó el envío del pedido,14
+1531,Se asignó el rapartidor,13
+1531,El repartidor vuelve a estar listo,2
+1532,Comenzó el envio del pedido,13
+1532,Se asignó el rapartidor,2
+1533,Comenzó el envio del pedido,2
+1533,Finalizó el envío del pedido,9
+1535,Comenzó el envio del pedido,8
+1536,El repartidor vuelve a estar listo,5
+1537,Se asignó el rapartidor,5
+1537,El repartidor vuelve a estar listo,7
+1537,Finalizó el envío del pedido,10
+1538,Se asignó el rapartidor,7
+1538,Comenzó el envio del pedido,5
+1538,El repartidor vuelve a estar listo,3
+1539,Comenzó el envio del pedido,7
+1539,Se asignó el rapartidor,3
+1540,El repartidor vuelve a estar listo,15
+1540,Comenzó el envio del pedido,11
+1541,Se asignó el rapartidor,15
+1541,Finalizó el envío del pedido,8
+1542,El repartidor vuelve a estar listo,12
+1542,Comenzó el envio del pedido,15
+1543,Se asignó el rapartidor,12
+1544,Comenzó el envio del pedido,12
+1544,El repartidor vuelve a estar listo,14
+1545,Se asignó el rapartidor,14
+1545,Finalizó el envío del pedido,13
+1546,El repartidor vuelve a estar listo,1
+1547,Se asignó el rapartidor,1
+1547,El repartidor vuelve a estar listo,8
+1547,Finalizó el envío del pedido,2
+1548,Comenzó el envio del pedido,1
+1548,Se asignó el rapartidor,8
+1549,Finalizó el envío del pedido,11
+1549,Finalizó el envío del pedido,15
+1551,El repartidor vuelve a estar listo,10
+1551,Finalizó el envío del pedido,5
+1552,Se asignó el rapartidor,10
+1552,Finalizó el envío del pedido,12
+1552,Finalizó el envío del pedido,7
+1553,El repartidor vuelve a estar listo,9
+1553,Comenzó el envio del pedido,10
+1553,Comenzó el envio del pedido,3
+1554,Se asignó el rapartidor,9
+1557,El repartidor vuelve a estar listo,15
+1557,Comenzó el envio del pedido,8
+1558,Se asignó el rapartidor,15
+1558,El repartidor vuelve a estar listo,11
+1559,Se asignó el rapartidor,11
+1559,Comenzó el envio del pedido,15
+1559,El repartidor vuelve a estar listo,13
+1560,Se asignó el rapartidor,13
+1561,Comenzó el envio del pedido,13
+1561,El repartidor vuelve a estar listo,12
+1562,Se asignó el rapartidor,12
+1562,El repartidor vuelve a estar listo,2
+1562,Finalizó el envío del pedido,3
+1563,Se asignó el rapartidor,2
+1563,Comenzó el envio del pedido,12
+1563,Finalizó el envío del pedido,8
+1563,Finalizó el envío del pedido,1
+1563,Comenzó el envio del pedido,6
+1564,Finalizó el envío del pedido,15
+1565,El repartidor vuelve a estar listo,5
+1565,Comenzó el envio del pedido,14
+1566,Se asignó el rapartidor,5
+1566,El repartidor vuelve a estar listo,7
+1567,Se asignó el rapartidor,7
+1567,Finalizó el envío del pedido,10
+1567,Finalizó el envío del pedido,13
+1569,El repartidor vuelve a estar listo,8
+1570,Se asignó el rapartidor,8
+1570,El repartidor vuelve a estar listo,15
+1571,Se asignó el rapartidor,15
+1571,El repartidor vuelve a estar listo,3
+1572,Se asignó el rapartidor,3
+1573,Comenzó el envio del pedido,15
+1574,El repartidor vuelve a estar listo,13
+1575,Se asignó el rapartidor,13
+1575,Finalizó el envío del pedido,6
+1579,El repartidor vuelve a estar listo,1
+1580,Se asignó el rapartidor,1
+1581,Comenzó el envio del pedido,1
+1581,Finalizó el envío del pedido,12
+1583,El repartidor vuelve a estar listo,10
+1583,Finalizó el envío del pedido,14
+1583,Comenzó el envio del pedido,3
+1584,Se asignó el rapartidor,10
+1584,Comenzó el envio del pedido,11
+1584,Comenzó el envio del pedido,8
+1585,Comenzó el envio del pedido,10
+1588,Comenzó el envio del pedido,7
+1588,El repartidor vuelve a estar listo,6
+1588,Comenzó el envio del pedido,2
+1589,Se asignó el rapartidor,6
+1590,Comenzó el envio del pedido,4
+1590,Finalizó el envío del pedido,15
+1591,Finalizó el envío del pedido,8
+1594,Comenzó el envio del pedido,5
+1595,Finalizó el envío del pedido,11
+1596,Finalizó el envío del pedido,7
+1596,Finalizó el envío del pedido,3
+1597,Finalizó el envío del pedido,1
+1597,Finalizó el envío del pedido,10
+1599,El repartidor vuelve a estar listo,8
+1600,Comenzó el envio del pedido,6
+1600,Se asignó el rapartidor,8
+1601,El repartidor vuelve a estar listo,12
+1601,El repartidor vuelve a estar listo,14
+1601,Comenzó el envio del pedido,8
+1602,Se asignó el rapartidor,12
+1603,Comenzó el envio del pedido,12
+1603,Se asignó el rapartidor,14
+1603,Finalizó el envío del pedido,5
+1603,Finalizó el envío del pedido,4
+1604,El repartidor vuelve a estar listo,7
+1604,Comenzó el envio del pedido,14
+1604,Comenzó el envio del pedido,9
+1605,Se asignó el rapartidor,7
+1606,El repartidor vuelve a estar listo,15
+1606,Comenzó el envio del pedido,7
+1606,Finalizó el envío del pedido,2
+1607,Se asignó el rapartidor,15
+1607,El repartidor vuelve a estar listo,11
+1608,Se asignó el rapartidor,11
+1609,Comenzó el envio del pedido,11
+1609,El repartidor vuelve a estar listo,3
+1609,Finalizó el envío del pedido,14
+1610,Se asignó el rapartidor,3
+1610,El repartidor vuelve a estar listo,10
+1611,Se asignó el rapartidor,10
+1612,Comenzó el envio del pedido,13
+1612,Comenzó el envio del pedido,10
+1612,El repartidor vuelve a estar listo,5
+1613,Se asignó el rapartidor,5
+1613,El repartidor vuelve a estar listo,1
+1614,Se asignó el rapartidor,1
+1615,El repartidor vuelve a estar listo,14
+1615,Finalizó el envío del pedido,12
+1616,Se asignó el rapartidor,14
+1616,El repartidor vuelve a estar listo,4
+1616,Finalizó el envío del pedido,6
+1616,Finalizó el envío del pedido,10
+1617,Comenzó el envio del pedido,14
+1617,Se asignó el rapartidor,4
+1617,Finalizó el envío del pedido,9
+1617,Comenzó el envio del pedido,3
+1619,Finalizó el envío del pedido,13
+1619,Comenzó el envio del pedido,4
+1620,Finalizó el envío del pedido,8
+1620,Finalizó el envío del pedido,7
+1621,El repartidor vuelve a estar listo,10
+1622,Se asignó el rapartidor,10
+1624,El repartidor vuelve a estar listo,2
+1625,Se asignó el rapartidor,2
+1625,Finalizó el envío del pedido,11
+1626,Comenzó el envio del pedido,2
+1627,Finalizó el envío del pedido,3
+1628,El repartidor vuelve a estar listo,13
+1628,El repartidor vuelve a estar listo,12
+1628,Comenzó el envio del pedido,15
+1629,Se asignó el rapartidor,13
+1629,Finalizó el envío del pedido,4
+1630,Se asignó el rapartidor,12
+1631,El repartidor vuelve a estar listo,9
+1631,Comenzó el envio del pedido,12
+1632,Se asignó el rapartidor,9
+1633,Finalizó el envío del pedido,2
+1634,El repartidor vuelve a estar listo,6
+1634,Finalizó el envío del pedido,14
+1635,Se asignó el rapartidor,6
+1635,El repartidor vuelve a estar listo,7
+1635,Comenzó el envio del pedido,6
+1635,Comenzó el envio del pedido,10
+1636,Se asignó el rapartidor,7
+1636,Finalizó el envío del pedido,15
+1637,El repartidor vuelve a estar listo,3
+1637,Finalizó el envío del pedido,12
+1637,Comenzó el envio del pedido,7
+1638,Se asignó el rapartidor,3
+1640,El repartidor vuelve a estar listo,4
+1641,Se asignó el rapartidor,4
+1641,El repartidor vuelve a estar listo,8
+1641,El repartidor vuelve a estar listo,2
+1642,Se asignó el rapartidor,8
+1642,Comenzó el envio del pedido,4
+1642,El repartidor vuelve a estar listo,11
+1643,Se asignó el rapartidor,2
+1643,Comenzó el envio del pedido,13
+1643,Comenzó el envio del pedido,2
+1644,Se asignó el rapartidor,11
+1644,El repartidor vuelve a estar listo,15
+1644,El repartidor vuelve a estar listo,12
+1644,Finalizó el envío del pedido,10
+1645,Se asignó el rapartidor,15
+1645,Comenzó el envio del pedido,11
+1646,Comenzó el envio del pedido,15
+1646,Se asignó el rapartidor,12
+1646,Comenzó el envio del pedido,12
+1646,Comenzó el envio del pedido,1
+1647,Comenzó el envio del pedido,3
+1648,Finalizó el envío del pedido,7
+1650,Finalizó el envío del pedido,11
+1652,El repartidor vuelve a estar listo,14
+1652,Finalizó el envío del pedido,13
+1652,Comenzó el envio del pedido,5
+1653,Se asignó el rapartidor,14
+1653,Finalizó el envío del pedido,6
+1653,El repartidor vuelve a estar listo,10
+1654,Se asignó el rapartidor,10
+1656,El repartidor vuelve a estar listo,11
+1656,Comenzó el envio del pedido,14
+1657,Se asignó el rapartidor,11
+1658,Finalizó el envío del pedido,2
+1659,El repartidor vuelve a estar listo,7
+1660,Se asignó el rapartidor,7
+1660,Finalizó el envío del pedido,3
+1660,Finalizó el envío del pedido,4
+1661,El repartidor vuelve a estar listo,13
+1661,Comenzó el envio del pedido,7
+1661,Finalizó el envío del pedido,12
+1662,Se asignó el rapartidor,13
+1662,Finalizó el envío del pedido,15
+1663,Finalizó el envío del pedido,14
+1665,Comenzó el envio del pedido,13
+1665,Finalizó el envío del pedido,1
+1666,Finalizó el envío del pedido,7
+1669,Finalizó el envío del pedido,5
+1671,El repartidor vuelve a estar listo,14
+1672,Se asignó el rapartidor,14
+1672,El repartidor vuelve a estar listo,6
+1672,El repartidor vuelve a estar listo,7
+1673,Comenzó el envio del pedido,14
+1673,Se asignó el rapartidor,6
+1673,El repartidor vuelve a estar listo,3
+1673,El repartidor vuelve a estar listo,2
+1674,Se asignó el rapartidor,7
+1674,Comenzó el envio del pedido,9
+1675,Comenzó el envio del pedido,7
+1675,Se asignó el rapartidor,3
+1676,Se asignó el rapartidor,2
+1676,El repartidor vuelve a estar listo,12
+1677,Comenzó el envio del pedido,2
+1677,Se asignó el rapartidor,12
+1677,Finalizó el envío del pedido,13
+1678,El repartidor vuelve a estar listo,15
+1679,Se asignó el rapartidor,15
+1679,El repartidor vuelve a estar listo,4
+1680,Comenzó el envio del pedido,15
+1680,Se asignó el rapartidor,4
+1681,Finalizó el envío del pedido,9
+1681,Comenzó el envio del pedido,10
+1684,El repartidor vuelve a estar listo,1
+1684,Finalizó el envío del pedido,14
+1684,Comenzó el envio del pedido,12
+1684,Comenzó el envio del pedido,8
+1685,Se asignó el rapartidor,1
+1686,El repartidor vuelve a estar listo,5
+1686,Comenzó el envio del pedido,1
+1686,Comenzó el envio del pedido,4
+1687,Se asignó el rapartidor,5
+1687,Finalizó el envío del pedido,2
+1687,Comenzó el envio del pedido,6
+1688,El repartidor vuelve a estar listo,9
+1689,Se asignó el rapartidor,9
+1689,Comenzó el envio del pedido,9
+1689,Finalizó el envío del pedido,10
+1690,El repartidor vuelve a estar listo,13
+1691,Se asignó el rapartidor,13
+1691,Finalizó el envío del pedido,4
+1692,Comenzó el envio del pedido,13
+1693,Finalizó el envío del pedido,15
+1693,Finalizó el envío del pedido,6
+1694,Finalizó el envío del pedido,8
+1694,Finalizó el envío del pedido,7
+1696,El repartidor vuelve a estar listo,14
+1696,El repartidor vuelve a estar listo,4
+1697,Se asignó el rapartidor,14
+1697,El repartidor vuelve a estar listo,10
+1697,Finalizó el envío del pedido,1
+1697,Finalizó el envío del pedido,13
+1698,Se asignó el rapartidor,4
+1698,Comenzó el envio del pedido,14
+1698,El repartidor vuelve a estar listo,2
+1699,Se asignó el rapartidor,10
+1699,El repartidor vuelve a estar listo,6
+1699,Finalizó el envío del pedido,12
+1700,Se asignó el rapartidor,2
+1700,Comenzó el envio del pedido,10
+1700,Comenzó el envio del pedido,3
+1700,Comenzó el envio del pedido,11
+1701,Se asignó el rapartidor,6
+1702,Comenzó el envio del pedido,6
+1702,El repartidor vuelve a estar listo,13
+1703,Se asignó el rapartidor,13
+1704,El repartidor vuelve a estar listo,8
+1704,Finalizó el envío del pedido,3
+1704,Comenzó el envio del pedido,13
+1705,Se asignó el rapartidor,8
+1705,Finalizó el envío del pedido,9
+1705,Comenzó el envio del pedido,8
+1707,El repartidor vuelve a estar listo,15
+1708,Se asignó el rapartidor,15
+1709,El repartidor vuelve a estar listo,1
+1709,El repartidor vuelve a estar listo,3
+1710,Se asignó el rapartidor,3
+1711,Se asignó el rapartidor,1
+1711,Finalizó el envío del pedido,11
+1712,Finalizó el envío del pedido,6
+1713,Finalizó el envío del pedido,14
+1714,El repartidor vuelve a estar listo,7
+1714,El repartidor vuelve a estar listo,12
+1714,Finalizó el envío del pedido,8
+1714,Finalizó el envío del pedido,13
+1715,Se asignó el rapartidor,7
+1716,Se asignó el rapartidor,12
+1717,Comenzó el envio del pedido,12
+1719,Finalizó el envío del pedido,10
+1719,Comenzó el envio del pedido,1
+1722,El repartidor vuelve a estar listo,11
+1722,El repartidor vuelve a estar listo,9
+1723,Se asignó el rapartidor,11
+1723,Comenzó el envio del pedido,5
+1723,El repartidor vuelve a estar listo,6
+1724,Se asignó el rapartidor,9
+1724,Comenzó el envio del pedido,3
+1724,El repartidor vuelve a estar listo,8
+1725,Comenzó el envio del pedido,9
+1725,Se asignó el rapartidor,6
+1725,El repartidor vuelve a estar listo,13
+1725,Finalizó el envío del pedido,1
+1726,Se asignó el rapartidor,8
+1727,Se asignó el rapartidor,13
+1727,Finalizó el envío del pedido,12
+1728,Comenzó el envio del pedido,13
+1729,El repartidor vuelve a estar listo,14
+1730,Se asignó el rapartidor,14
+1730,Finalizó el envío del pedido,3
+1732,El repartidor vuelve a estar listo,1
+1732,Finalizó el envío del pedido,5
+1732,Comenzó el envio del pedido,4
+1732,Comenzó el envio del pedido,2
+1733,Se asignó el rapartidor,1
+1734,Comenzó el envio del pedido,1
+1734,Comenzó el envio del pedido,15
+1736,El repartidor vuelve a estar listo,10
+1737,Se asignó el rapartidor,10
+1737,El repartidor vuelve a estar listo,3
+1737,Comenzó el envio del pedido,7
+1738,Comenzó el envio del pedido,10
+1738,Se asignó el rapartidor,3
+1741,El repartidor vuelve a estar listo,12
+1742,Se asignó el rapartidor,12
+1742,El repartidor vuelve a estar listo,5
+1743,Se asignó el rapartidor,5
+1743,Finalizó el envío del pedido,13
+1744,Comenzó el envio del pedido,5
+1745,Finalizó el envío del pedido,9
+1745,Finalizó el envío del pedido,2
+1747,Finalizó el envío del pedido,10
+1748,Finalizó el envío del pedido,7
+1749,Finalizó el envío del pedido,15
+1750,Finalizó el envío del pedido,5
+1750,Comenzó el envio del pedido,14
+1751,Finalizó el envío del pedido,4
+1751,Finalizó el envío del pedido,1
+1757,El repartidor vuelve a estar listo,5
+1757,El repartidor vuelve a estar listo,10
+1758,Se asignó el rapartidor,10
+1758,El repartidor vuelve a estar listo,2
+1758,Comenzó el envio del pedido,11
+1759,Comenzó el envio del pedido,10
+1759,Se asignó el rapartidor,5
+1759,El repartidor vuelve a estar listo,7
+1759,El repartidor vuelve a estar listo,13
+1759,Comenzó el envio del pedido,8
+1760,Se asignó el rapartidor,2
+1761,Se asignó el rapartidor,13
+1761,Comenzó el envio del pedido,2
+1762,Se asignó el rapartidor,7
+1763,Finalizó el envío del pedido,14
+1764,Comenzó el envio del pedido,7
+1764,El repartidor vuelve a estar listo,15
+1765,Se asignó el rapartidor,15
+1765,El repartidor vuelve a estar listo,9
+1766,Se asignó el rapartidor,9
+1767,Finalizó el envío del pedido,10
+1767,Comenzó el envio del pedido,6
+1768,Comenzó el envio del pedido,9
+1769,El repartidor vuelve a estar listo,1
+1770,Se asignó el rapartidor,1
+1770,El repartidor vuelve a estar listo,4
+1770,Comenzó el envio del pedido,12
+1771,Se asignó el rapartidor,4
+1771,Comenzó el envio del pedido,1
+1772,Finalizó el envío del pedido,8
+1777,Finalizó el envío del pedido,7
+1777,El repartidor vuelve a estar listo,14
+1777,Finalizó el envío del pedido,9
+1777,Finalizó el envío del pedido,11
+1778,Se asignó el rapartidor,14
+1779,Comenzó el envio del pedido,14
+1779,Comenzó el envio del pedido,4
+1780,Finalizó el envío del pedido,2
+1780,Finalizó el envío del pedido,1
+1781,El repartidor vuelve a estar listo,10
+1781,Comenzó el envio del pedido,3
+1782,Se asignó el rapartidor,10
+1783,Comenzó el envio del pedido,10
+1783,Finalizó el envío del pedido,4
+1784,Finalizó el envío del pedido,12
+1785,El repartidor vuelve a estar listo,8
+1786,Se asignó el rapartidor,8
+1787,El repartidor vuelve a estar listo,9
+1787,Finalizó el envío del pedido,6
+1787,Finalizó el envío del pedido,14
+1788,Se asignó el rapartidor,9
+1788,El repartidor vuelve a estar listo,4
+1789,Se asignó el rapartidor,4
+1790,El repartidor vuelve a estar listo,7
+1790,El repartidor vuelve a estar listo,1
+1790,Finalizó el envío del pedido,3
+1790,Comenzó el envio del pedido,13
+1791,Se asignó el rapartidor,1
+1792,Se asignó el rapartidor,7
+1793,Comenzó el envio del pedido,7
+1793,Comenzó el envio del pedido,8
+1796,El repartidor vuelve a estar listo,11
+1796,El repartidor vuelve a estar listo,14
+1797,Se asignó el rapartidor,11
+1797,Finalizó el envío del pedido,7
+1798,Se asignó el rapartidor,14
+1798,El repartidor vuelve a estar listo,12
+1799,Se asignó el rapartidor,12
+1799,El repartidor vuelve a estar listo,3
+1799,Comenzó el envio del pedido,15
+1800,Comenzó el envio del pedido,12
+1800,Se asignó el rapartidor,3
+1800,Comenzó el envio del pedido,14
+1800,El repartidor vuelve a estar listo,2
+1801,Se asignó el rapartidor,2
+1801,Comenzó el envio del pedido,3
+1801,Finalizó el envío del pedido,10
+1802,Finalizó el envío del pedido,8
+1802,El repartidor vuelve a estar listo,7
+1803,Se asignó el rapartidor,7
+1804,Comenzó el envio del pedido,7
+1805,Comenzó el envio del pedido,11
+1806,Finalizó el envío del pedido,15
+1807,El repartidor vuelve a estar listo,6
+1808,Se asignó el rapartidor,6
+1809,Comenzó el envio del pedido,6
+1810,Finalizó el envío del pedido,13
+1811,El repartidor vuelve a estar listo,8
+1812,Se asignó el rapartidor,8
+1813,El repartidor vuelve a estar listo,15
+1814,Se asignó el rapartidor,15
+1815,Comenzó el envio del pedido,15
+1815,Finalizó el envío del pedido,11
+1817,Comenzó el envio del pedido,8
+1818,Finalizó el envío del pedido,3
+1818,Finalizó el envío del pedido,12
+1819,Finalizó el envío del pedido,14
+1820,El repartidor vuelve a estar listo,10
+1820,Comenzó el envio del pedido,5
+1821,Se asignó el rapartidor,10
+1822,Finalizó el envío del pedido,7
+1822,Finalizó el envío del pedido,15
+1822,Finalizó el envío del pedido,6
+1822,Comenzó el envio del pedido,10
+1824,Finalizó el envío del pedido,8
+1824,Comenzó el envio del pedido,4
+1825,El repartidor vuelve a estar listo,11
+1826,Se asignó el rapartidor,11
+1827,Finalizó el envío del pedido,5
+1827,Comenzó el envio del pedido,11
+1830,El repartidor vuelve a estar listo,13
+1830,El repartidor vuelve a estar listo,15
+1831,Se asignó el rapartidor,13
+1831,El repartidor vuelve a estar listo,8
+1832,Comenzó el envio del pedido,13
+1832,Se asignó el rapartidor,15
+1832,Finalizó el envío del pedido,4
+1832,Comenzó el envio del pedido,15
+1832,Comenzó el envio del pedido,9
+1833,Se asignó el rapartidor,8
+1834,El repartidor vuelve a estar listo,5
+1835,Se asignó el rapartidor,5
+1836,El repartidor vuelve a estar listo,3
+1836,El repartidor vuelve a estar listo,6
+1836,Comenzó el envio del pedido,5
+1836,Finalizó el envío del pedido,11
+1836,Comenzó el envio del pedido,8
+1837,Se asignó el rapartidor,3
+1837,El repartidor vuelve a estar listo,12
+1838,Se asignó el rapartidor,6
+1838,Finalizó el envío del pedido,10
+1839,Comenzó el envio del pedido,6
+1839,Se asignó el rapartidor,12
+1839,El repartidor vuelve a estar listo,14
+1840,Se asignó el rapartidor,14
+1840,Comenzó el envio del pedido,12
+1840,El repartidor vuelve a estar listo,4
+1840,El repartidor vuelve a estar listo,7
+1841,Se asignó el rapartidor,4
+1842,Se asignó el rapartidor,7
+1842,Comenzó el envio del pedido,14
+1843,Comenzó el envio del pedido,7
+1844,Finalizó el envío del pedido,13
+1845,El repartidor vuelve a estar listo,11
+1845,Finalizó el envío del pedido,9
+1846,Se asignó el rapartidor,11
+1847,Comenzó el envio del pedido,11
+1847,Comenzó el envio del pedido,4
+1847,Finalizó el envío del pedido,14
+1848,Finalizó el envío del pedido,15
+1848,Comenzó el envio del pedido,3
+1849,Finalizó el envío del pedido,5
+1852,Finalizó el envío del pedido,12
+1853,El repartidor vuelve a estar listo,14
+1853,Finalizó el envío del pedido,6
+1854,Se asignó el rapartidor,14
+1854,El repartidor vuelve a estar listo,10
+1854,Finalizó el envío del pedido,8
+1855,Comenzó el envio del pedido,14
+1855,Se asignó el rapartidor,10
+1855,Comenzó el envio del pedido,1
+1855,Finalizó el envío del pedido,11
+1856,Comenzó el envio del pedido,10
+1857,El repartidor vuelve a estar listo,13
+1858,Se asignó el rapartidor,13
+1858,El repartidor vuelve a estar listo,9
+1858,Finalizó el envío del pedido,4
+1859,Comenzó el envio del pedido,13
+1859,Se asignó el rapartidor,9
+1859,Finalizó el envío del pedido,7
+1860,Comenzó el envio del pedido,9
+1861,Finalizó el envío del pedido,3
+1863,El repartidor vuelve a estar listo,5
+1864,Se asignó el rapartidor,5
+1864,El repartidor vuelve a estar listo,15
+1864,El repartidor vuelve a estar listo,11
+1865,Comenzó el envio del pedido,5
+1865,Se asignó el rapartidor,15
+1865,El repartidor vuelve a estar listo,12
+1865,Comenzó el envio del pedido,15
+1866,Se asignó el rapartidor,11
+1867,Comenzó el envio del pedido,11
+1867,Se asignó el rapartidor,12
+1868,Comenzó el envio del pedido,12
+1868,Finalizó el envío del pedido,10
+1868,El repartidor vuelve a estar listo,6
+1869,Se asignó el rapartidor,6
+1870,Comenzó el envio del pedido,6
+1870,El repartidor vuelve a estar listo,4
+1871,Se asignó el rapartidor,4
+1872,El repartidor vuelve a estar listo,8
+1872,Finalizó el envío del pedido,9
+1872,Comenzó el envio del pedido,4
+1873,Se asignó el rapartidor,8
+1873,Finalizó el envío del pedido,14
+1873,Comenzó el envio del pedido,2
+1873,Finalizó el envío del pedido,13
+1874,Comenzó el envio del pedido,8
+1874,Finalizó el envío del pedido,1
+1874,El repartidor vuelve a estar listo,3
+1875,Se asignó el rapartidor,3
+1876,Comenzó el envio del pedido,3
+1876,El repartidor vuelve a estar listo,7
+1877,Se asignó el rapartidor,7
+1878,Comenzó el envio del pedido,7
+1879,Finalizó el envío del pedido,8
+1881,El repartidor vuelve a estar listo,10
+1881,Finalizó el envío del pedido,15
+1882,Se asignó el rapartidor,10
+1882,Finalizó el envío del pedido,6
+1883,Comenzó el envio del pedido,10
+1883,Finalizó el envío del pedido,5
+1885,El repartidor vuelve a estar listo,9
+1885,El repartidor vuelve a estar listo,8
+1886,Se asignó el rapartidor,9
+1886,Finalizó el envío del pedido,11
+1887,Se asignó el rapartidor,8
+1887,Comenzó el envio del pedido,9
+1887,Finalizó el envío del pedido,12
+1888,El repartidor vuelve a estar listo,13
+1888,Comenzó el envio del pedido,8
+1888,Finalizó el envío del pedido,2
+1889,Se asignó el rapartidor,13
+1889,Finalizó el envío del pedido,3
+1890,Comenzó el envio del pedido,13
+1890,Finalizó el envío del pedido,10
+1892,El repartidor vuelve a estar listo,14
+1892,Finalizó el envío del pedido,4
+1893,Se asignó el rapartidor,14
+1894,Comenzó el envio del pedido,14
+1894,El repartidor vuelve a estar listo,1
+1895,Se asignó el rapartidor,1
+1895,El repartidor vuelve a estar listo,6
+1896,Comenzó el envio del pedido,1
+1896,Se asignó el rapartidor,6
+1896,Finalizó el envío del pedido,7
+1896,Finalizó el envío del pedido,9
+1897,Comenzó el envio del pedido,6
+1898,El repartidor vuelve a estar listo,15
+1898,El repartidor vuelve a estar listo,10
+1899,Se asignó el rapartidor,15
+1900,Comenzó el envio del pedido,15
+1900,Se asignó el rapartidor,10
+1900,Comenzó el envio del pedido,10
+1901,Finalizó el envío del pedido,14
+1902,El repartidor vuelve a estar listo,5
+1903,Se asignó el rapartidor,5
+1903,El repartidor vuelve a estar listo,3
+1903,Finalizó el envío del pedido,8
+1904,Comenzó el envio del pedido,5
+1904,Se asignó el rapartidor,3
+1904,El repartidor vuelve a estar listo,2
+1905,Comenzó el envio del pedido,3
+1905,Se asignó el rapartidor,2
+1905,Finalizó el envío del pedido,13
+1906,El repartidor vuelve a estar listo,11
+1906,El repartidor vuelve a estar listo,9
+1907,Se asignó el rapartidor,11
+1907,El repartidor vuelve a estar listo,12
+1908,Comenzó el envio del pedido,11
+1908,Se asignó el rapartidor,9
+1909,Comenzó el envio del pedido,9
+1909,Se asignó el rapartidor,12
+1909,El repartidor vuelve a estar listo,14
+1910,Comenzó el envio del pedido,12
+1910,Se asignó el rapartidor,14
+1910,Finalizó el envío del pedido,1
+1910,Finalizó el envío del pedido,10
+1912,El repartidor vuelve a estar listo,4
+1912,Comenzó el envio del pedido,2
+1913,Se asignó el rapartidor,4
+1913,Finalizó el envío del pedido,6
+1914,Comenzó el envio del pedido,4
+1915,El repartidor vuelve a estar listo,7
+1916,Se asignó el rapartidor,7
+1916,Finalizó el envío del pedido,15
+1918,Comenzó el envio del pedido,7
+1919,El repartidor vuelve a estar listo,8
+1919,Finalizó el envío del pedido,9
+1919,Finalizó el envío del pedido,3
+1919,Finalizó el envío del pedido,4
+1920,Se asignó el rapartidor,8
+1920,Finalizó el envío del pedido,5
+1921,El repartidor vuelve a estar listo,13
+1921,El repartidor vuelve a estar listo,10
+1922,Se asignó el rapartidor,13
+1923,Se asignó el rapartidor,10
+1924,Comenzó el envio del pedido,10
+1924,Finalizó el envío del pedido,12
+1924,Finalizó el envío del pedido,7
+1925,El repartidor vuelve a estar listo,1
+1925,El repartidor vuelve a estar listo,4
+1925,Finalizó el envío del pedido,2
+1926,Se asignó el rapartidor,1
+1927,Se asignó el rapartidor,4
+1927,Finalizó el envío del pedido,11
+1928,Comenzó el envio del pedido,4
+1930,El repartidor vuelve a estar listo,6
+1930,El repartidor vuelve a estar listo,9
+1930,El repartidor vuelve a estar listo,7
+1931,Se asignó el rapartidor,9
+1932,Se asignó el rapartidor,7
+1933,Se asignó el rapartidor,6
+1933,El repartidor vuelve a estar listo,15
+1933,Finalizó el envío del pedido,10
+1933,Finalizó el envío del pedido,4
+1934,Comenzó el envio del pedido,6
+1934,Se asignó el rapartidor,15
+1934,El repartidor vuelve a estar listo,3
+1935,Se asignó el rapartidor,3
+1937,El repartidor vuelve a estar listo,5
+1937,Comenzó el envio del pedido,9
+1937,Comenzó el envio del pedido,7
+1938,Se asignó el rapartidor,5
+1938,El repartidor vuelve a estar listo,2
+1939,Comenzó el envio del pedido,5
+1939,Se asignó el rapartidor,2
+1939,Comenzó el envio del pedido,8
+1939,El repartidor vuelve a estar listo,12
+1939,El repartidor vuelve a estar listo,4
+1939,Finalizó el envío del pedido,6
+1940,Se asignó el rapartidor,12
+1941,Se asignó el rapartidor,4
+1942,Comenzó el envio del pedido,1
+1942,Comenzó el envio del pedido,14
+1943,El repartidor vuelve a estar listo,10
+1944,Se asignó el rapartidor,10
+1944,Finalizó el envío del pedido,8
+1945,El repartidor vuelve a estar listo,6
+1946,Se asignó el rapartidor,6
+1947,El repartidor vuelve a estar listo,11
+1947,Finalizó el envío del pedido,9
+1948,Se asignó el rapartidor,11
+1948,Finalizó el envío del pedido,1
+1949,Comenzó el envio del pedido,11
+1949,Comenzó el envio del pedido,13
+1950,El repartidor vuelve a estar listo,8
+1950,Comenzó el envio del pedido,15
+1951,Se asignó el rapartidor,8
+1952,Finalizó el envío del pedido,7
+1954,El repartidor vuelve a estar listo,1
+1954,Comenzó el envio del pedido,12
+1955,Se asignó el rapartidor,1
+1955,Finalizó el envío del pedido,5
+1957,El repartidor vuelve a estar listo,9
+1958,Se asignó el rapartidor,9
+1959,Finalizó el envío del pedido,15
+1959,Comenzó el envio del pedido,8
+1959,Comenzó el envio del pedido,9
+1961,Finalizó el envío del pedido,14
+1962,Finalizó el envío del pedido,12
+1965,Finalizó el envío del pedido,13
+1966,Comenzó el envio del pedido,10
+1967,El repartidor vuelve a estar listo,7
+1967,Comenzó el envio del pedido,3
+1968,Se asignó el rapartidor,7
+1968,El repartidor vuelve a estar listo,15
+1968,Finalizó el envío del pedido,11
+1968,Comenzó el envio del pedido,1
+1969,Se asignó el rapartidor,15
+1970,El repartidor vuelve a estar listo,12
+1970,Comenzó el envio del pedido,15
+1970,Finalizó el envío del pedido,8
+1971,Se asignó el rapartidor,12
+1972,El repartidor vuelve a estar listo,5
+1972,Comenzó el envio del pedido,12
+1973,Se asignó el rapartidor,5
+1975,Finalizó el envío del pedido,9
+1976,Finalizó el envío del pedido,3
+1979,Finalizó el envío del pedido,10
+1980,El repartidor vuelve a estar listo,14
+1980,Comenzó el envio del pedido,2
+1981,Se asignó el rapartidor,14
+1981,El repartidor vuelve a estar listo,13
+1981,El repartidor vuelve a estar listo,8
+1982,Se asignó el rapartidor,8
+1983,Comenzó el envio del pedido,8
+1983,Se asignó el rapartidor,13
+1984,Finalizó el envío del pedido,15
+1985,El repartidor vuelve a estar listo,3
+1985,Finalizó el envío del pedido,1
+1986,Se asignó el rapartidor,3
+1988,El repartidor vuelve a estar listo,11
+1988,Comenzó el envio del pedido,7
+1988,Comenzó el envio del pedido,14
+1989,Se asignó el rapartidor,11
+1989,Comenzó el envio del pedido,11
+1990,Finalizó el envío del pedido,12
+1991,El repartidor vuelve a estar listo,9
+1992,Se asignó el rapartidor,9
+1992,El repartidor vuelve a estar listo,10
+1993,Se asignó el rapartidor,10
+1993,Finalizó el envío del pedido,8
+1994,Comenzó el envio del pedido,13
+1996,Finalizó el envío del pedido,2
+1997,Finalizó el envío del pedido,7
+1997,Finalizó el envío del pedido,14
+1997,Comenzó el envio del pedido,10
+1999,El repartidor vuelve a estar listo,15
+1999,Finalizó el envío del pedido,13
+1999,Finalizó el envío del pedido,11
+2000,Se asignó el rapartidor,15
+2001,Comenzó el envio del pedido,15
+2002,El repartidor vuelve a estar listo,1
+2003,Se asignó el rapartidor,1
+2004,El repartidor vuelve a estar listo,13
+2004,El repartidor vuelve a estar listo,8
+2004,Comenzó el envio del pedido,1
+2005,Se asignó el rapartidor,8
+2006,Se asignó el rapartidor,13
+2006,El repartidor vuelve a estar listo,7
+2006,El repartidor vuelve a estar listo,14
+2007,Comenzó el envio del pedido,13
+2007,Se asignó el rapartidor,14
+2007,Comenzó el envio del pedido,5
+2008,Se asignó el rapartidor,7
+2009,Comenzó el envio del pedido,14
+2009,El repartidor vuelve a estar listo,12
+2009,El repartidor vuelve a estar listo,11
+2010,Se asignó el rapartidor,12
+2011,Se asignó el rapartidor,11
+2011,Finalizó el envío del pedido,10
+2011,Finalizó el envío del pedido,1
+2012,El repartidor vuelve a estar listo,2
+2012,Comenzó el envio del pedido,11
+2012,Comenzó el envio del pedido,7
+2013,Se asignó el rapartidor,2
+2013,Finalizó el envío del pedido,5
+2014,Comenzó el envio del pedido,2
+2017,Finalizó el envío del pedido,14
+2017,Finalizó el envío del pedido,15
+2019,El repartidor vuelve a estar listo,1
+2019,El repartidor vuelve a estar listo,5
+2020,Se asignó el rapartidor,1
+2020,Finalizó el envío del pedido,11
+2021,Se asignó el rapartidor,5
+2024,Comenzó el envio del pedido,1
+2025,Finalizó el envío del pedido,13
+2025,El repartidor vuelve a estar listo,10
+2025,Comenzó el envio del pedido,4
+2026,Se asignó el rapartidor,10
+2026,Comenzó el envio del pedido,3
+2026,El repartidor vuelve a estar listo,14
+2027,Se asignó el rapartidor,14
+2027,Comenzó el envio del pedido,14
+2027,Finalizó el envío del pedido,7
+2027,Comenzó el envio del pedido,10
+2028,Finalizó el envío del pedido,2
+2028,Comenzó el envio del pedido,8
+2029,El repartidor vuelve a estar listo,11
+2030,Se asignó el rapartidor,11
+2030,Comenzó el envio del pedido,9
+2031,Finalizó el envío del pedido,3
+2034,El repartidor vuelve a estar listo,15
+2035,Se asignó el rapartidor,15
+2036,Comenzó el envio del pedido,15
+2036,Comenzó el envio del pedido,12
+2037,El repartidor vuelve a estar listo,3
+2038,Se asignó el rapartidor,3
+2038,Comenzó el envio del pedido,11
+2039,Comenzó el envio del pedido,6
+2040,Comenzó el envio del pedido,3
+2040,Finalizó el envío del pedido,1
+2040,Finalizó el envío del pedido,14
+2041,Finalizó el envío del pedido,4
+2042,El repartidor vuelve a estar listo,7
+2042,Finalizó el envío del pedido,8
+2042,Finalizó el envío del pedido,10
+2043,Se asignó el rapartidor,7
+2043,El repartidor vuelve a estar listo,2
+2044,Se asignó el rapartidor,2
+2044,El repartidor vuelve a estar listo,13
+2045,Se asignó el rapartidor,13
+2045,Finalizó el envío del pedido,9
+2049,Finalizó el envío del pedido,12
+2050,Finalizó el envío del pedido,11
+2051,Finalizó el envío del pedido,15
+2053,Finalizó el envío del pedido,6
+2054,El repartidor vuelve a estar listo,10
+2054,El repartidor vuelve a estar listo,14
+2055,Se asignó el rapartidor,14
+2055,Comenzó el envio del pedido,7
+2055,Finalizó el envío del pedido,3
+2056,Comenzó el envio del pedido,14
+2056,Se asignó el rapartidor,10
+2056,El repartidor vuelve a estar listo,1
+2056,El repartidor vuelve a estar listo,8
+2056,Comenzó el envio del pedido,13
+2057,Se asignó el rapartidor,1
+2057,Comenzó el envio del pedido,10
+2057,El repartidor vuelve a estar listo,4
+2057,Comenzó el envio del pedido,2
+2058,Comenzó el envio del pedido,1
+2058,Se asignó el rapartidor,8
+2059,Se asignó el rapartidor,4
+2060,Comenzó el envio del pedido,4
+2061,El repartidor vuelve a estar listo,9
+2062,Se asignó el rapartidor,9
+2062,El repartidor vuelve a estar listo,12
+2062,Finalizó el envío del pedido,10
+2063,Se asignó el rapartidor,12
+2063,El repartidor vuelve a estar listo,11
+2064,Comenzó el envio del pedido,12
+2064,Se asignó el rapartidor,11
+2065,Comenzó el envio del pedido,11
+2065,Finalizó el envío del pedido,1
+2067,El repartidor vuelve a estar listo,15
+2067,El repartidor vuelve a estar listo,6
+2068,Se asignó el rapartidor,15
+2068,El repartidor vuelve a estar listo,10
+2069,Se asignó el rapartidor,6
+2069,Finalizó el envío del pedido,7
+2069,Comenzó el envio del pedido,5
+2070,Se asignó el rapartidor,10
+2070,Finalizó el envío del pedido,2
+2071,Finalizó el envío del pedido,13
+2071,El repartidor vuelve a estar listo,3
+2071,Finalizó el envío del pedido,14
+2072,Se asignó el rapartidor,3
+2072,Finalizó el envío del pedido,4
+2073,El repartidor vuelve a estar listo,1
+2074,Se asignó el rapartidor,1
+2075,Comenzó el envio del pedido,10
+2075,Comenzó el envio del pedido,3
+2076,Comenzó el envio del pedido,15
+2077,Comenzó el envio del pedido,9
+2079,Finalizó el envío del pedido,5
+2082,Finalizó el envío del pedido,12
+2083,El repartidor vuelve a estar listo,2
+2083,Finalizó el envío del pedido,15
+2083,Finalizó el envío del pedido,10
+2083,Finalizó el envío del pedido,3
+2084,Se asignó el rapartidor,2
+2084,Comenzó el envio del pedido,6
+2084,El repartidor vuelve a estar listo,7
+2084,Finalizó el envío del pedido,11
+2085,Se asignó el rapartidor,7
+2085,El repartidor vuelve a estar listo,4
+2086,Comenzó el envio del pedido,7
+2086,Se asignó el rapartidor,4
+2086,Finalizó el envío del pedido,9
+2087,Comenzó el envio del pedido,4
+2087,El repartidor vuelve a estar listo,13
+2087,El repartidor vuelve a estar listo,14
+2087,Comenzó el envio del pedido,1
+2088,Se asignó el rapartidor,14
+2089,Se asignó el rapartidor,13
+2089,El repartidor vuelve a estar listo,5
+2090,Se asignó el rapartidor,5
+2090,El repartidor vuelve a estar listo,15
+2091,Se asignó el rapartidor,15
+2091,Comenzó el envio del pedido,5
+2091,El repartidor vuelve a estar listo,10
+2091,El repartidor vuelve a estar listo,3
+2091,Comenzó el envio del pedido,15
+2092,Comenzó el envio del pedido,8
+2092,Se asignó el rapartidor,10
+2092,Finalizó el envío del pedido,6
+2093,Se asignó el rapartidor,3
+2094,Comenzó el envio del pedido,3
+2095,El repartidor vuelve a estar listo,9
+2096,Se asignó el rapartidor,9
+2096,Comenzó el envio del pedido,14
+2097,Finalizó el envío del pedido,4
+2098,Finalizó el envío del pedido,7
+2099,Finalizó el envío del pedido,1
+2101,El repartidor vuelve a estar listo,12
+2101,El repartidor vuelve a estar listo,6
+2101,Comenzó el envio del pedido,9
+2102,Se asignó el rapartidor,12
+2103,Comenzó el envio del pedido,12
+2103,Se asignó el rapartidor,6
+2103,Finalizó el envío del pedido,14
+2103,Finalizó el envío del pedido,8
+2103,Finalizó el envío del pedido,3
+2104,El repartidor vuelve a estar listo,11
+2105,Se asignó el rapartidor,11
+2105,Comenzó el envio del pedido,2
+2106,Comenzó el envio del pedido,11
+2106,Comenzó el envio del pedido,10
+2107,Finalizó el envío del pedido,15
+2108,El repartidor vuelve a estar listo,4
+2108,Finalizó el envío del pedido,9
+2109,Se asignó el rapartidor,4
+2110,Finalizó el envío del pedido,5
+2111,El repartidor vuelve a estar listo,1
+2111,El repartidor vuelve a estar listo,14
+2111,El repartidor vuelve a estar listo,7
+2112,Se asignó el rapartidor,1
+2112,Finalizó el envío del pedido,2
+2113,Se asignó el rapartidor,7
+2113,El repartidor vuelve a estar listo,3
+2113,Finalizó el envío del pedido,12
+2114,Se asignó el rapartidor,14
+2115,Se asignó el rapartidor,3
+2115,El repartidor vuelve a estar listo,8
+2115,El repartidor vuelve a estar listo,9
+2116,Se asignó el rapartidor,8
+2117,Se asignó el rapartidor,9
+2117,Finalizó el envío del pedido,11
+2118,Comenzó el envio del pedido,7
+2120,El repartidor vuelve a estar listo,2
+2121,Se asignó el rapartidor,2
+2123,Finalizó el envío del pedido,10
+2124,El repartidor vuelve a estar listo,15
+2124,El repartidor vuelve a estar listo,12
+2125,Se asignó el rapartidor,15
+2125,Comenzó el envio del pedido,1
+2125,Comenzó el envio del pedido,3
+2126,Se asignó el rapartidor,12
+2128,Comenzó el envio del pedido,4
+2129,El repartidor vuelve a estar listo,11
+2129,Comenzó el envio del pedido,14
+2130,Se asignó el rapartidor,11
+2130,El repartidor vuelve a estar listo,5
+2131,Comenzó el envio del pedido,11
+2131,Se asignó el rapartidor,5
+2132,Comenzó el envio del pedido,5
+2133,Finalizó el envío del pedido,4
+2137,Finalizó el envío del pedido,7
+2137,Finalizó el envío del pedido,11
+2137,Comenzó el envio del pedido,13
+2138,Comenzó el envio del pedido,8
+2138,El repartidor vuelve a estar listo,4
+2139,Se asignó el rapartidor,4
+2139,Finalizó el envío del pedido,14
+2140,Finalizó el envío del pedido,1
+2140,El repartidor vuelve a estar listo,10
+2141,Se asignó el rapartidor,10
+2142,Comenzó el envio del pedido,10
+2142,Finalizó el envío del pedido,8
+2142,Finalizó el envío del pedido,3
+2142,Comenzó el envio del pedido,15
+2144,El repartidor vuelve a estar listo,11
+2144,Comenzó el envio del pedido,12
+2145,Se asignó el rapartidor,11
+2145,Comenzó el envio del pedido,11
+2145,Finalizó el envío del pedido,13
+2147,El repartidor vuelve a estar listo,8
+2147,Finalizó el envío del pedido,5
+2148,Se asignó el rapartidor,8
+2149,El repartidor vuelve a estar listo,14
+2150,Se asignó el rapartidor,14
+2150,Finalizó el envío del pedido,12
+2151,Comenzó el envio del pedido,14
+2152,Finalizó el envío del pedido,11
+2153,El repartidor vuelve a estar listo,13
+2154,Se asignó el rapartidor,13
+2154,Comenzó el envio del pedido,13
+2156,El repartidor vuelve a estar listo,7
+2156,El repartidor vuelve a estar listo,1
+2156,El repartidor vuelve a estar listo,12
+2156,Finalizó el envío del pedido,15
+2157,Se asignó el rapartidor,1
+2157,Finalizó el envío del pedido,14
+2157,Comenzó el envio del pedido,4
+2158,Comenzó el envio del pedido,1
+2158,Se asignó el rapartidor,12
+2159,Se asignó el rapartidor,7
+2159,El repartidor vuelve a estar listo,3
+2160,Se asignó el rapartidor,3
+2160,El repartidor vuelve a estar listo,11
+2160,Finalizó el envío del pedido,10
+2160,Comenzó el envio del pedido,7
+2161,Se asignó el rapartidor,11
+2161,Comenzó el envio del pedido,2
+2163,El repartidor vuelve a estar listo,5
+2164,Se asignó el rapartidor,5
+2164,El repartidor vuelve a estar listo,14
+2165,Se asignó el rapartidor,14
+2166,Finalizó el envío del pedido,13
+2166,Comenzó el envio del pedido,12
+2166,Comenzó el envio del pedido,14
+2170,El repartidor vuelve a estar listo,15
+2171,Se asignó el rapartidor,15
+2171,Comenzó el envio del pedido,9
+2171,Finalizó el envío del pedido,12
+2173,Finalizó el envío del pedido,2
+2176,El repartidor vuelve a estar listo,10
+2176,El repartidor vuelve a estar listo,12
+2176,Finalizó el envío del pedido,4
+2176,Finalizó el envío del pedido,1
+2177,Se asignó el rapartidor,10
+2178,Comenzó el envio del pedido,10
+2178,Comenzó el envio del pedido,8
+2178,Se asignó el rapartidor,12
+2178,Finalizó el envío del pedido,7
+2179,Comenzó el envio del pedido,11
+2180,El repartidor vuelve a estar listo,13
+2181,Se asignó el rapartidor,13
+2181,Comenzó el envio del pedido,6
+2181,Comenzó el envio del pedido,5
+2182,Finalizó el envío del pedido,9
+2182,Finalizó el envío del pedido,14
+2184,Finalizó el envío del pedido,10
+2185,Finalizó el envío del pedido,5
+2186,El repartidor vuelve a estar listo,2
+2186,Comenzó el envio del pedido,13
+2187,Se asignó el rapartidor,2
+2188,Comenzó el envio del pedido,2
+2189,Comenzó el envio del pedido,15
+2190,El repartidor vuelve a estar listo,5
+2190,Comenzó el envio del pedido,12
+2191,Se asignó el rapartidor,5
+2191,El repartidor vuelve a estar listo,10
+2192,Se asignó el rapartidor,10
+2193,Finalizó el envío del pedido,8
+2194,Finalizó el envío del pedido,13
+2194,El repartidor vuelve a estar listo,9
+2195,Se asignó el rapartidor,9
+2195,El repartidor vuelve a estar listo,4
+2195,El repartidor vuelve a estar listo,1
+2196,Se asignó el rapartidor,4
+2196,El repartidor vuelve a estar listo,7
+2197,Se asignó el rapartidor,1
+2197,El repartidor vuelve a estar listo,14
+2197,Finalizó el envío del pedido,6
+2198,Se asignó el rapartidor,7
+2198,Comenzó el envio del pedido,5
+2198,Finalizó el envío del pedido,2
+2199,Comenzó el envio del pedido,7
+2199,Se asignó el rapartidor,14
+2199,Finalizó el envío del pedido,11
+2202,El repartidor vuelve a estar listo,13
+2202,Finalizó el envío del pedido,12
+2202,Comenzó el envio del pedido,10
+2203,Se asignó el rapartidor,13
+2203,Finalizó el envío del pedido,5
+2204,Comenzó el envio del pedido,3
+2206,Finalizó el envío del pedido,15
+2206,Comenzó el envio del pedido,1
+2208,El repartidor vuelve a estar listo,2
+2209,Se asignó el rapartidor,2
+2209,El repartidor vuelve a estar listo,8
+2209,El repartidor vuelve a estar listo,5
+2210,Se asignó el rapartidor,8
+2210,Comenzó el envio del pedido,2
+2211,Se asignó el rapartidor,5
+2212,Finalizó el envío del pedido,1
+2212,Comenzó el envio del pedido,13
+2213,Comenzó el envio del pedido,14
+2214,El repartidor vuelve a estar listo,6
+2214,El repartidor vuelve a estar listo,12
+2214,Finalizó el envío del pedido,7
+2215,Se asignó el rapartidor,6
+2215,Finalizó el envío del pedido,3
+2216,Se asignó el rapartidor,12
+2218,El repartidor vuelve a estar listo,1
+2218,Finalizó el envío del pedido,14
+2219,Se asignó el rapartidor,1
+2219,El repartidor vuelve a estar listo,11
+2219,Comenzó el envio del pedido,9
+2220,Comenzó el envio del pedido,1
+2220,Se asignó el rapartidor,11
+2220,Finalizó el envío del pedido,10
+2223,El repartidor vuelve a estar listo,15
+2223,El repartidor vuelve a estar listo,14
+2224,Se asignó el rapartidor,15
+2224,Finalizó el envío del pedido,13
+2224,Comenzó el envio del pedido,5
+2225,Se asignó el rapartidor,14
+2226,El repartidor vuelve a estar listo,3
+2227,Se asignó el rapartidor,3
+2227,Comenzó el envio del pedido,8
+2228,Finalizó el envío del pedido,9
+2229,Finalizó el envío del pedido,2
+2230,El repartidor vuelve a estar listo,7
+2231,Se asignó el rapartidor,7
+2232,Finalizó el envío del pedido,5
+2233,Finalizó el envío del pedido,1
+2234,Comenzó el envio del pedido,12
+2235,Finalizó el envío del pedido,8
+2236,El repartidor vuelve a estar listo,13
+2236,Comenzó el envio del pedido,11
+2237,Se asignó el rapartidor,13
+2237,El repartidor vuelve a estar listo,9
+2238,Se asignó el rapartidor,9
+2238,El repartidor vuelve a estar listo,10
+2239,Se asignó el rapartidor,10
+2240,El repartidor vuelve a estar listo,5
+2240,Comenzó el envio del pedido,13
+2241,Comenzó el envio del pedido,15
+2241,Se asignó el rapartidor,5
+2241,Finalizó el envío del pedido,12
+2242,Comenzó el envio del pedido,5
+2242,Finalizó el envío del pedido,11
+2243,El repartidor vuelve a estar listo,8
+2243,Comenzó el envio del pedido,3
+2244,Se asignó el rapartidor,8
+2245,Comenzó el envio del pedido,8
+2245,Comenzó el envio del pedido,6
+2247,El repartidor vuelve a estar listo,1
+2248,Se asignó el rapartidor,1
+2248,El repartidor vuelve a estar listo,11
+2248,El repartidor vuelve a estar listo,12
+2249,Se asignó el rapartidor,12
+2249,Comenzó el envio del pedido,1
+2249,El repartidor vuelve a estar listo,2
+2250,Comenzó el envio del pedido,12
+2250,Se asignó el rapartidor,11
+2251,Se asignó el rapartidor,2
+2252,Finalizó el envío del pedido,5
+2253,Finalizó el envío del pedido,15
+2254,Comenzó el envio del pedido,4
+2255,Finalizó el envío del pedido,13
+2256,Comenzó el envio del pedido,10
+2258,Finalizó el envío del pedido,3
+2258,Finalizó el envío del pedido,12
+2259,Finalizó el envío del pedido,1
+2262,Finalizó el envío del pedido,4
+2262,Finalizó el envío del pedido,8
+2263,El repartidor vuelve a estar listo,5
+2263,Finalizó el envío del pedido,10
+2264,Se asignó el rapartidor,5
+2264,Finalizó el envío del pedido,6
+2265,Comenzó el envio del pedido,5
+2266,El repartidor vuelve a estar listo,15
+2267,Se asignó el rapartidor,15
+2267,El repartidor vuelve a estar listo,12
+2268,Se asignó el rapartidor,12
+2268,Comenzó el envio del pedido,15
+2268,Comenzó el envio del pedido,12
+2270,El repartidor vuelve a estar listo,1
+2270,El repartidor vuelve a estar listo,10
+2270,El repartidor vuelve a estar listo,4
+2270,El repartidor vuelve a estar listo,13
+2271,Se asignó el rapartidor,1
+2271,Comenzó el envio del pedido,7
+2272,Se asignó el rapartidor,4
+2272,Comenzó el envio del pedido,1
+2273,Se asignó el rapartidor,10
+2273,El repartidor vuelve a estar listo,3
+2274,Se asignó el rapartidor,13
+2274,Finalizó el envío del pedido,15
+2275,Se asignó el rapartidor,3
+2276,Comenzó el envio del pedido,9
+2279,Finalizó el envío del pedido,7
+2280,El repartidor vuelve a estar listo,8
+2281,Se asignó el rapartidor,8
+2281,El repartidor vuelve a estar listo,15
+2282,Se asignó el rapartidor,15
+2282,Comenzó el envio del pedido,2
+2282,Comenzó el envio del pedido,3
+2283,El repartidor vuelve a estar listo,6
+2283,Finalizó el envío del pedido,5
+2283,Finalizó el envío del pedido,12
+2284,Se asignó el rapartidor,6
+2285,Finalizó el envío del pedido,9
+2285,Comenzó el envio del pedido,10
+2286,Finalizó el envío del pedido,2
+2287,El repartidor vuelve a estar listo,7
+2287,Finalizó el envío del pedido,3
+2287,Comenzó el envio del pedido,8
+2288,Se asignó el rapartidor,7
+2288,Finalizó el envío del pedido,1
+2288,Comenzó el envio del pedido,4
+2288,Comenzó el envio del pedido,14
+2289,Comenzó el envio del pedido,7
+2291,El repartidor vuelve a estar listo,2
+2291,Finalizó el envío del pedido,10
+2292,Se asignó el rapartidor,2
+2292,El repartidor vuelve a estar listo,3
+2292,Finalizó el envío del pedido,4
+2293,Comenzó el envio del pedido,2
+2293,Se asignó el rapartidor,3
+2294,El repartidor vuelve a estar listo,9
+2295,Se asignó el rapartidor,9
+2296,Finalizó el envío del pedido,8
+2296,Comenzó el envio del pedido,13
+2297,El repartidor vuelve a estar listo,10
+2297,El repartidor vuelve a estar listo,4
+2298,Se asignó el rapartidor,10
+2298,El repartidor vuelve a estar listo,12
+2298,Comenzó el envio del pedido,6
+2299,Se asignó el rapartidor,4
+2300,Comenzó el envio del pedido,4
+2300,Se asignó el rapartidor,12
+2302,El repartidor vuelve a estar listo,5
+2302,Finalizó el envío del pedido,14
+2303,Se asignó el rapartidor,5
+2304,Comenzó el envio del pedido,5
+2305,El repartidor vuelve a estar listo,1
+2305,El repartidor vuelve a estar listo,8
+2305,Finalizó el envío del pedido,7
+2305,Comenzó el envio del pedido,15
+2306,Se asignó el rapartidor,1
+2307,Se asignó el rapartidor,8
+2307,Finalizó el envío del pedido,13
+2308,Comenzó el envio del pedido,8
+2308,Finalizó el envío del pedido,6
+2309,Comenzó el envio del pedido,11
+2310,Finalizó el envío del pedido,2
+2311,Finalizó el envío del pedido,15
+2316,El repartidor vuelve a estar listo,14
+2317,Se asignó el rapartidor,14
+2317,El repartidor vuelve a estar listo,15
+2318,Se asignó el rapartidor,15
+2318,El repartidor vuelve a estar listo,6
+2318,El repartidor vuelve a estar listo,13
+2318,Finalizó el envío del pedido,4
+2318,Comenzó el envio del pedido,9
+2319,Se asignó el rapartidor,13
+2319,Finalizó el envío del pedido,8
+2320,Comenzó el envio del pedido,13
+2320,Se asignó el rapartidor,6
+2320,Comenzó el envio del pedido,14
+2321,Comenzó el envio del pedido,6
+2322,El repartidor vuelve a estar listo,7
+2323,Se asignó el rapartidor,7
+2323,Finalizó el envío del pedido,5
+2324,Finalizó el envío del pedido,11
+2324,Comenzó el envio del pedido,7
+2325,Finalizó el envío del pedido,13
+2326,Finalizó el envío del pedido,6
+2326,Comenzó el envio del pedido,3
+2327,Comenzó el envio del pedido,1
+2327,Finalizó el envío del pedido,9
+2327,Comenzó el envio del pedido,10
+2328,El repartidor vuelve a estar listo,2
+2329,Se asignó el rapartidor,2
+2330,Comenzó el envio del pedido,2
+2331,El repartidor vuelve a estar listo,13
+2331,El repartidor vuelve a estar listo,8
+2332,Se asignó el rapartidor,8
+2332,El repartidor vuelve a estar listo,6
+2333,Comenzó el envio del pedido,8
+2333,Se asignó el rapartidor,13
+2334,Se asignó el rapartidor,6
+2334,Finalizó el envío del pedido,1
+2335,Finalizó el envío del pedido,14
+2336,El repartidor vuelve a estar listo,9
+2337,Se asignó el rapartidor,9
+2337,El repartidor vuelve a estar listo,4
+2338,Se asignó el rapartidor,4
+2339,Comenzó el envio del pedido,4
+2339,El repartidor vuelve a estar listo,11
+2340,Se asignó el rapartidor,11
+2341,El repartidor vuelve a estar listo,1
+2341,Finalizó el envío del pedido,2
+2342,Se asignó el rapartidor,1
+2342,Comenzó el envio del pedido,13
+2343,El repartidor vuelve a estar listo,5
+2343,Finalizó el envío del pedido,7
+2344,Se asignó el rapartidor,5
+2344,Finalizó el envío del pedido,8
+2346,Finalizó el envío del pedido,3
+2347,Finalizó el envío del pedido,10
+2348,Finalizó el envío del pedido,13
+2351,El repartidor vuelve a estar listo,14
+2351,Comenzó el envio del pedido,9
+2352,Se asignó el rapartidor,14
+2352,Finalizó el envío del pedido,4
+2353,El repartidor vuelve a estar listo,2
+2353,Comenzó el envio del pedido,14
+2354,Se asignó el rapartidor,2
+2354,El repartidor vuelve a estar listo,13
+2355,Se asignó el rapartidor,13
+2355,Comenzó el envio del pedido,11
+2356,El repartidor vuelve a estar listo,8
+2357,Se asignó el rapartidor,8
+2357,Comenzó el envio del pedido,6
+2358,Comenzó el envio del pedido,8
+2359,Comenzó el envio del pedido,13
+2360,Comenzó el envio del pedido,12
+2361,Finalizó el envío del pedido,14
+2362,El repartidor vuelve a estar listo,7
+2363,Se asignó el rapartidor,7
+2363,Finalizó el envío del pedido,6
+2364,Comenzó el envio del pedido,7
+2365,Finalizó el envío del pedido,12
+2365,Comenzó el envio del pedido,1
+2366,El repartidor vuelve a estar listo,3
+2366,El repartidor vuelve a estar listo,4
+2367,Se asignó el rapartidor,3
+2367,El repartidor vuelve a estar listo,10
+2368,Comenzó el envio del pedido,3
+2368,Se asignó el rapartidor,4
+2368,Finalizó el envío del pedido,9
+2368,Comenzó el envio del pedido,15
+2369,Se asignó el rapartidor,10
+2370,El repartidor vuelve a estar listo,14
+2370,El repartidor vuelve a estar listo,6
+2370,El repartidor vuelve a estar listo,12
+2371,Se asignó el rapartidor,6
+2371,Finalizó el envío del pedido,13
+2372,Se asignó el rapartidor,14
+2372,Finalizó el envío del pedido,1
+2373,Comenzó el envio del pedido,14
+2373,Se asignó el rapartidor,12
+2373,Finalizó el envío del pedido,11
+2374,Finalizó el envío del pedido,3
+2375,Finalizó el envío del pedido,8
+2375,Comenzó el envio del pedido,5
+2376,Comenzó el envio del pedido,6
+2379,El repartidor vuelve a estar listo,1
+2380,Se asignó el rapartidor,1
+2381,El repartidor vuelve a estar listo,3
+2381,Comenzó el envio del pedido,1
+2381,Finalizó el envío del pedido,6
+2381,Finalizó el envío del pedido,14
+2382,Se asignó el rapartidor,3
+2382,Finalizó el envío del pedido,5
+2383,Finalizó el envío del pedido,7
+2383,El repartidor vuelve a estar listo,13
+2383,Finalizó el envío del pedido,15
+2383,Comenzó el envio del pedido,2
+2384,Se asignó el rapartidor,13
+2385,El repartidor vuelve a estar listo,9
+2385,Comenzó el envio del pedido,13
+2386,Se asignó el rapartidor,9
+2386,El repartidor vuelve a estar listo,6
+2386,Comenzó el envio del pedido,12
+2387,Comenzó el envio del pedido,9
+2387,Se asignó el rapartidor,6
+2388,Comenzó el envio del pedido,10
+2389,El repartidor vuelve a estar listo,5
+2390,Se asignó el rapartidor,5
+2390,Comenzó el envio del pedido,3
+2390,El repartidor vuelve a estar listo,14
+2391,Se asignó el rapartidor,14
+2391,Finalizó el envío del pedido,13
+2392,El repartidor vuelve a estar listo,11
+2392,Comenzó el envio del pedido,14
+2392,Finalizó el envío del pedido,12
+2392,Finalizó el envío del pedido,9
+2393,Se asignó el rapartidor,11
+2393,Comenzó el envio del pedido,4
+2393,El repartidor vuelve a estar listo,8
+2395,Se asignó el rapartidor,8
+2395,Comenzó el envio del pedido,8
+2396,Finalizó el envío del pedido,10
+2396,Finalizó el envío del pedido,1
+2398,El repartidor vuelve a estar listo,13
+2398,El repartidor vuelve a estar listo,12
+2398,El repartidor vuelve a estar listo,9
+2398,El repartidor vuelve a estar listo,15
+2399,Se asignó el rapartidor,12
+2401,Finalizó el envío del pedido,14
+2402,Se asignó el rapartidor,13
+2402,Finalizó el envío del pedido,2
+2403,El repartidor vuelve a estar listo,7
+2403,Finalizó el envío del pedido,3
+2404,El repartidor vuelve a estar listo,10
+2405,Se asignó el rapartidor,15
+2405,Comenzó el envio del pedido,6
+2408,Se asignó el rapartidor,9
+2408,Finalizó el envío del pedido,4
+2409,Se asignó el rapartidor,7
+2410,Finalizó el envío del pedido,8
+2411,El repartidor vuelve a estar listo,14
+2412,Se asignó el rapartidor,10
+2412,El repartidor vuelve a estar listo,1
+2416,Se asignó el rapartidor,14
+2416,Comenzó el envio del pedido,14
+2417,El repartidor vuelve a estar listo,3
+2419,Comenzó el envio del pedido,11
+2420,Se asignó el rapartidor,1
+2421,El repartidor vuelve a estar listo,2
+2422,Se asignó el rapartidor,3
+2422,Comenzó el envio del pedido,5
+2422,Finalizó el envío del pedido,14
+2424,El repartidor vuelve a estar listo,4
+2424,Finalizó el envío del pedido,6
+2425,El repartidor vuelve a estar listo,8
+2426,Se asignó el rapartidor,2
+2426,Comenzó el envio del pedido,12
+2426,Comenzó el envio del pedido,2
+2427,Comenzó el envio del pedido,9
+2428,El repartidor vuelve a estar listo,14
+2429,Se asignó el rapartidor,4
+2430,Finalizó el envío del pedido,5
+2433,Finalizó el envío del pedido,12
+2434,Se asignó el rapartidor,8
+2434,Finalizó el envío del pedido,11
+2434,Finalizó el envío del pedido,9
+2434,Comenzó el envio del pedido,8
+2435,Comenzó el envio del pedido,7
+2439,Se asignó el rapartidor,14
+2439,El repartidor vuelve a estar listo,5
+2442,El repartidor vuelve a estar listo,12
+2442,Finalizó el envío del pedido,8
+2442,Comenzó el envio del pedido,1
+2443,El repartidor vuelve a estar listo,9
+2444,Se asignó el rapartidor,5
+2444,El repartidor vuelve a estar listo,6
+2444,Finalizó el envío del pedido,2
+2444,Comenzó el envio del pedido,15
+2446,Comenzó el envio del pedido,13
+2447,Se asignó el rapartidor,12
+2449,El repartidor vuelve a estar listo,11
+2449,El repartidor vuelve a estar listo,8
+2450,Finalizó el envío del pedido,15
+2452,Se asignó el rapartidor,9
+2452,Finalizó el envío del pedido,13
+2453,Finalizó el envío del pedido,7
+2456,Se asignó el rapartidor,6
+2456,El repartidor vuelve a estar listo,15
+2457,Se asignó el rapartidor,11
+2457,Comenzó el envio del pedido,10
+2458,Comenzó el envio del pedido,5
+2458,Finalizó el envío del pedido,1
+2458,El repartidor vuelve a estar listo,13
+2460,Se asignó el rapartidor,8
+2461,Comenzó el envio del pedido,8
+2462,El repartidor vuelve a estar listo,2
+2465,Se asignó el rapartidor,15
+2465,Comenzó el envio del pedido,3
+2466,Se asignó el rapartidor,13
+2466,Comenzó el envio del pedido,13
+2467,Comenzó el envio del pedido,14
+2469,Finalizó el envío del pedido,10
+2469,Finalizó el envío del pedido,8
+2471,Se asignó el rapartidor,2
+2471,Comenzó el envio del pedido,12
+2471,El repartidor vuelve a estar listo,7
+2471,Comenzó el envio del pedido,2
+2472,Finalizó el envío del pedido,5
+2474,El repartidor vuelve a estar listo,1
+2476,Se asignó el rapartidor,7
+2476,Comenzó el envio del pedido,4
+2477,Se asignó el rapartidor,1
+2477,Finalizó el envío del pedido,3
+2477,El repartidor vuelve a estar listo,8
+2478,Comenzó el envio del pedido,7
+2480,Se asignó el rapartidor,8
+2480,Finalizó el envío del pedido,14
+2480,Finalizó el envío del pedido,13
+2482,El repartidor vuelve a estar listo,10
+2483,Comenzó el envio del pedido,9
+2483,Finalizó el envío del pedido,7
+2484,Se asignó el rapartidor,10
+2485,Finalizó el envío del pedido,12
+2485,Comenzó el envio del pedido,1
+2487,El repartidor vuelve a estar listo,5
+2488,Se asignó el rapartidor,5
+2488,Finalizó el envío del pedido,2
+2489,Finalizó el envío del pedido,4
+2489,Comenzó el envio del pedido,11
+2490,El repartidor vuelve a estar listo,7
+2491,Se asignó el rapartidor,7
+2491,El repartidor vuelve a estar listo,3
+2492,Comenzó el envio del pedido,7
+2492,Se asignó el rapartidor,3
+2494,El repartidor vuelve a estar listo,14
+2495,Se asignó el rapartidor,14
+2496,El repartidor vuelve a estar listo,13
+2497,Se asignó el rapartidor,13
+2498,Comenzó el envio del pedido,13
+2499,El repartidor vuelve a estar listo,12
+2500,Se asignó el rapartidor,12
+2500,Comenzó el envio del pedido,5
+2502,Finalizó el envío del pedido,1
+2502,Finalizó el envío del pedido,9
+2503,El repartidor vuelve a estar listo,4
+2503,Finalizó el envío del pedido,7
+2504,Se asignó el rapartidor,4
+2505,El repartidor vuelve a estar listo,2
+2505,Finalizó el envío del pedido,11
+2506,Se asignó el rapartidor,2
+2507,Finalizó el envío del pedido,5
+2508,Comenzó el envio del pedido,6
+2513,Comenzó el envio del pedido,14
+2515,El repartidor vuelve a estar listo,7
+2515,Finalizó el envío del pedido,6
+2515,Finalizó el envío del pedido,13
+2516,Se asignó el rapartidor,7
+2516,El repartidor vuelve a estar listo,5
+2517,Se asignó el rapartidor,5
+2518,Comenzó el envio del pedido,5
+2518,Comenzó el envio del pedido,3
+2519,El repartidor vuelve a estar listo,1
+2520,Se asignó el rapartidor,1
+2520,Comenzó el envio del pedido,15
+2521,El repartidor vuelve a estar listo,9
+2521,El repartidor vuelve a estar listo,11
+2522,Se asignó el rapartidor,9
+2522,Comenzó el envio del pedido,8
+2522,El repartidor vuelve a estar listo,6
+2523,Se asignó el rapartidor,11
+2524,Se asignó el rapartidor,6
+2525,Comenzó el envio del pedido,2
+2526,Finalizó el envío del pedido,3
+2530,Finalizó el envío del pedido,15
+2531,Finalizó el envío del pedido,14
+2531,Comenzó el envio del pedido,1
+2533,El repartidor vuelve a estar listo,13
+2534,Se asignó el rapartidor,13
+2534,El repartidor vuelve a estar listo,3
+2534,Finalizó el envío del pedido,8
+2534,Finalizó el envío del pedido,2
+2535,Se asignó el rapartidor,3
+2535,Comenzó el envio del pedido,7
+2536,Comenzó el envio del pedido,3
+2537,Finalizó el envío del pedido,5
+2538,Comenzó el envio del pedido,12
+2540,Finalizó el envío del pedido,1
+2540,El repartidor vuelve a estar listo,15
+2541,Se asignó el rapartidor,15
+2541,Comenzó el envio del pedido,4
+2542,Comenzó el envio del pedido,15
+2543,El repartidor vuelve a estar listo,2
+2544,Se asignó el rapartidor,2
+2545,Comenzó el envio del pedido,2
+2547,El repartidor vuelve a estar listo,8
+2547,Finalizó el envío del pedido,12
+2547,Finalizó el envío del pedido,7
+2547,Comenzó el envio del pedido,6
+2548,Se asignó el rapartidor,8
+2549,El repartidor vuelve a estar listo,14
+2550,Se asignó el rapartidor,14
+2550,El repartidor vuelve a estar listo,1
+2551,Comenzó el envio del pedido,14
+2551,Se asignó el rapartidor,1
+2551,Comenzó el envio del pedido,10
+2552,Finalizó el envío del pedido,2
+2553,Finalizó el envío del pedido,4
+2555,Finalizó el envío del pedido,3
+2556,El repartidor vuelve a estar listo,12
+2556,Comenzó el envio del pedido,8
+2557,Se asignó el rapartidor,12
+2558,El repartidor vuelve a estar listo,5
+2558,Finalizó el envío del pedido,14
+2558,Comenzó el envio del pedido,12
+2559,Se asignó el rapartidor,5
+2559,Finalizó el envío del pedido,10
+2560,Comenzó el envio del pedido,5
+2560,El repartidor vuelve a estar listo,7
+2560,El repartidor vuelve a estar listo,2
+2560,Finalizó el envío del pedido,15
+2561,Se asignó el rapartidor,2
+2562,Se asignó el rapartidor,7
+2562,Finalizó el envío del pedido,6
+2562,Comenzó el envio del pedido,9
+2563,Comenzó el envio del pedido,7
+2563,Comenzó el envio del pedido,11
+2565,Finalizó el envío del pedido,12
+2566,El repartidor vuelve a estar listo,4
+2566,El repartidor vuelve a estar listo,14
+2567,Se asignó el rapartidor,4
+2567,Finalizó el envío del pedido,8
+2568,Comenzó el envio del pedido,4
+2568,Se asignó el rapartidor,14
+2568,El repartidor vuelve a estar listo,10
+2569,Comenzó el envio del pedido,14
+2569,Se asignó el rapartidor,10
+2569,Comenzó el envio del pedido,13
+2569,Finalizó el envío del pedido,9
+2570,Finalizó el envío del pedido,5
+2571,Comenzó el envio del pedido,10
+2571,Finalizó el envío del pedido,11
+2572,El repartidor vuelve a estar listo,12
+2573,Se asignó el rapartidor,12
+2573,Comenzó el envio del pedido,1
+2574,Comenzó el envio del pedido,12
+2575,El repartidor vuelve a estar listo,3
+2576,Se asignó el rapartidor,3
+2576,Finalizó el envío del pedido,7
+2577,El repartidor vuelve a estar listo,6
+2577,Comenzó el envio del pedido,3
+2577,El repartidor vuelve a estar listo,9
+2577,Finalizó el envío del pedido,14
+2577,Finalizó el envío del pedido,4
+2578,Se asignó el rapartidor,6
+2578,El repartidor vuelve a estar listo,8
+2579,Se asignó el rapartidor,9
+2579,Comenzó el envio del pedido,6
+2579,El repartidor vuelve a estar listo,11
+2579,El repartidor vuelve a estar listo,15
+2580,Comenzó el envio del pedido,9
+2580,Se asignó el rapartidor,8
+2580,Finalizó el envío del pedido,12
+2581,Se asignó el rapartidor,11
+2581,El repartidor vuelve a estar listo,5
+2581,Finalizó el envío del pedido,1
+2582,Comenzó el envio del pedido,11
+2582,Se asignó el rapartidor,15
+2583,Se asignó el rapartidor,5
+2584,Finalizó el envío del pedido,13
+2586,El repartidor vuelve a estar listo,14
+2587,Se asignó el rapartidor,14
+2587,El repartidor vuelve a estar listo,4
+2587,El repartidor vuelve a estar listo,12
+2588,Se asignó el rapartidor,4
+2588,Comenzó el envio del pedido,14
+2588,Finalizó el envío del pedido,10
+2588,Comenzó el envio del pedido,8
+2589,Comenzó el envio del pedido,4
+2589,Se asignó el rapartidor,12
+2589,El repartidor vuelve a estar listo,1
+2589,Comenzó el envio del pedido,5
+2589,Comenzó el envio del pedido,2
+2590,Comenzó el envio del pedido,12
+2590,Se asignó el rapartidor,1
+2590,El repartidor vuelve a estar listo,7
+2590,Finalizó el envío del pedido,6
+2591,Se asignó el rapartidor,7
+2591,Comenzó el envio del pedido,1
+2593,Finalizó el envío del pedido,4
+2594,Finalizó el envío del pedido,9
+2594,Finalizó el envío del pedido,14
+2594,Finalizó el envío del pedido,2
+2595,Finalizó el envío del pedido,8
+2595,Finalizó el envío del pedido,11
+2596,Finalizó el envío del pedido,3
+2598,Finalizó el envío del pedido,5
+2599,El repartidor vuelve a estar listo,6
+2599,El repartidor vuelve a estar listo,4
+2600,Se asignó el rapartidor,4
+2600,Finalizó el envío del pedido,12
+2600,Finalizó el envío del pedido,1
+2600,Comenzó el envio del pedido,15
+2601,Se asignó el rapartidor,6
+2601,El repartidor vuelve a estar listo,2
+2601,El repartidor vuelve a estar listo,13
+2602,Se asignó el rapartidor,2
+2602,El repartidor vuelve a estar listo,8
+2603,Comenzó el envio del pedido,2
+2603,Se asignó el rapartidor,13
+2604,Se asignó el rapartidor,8
+2604,El repartidor vuelve a estar listo,14
+2606,El repartidor vuelve a estar listo,5
+2606,Comenzó el envio del pedido,13
+2607,El repartidor vuelve a estar listo,10
+2609,El repartidor vuelve a estar listo,11
+2609,El repartidor vuelve a estar listo,1
+2610,El repartidor vuelve a estar listo,9
+2610,El repartidor vuelve a estar listo,12
+2617,El repartidor vuelve a estar listo,3
+2619,Finalizó el envío del pedido,15
+2619,Finalizó el envío del pedido,13
+2619,Finalizó el envío del pedido,2
+2622,Comenzó el envio del pedido,7
+2625,Comenzó el envio del pedido,4
+2625,Comenzó el envio del pedido,6
+2629,Finalizó el envío del pedido,7
+2633,El repartidor vuelve a estar listo,13
+2633,Finalizó el envío del pedido,6
+2633,Comenzó el envio del pedido,8
+2634,Finalizó el envío del pedido,4
+2636,El repartidor vuelve a estar listo,7
+2636,El repartidor vuelve a estar listo,2
+2638,El repartidor vuelve a estar listo,15
+2641,El repartidor vuelve a estar listo,6
+2643,El repartidor vuelve a estar listo,4
+2650,Finalizó el envío del pedido,8
+2667,El repartidor vuelve a estar listo,8

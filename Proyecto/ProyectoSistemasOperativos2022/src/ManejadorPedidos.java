@@ -43,13 +43,20 @@ public class ManejadorPedidos implements Runnable {
         return pedidos;
     }
 
-    public void cargarPedidos(){
+    public Boolean cargarPedidos(){
 
         String[] arrayPedidos = ManejadorArchivosGenerico.leerArchivo("Entradas/Pedidos.csv");
-        for (String i: arrayPedidos){
-            String[] temp = i.split(",");
-            pedidos.add(new Pedido(temp[0], temp[1], Integer.parseInt(temp[2]), Integer.parseInt(temp[3]), Integer.parseInt(temp[4]), temp[5], Integer.parseInt(temp[6])));
+        
+        try {
+            for (String i: arrayPedidos){
+                String[] temp = i.split(",");
+                pedidos.add(new Pedido(Integer.parseInt(temp[0]), temp[1], temp[2], Integer.parseInt(temp[3]), Integer.parseInt(temp[4]), Integer.parseInt(temp[5])));
+            }
+        } catch (Exception e) {
+            System.out.println("Formato de Pedidos.csv incorrecto");
+            return false;
         }
+        return true;
     }
 
     @Override

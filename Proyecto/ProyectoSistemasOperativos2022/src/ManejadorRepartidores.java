@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.StringJoiner;
 import java.util.concurrent.Semaphore;
 
 public class ManejadorRepartidores implements Runnable {
@@ -18,6 +19,7 @@ public class ManejadorRepartidores implements Runnable {
     private Pedido siguienteRestaurante;
     private Pedido siguienteParaAtender;
     private Semaphore colasRestaurantesMutex = new Semaphore(1);
+    private Semaphore colasRepartidoresMutex = new Semaphore(1);
     private Semaphore semComienzo = new Semaphore(0);
     private Semaphore semFinal = new Semaphore(0);
     private Semaphore semFinalTodos = new Semaphore(0);
@@ -71,21 +73,35 @@ public class ManejadorRepartidores implements Runnable {
             try {semTickRepartidores.acquire();} catch (InterruptedException e) {}
 
             //Se actualizan los contadores
+            try {colasRepartidoresMutex.acquire();} catch (InterruptedException e1) {}
             for (Repartidor repartidor: repartidoresListos){
                 repartidor.setTickActual(tickActual);
             }
-            for (Repartidor repartidor: repartidoresEnviando){
-                repartidor.setTickActual(tickActual);
+            for (int i = 0; i < repartidoresEnviando.size(); i++){
+                repartidoresEnviando.get(i).setTickActual(tickActual);
             }
+            colasRepartidoresMutex.release();
 
             if(siguienteDistanciaCorta != null){
                 siguienteDistanciaCorta.setAntiguedad(siguienteDistanciaCorta.getAntiguedad()+1);
+                if(siguienteDistanciaCorta.getAntiguedad() >= 25){
+                    colaAlmacen.add(siguienteDistanciaCorta);
+                    siguienteDistanciaCorta = null;
+                }
             }
             if(siguienteDistanciaMedia != null){
                 siguienteDistanciaMedia.setAntiguedad(siguienteDistanciaMedia.getAntiguedad()+1);
+                if(siguienteDistanciaMedia.getAntiguedad() >= 20){
+                    colaRestauranteDistanciaCorta.add(siguienteDistanciaMedia);
+                    siguienteDistanciaMedia = null;
+                }
             }
             if(siguienteDistanciaLarga != null){
                 siguienteDistanciaLarga.setAntiguedad(siguienteDistanciaLarga.getAntiguedad()+1);
+                if(siguienteDistanciaLarga.getAntiguedad() >= 20){
+                    colaRestauranteDistanciaMedia.add(siguienteDistanciaLarga);
+                    siguienteDistanciaLarga = null;
+                }
             }
             if(siguienteRestaurante != null){
                 siguienteRestaurante.setAntiguedad(siguienteRestaurante.getAntiguedad()+1);
@@ -95,12 +111,18 @@ public class ManejadorRepartidores implements Runnable {
 
             for (int i=0; i < colaRestauranteDistanciaCorta.size(); i++) {
                 colaRestauranteDistanciaCorta.get(i).setAntiguedad(colaRestauranteDistanciaCorta.get(i).getAntiguedad() + 1);
+
+                if(colaRestauranteDistanciaCorta.get(i).getAntiguedad() >= 25){
+                    colaRestauranteDistanciaCorta.get(i).setAntiguedad(0);
+                    colaAlmacen.add(colaRestauranteDistanciaCorta.get(i));
+                    colaRestauranteDistanciaCorta.remove(colaRestauranteDistanciaCorta.get(i));
+                }
                 
-                if (siguienteDistanciaCorta == null){
+                else if (siguienteDistanciaCorta == null){
                     siguienteDistanciaCorta = colaRestauranteDistanciaCorta.get(i);
                     colaRestauranteDistanciaCorta.remove(colaRestauranteDistanciaCorta.get(i));
                 }
-                else if (prioridadHRRN(siguienteDistanciaMedia.getAntiguedad(), siguienteDistanciaMedia.getTiempoElaboracion()) < prioridadHRRN(colaRestauranteDistanciaCorta.get(i).getAntiguedad(), (colaRestauranteDistanciaCorta.get(i).getTiempoElaboracion()))){
+                else if (prioridadHRRN(siguienteDistanciaCorta.getAntiguedad(), siguienteDistanciaCorta.getTiempoElaboracion()) < prioridadHRRN(colaRestauranteDistanciaCorta.get(i).getAntiguedad(), (colaRestauranteDistanciaCorta.get(i).getTiempoElaboracion()))){
                     colaRestauranteDistanciaCorta.add(siguienteDistanciaCorta);
                     siguienteDistanciaCorta = colaRestauranteDistanciaCorta.get(i);
                     colaRestauranteDistanciaCorta.remove(colaRestauranteDistanciaCorta.get(i));
@@ -110,7 +132,7 @@ public class ManejadorRepartidores implements Runnable {
             for (int i=0; i < colaRestauranteDistanciaMedia.size(); i++) {
                 colaRestauranteDistanciaMedia.get(i).setAntiguedad(colaRestauranteDistanciaMedia.get(i).getAntiguedad() + 1);
 
-                if(colaRestauranteDistanciaMedia.get(i).getAntiguedad() >= 15){
+                if(colaRestauranteDistanciaMedia.get(i).getAntiguedad() >= 20){
                     colaRestauranteDistanciaMedia.get(i).setAntiguedad(0);
                     colaRestauranteDistanciaCorta.add(colaRestauranteDistanciaMedia.get(i));
                     colaRestauranteDistanciaMedia.remove(colaRestauranteDistanciaMedia.get(i));
@@ -129,7 +151,7 @@ public class ManejadorRepartidores implements Runnable {
             for (int i=0; i < colaRestauranteDistanciaLarga.size(); i++){
                 colaRestauranteDistanciaLarga.get(i).setAntiguedad(colaRestauranteDistanciaLarga.get(i).getAntiguedad() + 1);
                 
-                if(colaRestauranteDistanciaLarga.get(i).getAntiguedad() >= 10){
+                if(colaRestauranteDistanciaLarga.get(i).getAntiguedad() >= 20){
                     colaRestauranteDistanciaLarga.get(i).setAntiguedad(0);
                     colaRestauranteDistanciaMedia.add(colaRestauranteDistanciaLarga.get(i));
                     colaRestauranteDistanciaLarga.remove(colaRestauranteDistanciaLarga.get(i));
@@ -166,7 +188,7 @@ public class ManejadorRepartidores implements Runnable {
             }
 
             if(siguienteRestaurante != null){
-                if(siguienteRestaurante.getAntiguedad() >= 20){
+                if(siguienteRestaurante.getAntiguedad() >= 25){
                     siguienteRestaurante.setAntiguedad(0);
                     colaAlmacen.add(siguienteRestaurante);
                     siguienteRestaurante = null;
@@ -196,11 +218,32 @@ public class ManejadorRepartidores implements Runnable {
                 }
             }
 
+            StringJoiner str = new StringJoiner(",");
+            str.add(String.valueOf(tickActual));
+            str.add(String.valueOf(colaRestauranteDistanciaLarga.size()));
+            str.add(String.valueOf(colaRestauranteDistanciaMedia.size()));
+            str.add(String.valueOf(colaRestauranteDistanciaCorta.size()));
+            str.add(String.valueOf(colaAlmacen.size()));
+            str.add(String.valueOf(colaFarmacia.size()));
+            if (siguienteRestaurante != null){
+                str.add(String.valueOf(siguienteRestaurante.getId()));
+            }
+            else{
+                str.add("Ninguno");
+            }
+            if (siguienteParaAtender != null){
+                str.add(String.valueOf(siguienteParaAtender.getId()));
+            }
+            else{
+                str.add("Ninguno");
+            }
+            ManejadorArchivosGenerico.escribirLinea("Salidas/SaturacionDeColas.csv", str.toString());
+
             if(!repartidoresListos.isEmpty() && siguienteParaAtender != null){
                 Repartidor repartidor = repartidoresListos.remove();
                 for (Comercio comercio : manejadorComercios.getComercios()) {
                     if(siguienteParaAtender.getComercio().compareTo(comercio.nombre) == 0){
-                        ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Se asignó el rapartidor," + String.valueOf(siguienteParaAtender.getId()));
+                        ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Se asignó el rapartidor,"+ String.valueOf(siguienteParaAtender.getTipoComercio()) + "," + String.valueOf(siguienteParaAtender.getId()));
                         ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraRepartidores.csv", String.valueOf(tickActual) + ",Se asignó el rapartidor," + String.valueOf(repartidor.getId()));
                         logger.actualizarPedido(siguienteParaAtender, "asignRep");
                         System.out.println("Se asignó el rapartidor #" + repartidor.getId() + " al comercio: " + comercio.getNombre());
@@ -230,12 +273,12 @@ public class ManejadorRepartidores implements Runnable {
                 break;
             case "restaurante":
                 try {colasRestaurantesMutex.acquire();} catch (InterruptedException e) {}
-                if(pedido.getDistanciaCliente()<=5){
+                if(pedido.getDistanciaCliente()<=9){
                     colaRestauranteDistanciaCorta.add(pedido);
                     colasRestaurantesMutex.release();
                     break;
                 }
-                if(pedido.getDistanciaCliente()<=11){
+                if(pedido.getDistanciaCliente()<=14){
                     colaRestauranteDistanciaMedia.add(pedido);
                     colasRestaurantesMutex.release();
                     break;
@@ -256,21 +299,31 @@ public class ManejadorRepartidores implements Runnable {
     }
 
     public void repartidorListo(Repartidor repartidor){
+        try {colasRepartidoresMutex.acquire();} catch (InterruptedException e) {}
         repartidoresEnviando.remove(repartidor);
         repartidoresListos.add(repartidor);
+        colasRepartidoresMutex.release();
     }
 
     public void repartidorEnviando(Repartidor repartidor){
+        try {colasRepartidoresMutex.acquire();} catch (InterruptedException e) {}
         repartidoresEnviando.add(repartidor);
+        colasRepartidoresMutex.release();
     }
 
-	public void cargarRepartidores(Logger logger) {
+	public Boolean cargarRepartidores(Logger logger) {
 
         String[] entrada = ManejadorArchivosGenerico.leerArchivo("Entradas/ComerciosRepartidores.csv");
-        String repartidores = entrada[0];
-        int cantidadRepartidores = Integer.parseInt(repartidores.split(",")[1]);
-        for (int i = 1; i <= cantidadRepartidores; i++){
-            repartidoresListos.add(new Repartidor(i, this, semComienzo, semFinal, semFinalTodos, logger));
+        try {
+            String repartidores = entrada[0];
+            int cantidadRepartidores = Integer.parseInt(repartidores.split(",")[1]);
+            for (int i = 1; i <= cantidadRepartidores; i++){
+                repartidoresListos.add(new Repartidor(i, this, semComienzo, semFinal, semFinalTodos, logger));
+            }
+            
+        } catch (Exception e) {
+            System.out.println("Formato de Pedidos.csv incorrecto");
+            return false;
         }
 
         totalDeRepartidores = repartidoresListos.size();
@@ -278,5 +331,6 @@ public class ManejadorRepartidores implements Runnable {
             Thread hilo = new Thread(rep);
             hilo.start();
         }
+        return true;
 	}
 }

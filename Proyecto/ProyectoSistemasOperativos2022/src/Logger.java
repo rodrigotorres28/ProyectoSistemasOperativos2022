@@ -30,6 +30,7 @@ public class Logger {
                         break;
                     case "asignRep":
                         listaPedidosSimulados.get(i).setAsignacionRepartidor(String.valueOf(contadorGlobal));
+                        break;
                     case "iniEnv":
                         listaPedidosSimulados.get(i).setInicioEnvioTick(String.valueOf(contadorGlobal));
                         break;
@@ -43,6 +44,7 @@ public class Logger {
                         System.out.println("Error del Switch Case del Logger");
                         break;
                 }
+                break;
             }
         }
         semPedidosSimuladosMutex.release();
@@ -50,17 +52,18 @@ public class Logger {
 
     public String[] crearStringsParaSalida(){
         String[] stringSalida = new String[listaPedidosSimulados.size() + 1];
-        String linea = "ID,Tipo de Comercio,|,Ingreso,Inicio Elaboración,Fin Elaboración,Asignación de repartidor,Inicio Envio,Fin Envio,Repartidor Listo,|,Demora total del Pedido,Demora Sin elaboración ni envio,Tiempo para asignar repartidor,Demora de entrega al repartidor";
+        String linea = "ID,Tipo de Comercio,|,Ingreso,Inicio Elaboración,Fin Elaboración,Asignación de repartidor,Inicio Envio,Fin Envio,Repartidor Listo,|,Demora total del Pedido,Retraso de comienzo de elaboración,Espera con pedido elaborado,Tiempo para asignar repartidor";
         stringSalida[0] = linea;
         int i = 1;
         for (LogPedido logPedido : listaPedidosSimulados) {
             String demoraTotal = String.valueOf(Integer.parseInt(logPedido.getFinEnvioTick())-Integer.parseInt(logPedido.getIngresaTick()));
-            int elaboracion = Integer.parseInt(logPedido.getFinElaboracionTick()) - Integer.parseInt(logPedido.getInicioElaboracionTick());
-            int envio = Integer.parseInt(logPedido.getFinEnvioTick()) - Integer.parseInt(logPedido.getInicioEnvioTick());
-            String demoraSinElaboracionNiEnvio = String.valueOf(Integer.parseInt(demoraTotal) - elaboracion - envio);
-            int diferenciaAsignYFinElab = Integer.parseInt(logPedido.getFinElaboracionTick()) - Integer.parseInt(logPedido.getAsignacionRepartidor());
-            String strDifAsignElab = String.valueOf(Math.abs(diferenciaAsignYFinElab));
+            int diferenciaIniEnvYFinElab = Integer.parseInt(logPedido.getInicioEnvioTick()) - Integer.parseInt(logPedido.getFinElaboracionTick());
+            String esperaConPedidoElaborado = "0";
+            if(diferenciaIniEnvYFinElab >= 0){
+                esperaConPedidoElaborado = String.valueOf(diferenciaIniEnvYFinElab);
+            }
             String tiempoParaAsignarRepartidor = String.valueOf(Integer.parseInt(logPedido.getAsignacionRepartidor()) - Integer.parseInt(logPedido.getIngresaTick()));
+            String retrasoDeComienzoDeElaboracion = String.valueOf(Integer.parseInt(logPedido.getInicioElaboracionTick()) - Integer.parseInt(logPedido.getIngresaTick()));
             StringJoiner str = new StringJoiner(",");
             str.add(String.valueOf(logPedido.getId()));
             str.add(logPedido.getTipoComercio());
@@ -74,9 +77,9 @@ public class Logger {
             str.add(logPedido.getRepartidorListoTick());
             str.add("|");
             str.add(demoraTotal);
-            str.add(demoraSinElaboracionNiEnvio);
+            str.add(retrasoDeComienzoDeElaboracion);
+            str.add(esperaConPedidoElaborado);
             str.add(tiempoParaAsignarRepartidor);
-            str.add(strDifAsignElab);
             linea = str.toString();
             stringSalida[i] = linea;
             i++;

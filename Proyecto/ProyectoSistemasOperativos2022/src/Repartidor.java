@@ -68,7 +68,7 @@ public class Repartidor implements Runnable{
 			
 			if (!enEspera){
 				if(enviando && distanciaRestante == 0){
-					ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Finalizó el envío del pedido," + String.valueOf(pedido.getId()));
+					ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraPedidos.csv", String.valueOf(tickActual) + ",Finalizó el envío del pedido," + String.valueOf(pedido.getTipoComercio()) + "," + String.valueOf(pedido.getId()));
 					ManejadorArchivosGenerico.escribirLinea("Salidas/BitacoraRepartidores.csv", String.valueOf(tickActual) + ",Finalizó el envío del pedido," + String.valueOf(id));
 					logger.actualizarPedido(pedido, "finEnv");
 					System.out.println("Finalizó el envío del pedido #" + pedido.getId() + ". Por el repartidor #" + id);
@@ -80,6 +80,7 @@ public class Repartidor implements Runnable{
 					logger.actualizarPedido(pedido, "repList");
 					System.out.println("El repartidor #" + id + " vuelve a estar listo");
 					enEspera = true;
+					pedido = null;
 					manejadorRepartidores.repartidorListo(this);
 				}
 

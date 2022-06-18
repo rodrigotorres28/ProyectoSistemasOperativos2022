@@ -5,7 +5,6 @@ public class Pedido {
   private int tiempoElaboracion;
   private int distanciaCliente;
   private int id;
-  private String productos;
   private int horaIngresado;
   private int antiguedad;
 
@@ -37,23 +36,17 @@ public class Pedido {
     return id;
   }
 
-  public String getProductos() {
-    return productos;
-  }
-
   public String getTipoComercio() {
     return tipoComercio;
   }
 
-  public Pedido(String Comercio, String TipoComercio , int TiempoElaboracion, int DistanciaCliente, int Id, String Productos,
-      int HoraIngresado) {
+  public Pedido(int Id, String Comercio, String TipoComercio , int TiempoElaboracion, int DistanciaCliente, int HoraIngresado) {
 
     this.comercio = Comercio;
     this.tipoComercio = TipoComercio;
     this.tiempoElaboracion = TiempoElaboracion;
     this.distanciaCliente = DistanciaCliente;
     this.id = Id;
-    this.productos = Productos;
     this.horaIngresado = HoraIngresado;
   }
 
